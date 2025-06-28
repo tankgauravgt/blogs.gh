@@ -1,5 +1,5 @@
 ---
 title: GT Notes
-icon: LiHome
+icon: RiHome5Line
 ---
 Welcome to GT Notes!

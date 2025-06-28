@@ -1,4 +1,4 @@
 ---
 title: Machine Learning
-icon: OcInfo16
+icon: RiPresentationFill
 ---

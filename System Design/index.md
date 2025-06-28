@@ -1,4 +1,4 @@
 ---
 title: System Design
-icon: OcInfo16
+icon: RiPresentationFill
 ---
