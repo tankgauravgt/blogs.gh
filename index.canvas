@@ -1,9 +1,0 @@
-{
-	"nodes":[
-		{"id":"a2ac78fd5e53e565","x":-180,"y":-899,"width":400,"height":400,"type":"file","file":"System Design/index.md"},
-		{"id":"2b0e3d739a1e4459","type":"text","text":"# GT Blogs","x":-560,"y":-200,"width":180,"height":60,"color":"6"}
-	],
-	"edges":[
-		{"id":"2748b7335762d8f4","fromNode":"2b0e3d739a1e4459","fromSide":"right","toNode":"a2ac78fd5e53e565","toSide":"left"}
-	]
-}
