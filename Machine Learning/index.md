@@ -1,3 +1,3 @@
 ---
-title: "Machine Learning: Index"
+title: "Index: Machine Learning"
 ---
