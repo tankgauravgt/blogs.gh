@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"7b2acf467dfe2494","x":-20,"y":-700,"width":340,"height":60,"type":"text","text":"## Core Computer Science"},
+		{"id":"c4796c7b64aa5053","x":-20,"y":-600,"width":260,"height":60,"type":"text","text":"## Machine Learning"},
+		{"id":"46d02ace8e7c9a98","x":-20,"y":-400,"width":400,"height":68,"type":"text","text":"## Natural Language Processing"},
+		{"id":"fea49b2b40a75b6e","x":-20,"y":-500,"width":258,"height":68,"type":"text","text":"## Computer Vision"},
+		{"id":"2b0e3d739a1e4459","x":-560,"y":-200,"width":180,"height":80,"color":"6","type":"text","text":"# GT Blogs"}
+	],
+	"edges":[
+		{"id":"ebc03bcc6e7f5577","fromNode":"2b0e3d739a1e4459","fromSide":"right","toNode":"c4796c7b64aa5053","toSide":"left"},
+		{"id":"1be218424a333d1b","fromNode":"2b0e3d739a1e4459","fromSide":"right","toNode":"7b2acf467dfe2494","toSide":"left"},
+		{"id":"f6fc66adb8d1f37f","fromNode":"2b0e3d739a1e4459","fromSide":"right","toNode":"46d02ace8e7c9a98","toSide":"left"},
+		{"id":"5d1b0f7e9a96ed91","fromNode":"2b0e3d739a1e4459","fromSide":"right","toNode":"fea49b2b40a75b6e","toSide":"left"}
+	]
+}
