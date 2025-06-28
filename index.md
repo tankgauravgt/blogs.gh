@@ -3,5 +3,5 @@ title: Welcome to GT Notes!
 ---
 ### Index
 
-- [[Machine Learning/index|index]]
-- [[System Design/index|index]]
+- [[./machine-learning/index.html|Machine Learning]]
+- [[./system-design/index.html|System Design]]
