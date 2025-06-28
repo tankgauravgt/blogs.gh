@@ -1,4 +1,4 @@
 ---
-title: Machine Learning
+title: "Machine Learning: Introduction"
 icon: RiPresentationFill
 ---

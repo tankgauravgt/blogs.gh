@@ -1,4 +1,4 @@
 ---
-title: System Design
+title: "System Design: Introduction"
 icon: RiPresentationFill
 ---
