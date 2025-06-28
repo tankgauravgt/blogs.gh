@@ -1,4 +1,5 @@
 ---
 title: "Index: Machine Learning"
 ---
-- [[./regression.html|Regression]]
+- [[./machine-learning/linear-regression.html|Linear Regression]]
+- [[./machine-learning/logistic-regression.html|Logistic Regression]]
