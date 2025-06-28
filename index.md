@@ -1,4 +1,4 @@
 ---
-title: GT Notes
+title: "GT Notes: Index"
 ---
 Welcome to GT Notes!

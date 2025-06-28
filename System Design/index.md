@@ -1,3 +1,3 @@
 ---
-title: "System Design: Introduction"
+title: "System Design: Index"
 ---

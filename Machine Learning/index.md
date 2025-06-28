@@ -1,3 +1,3 @@
 ---
-title: "Machine Learning: Introduction"
+title: "Machine Learning: Index"
 ---
