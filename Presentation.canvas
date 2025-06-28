@@ -1,1 +1,6 @@
-{}
+{
+	"nodes":[
+		{"id":"3b34a6ba93bdf1de","x":-520,"y":-660,"width":250,"height":400,"color":"3","type":"text","text":"CASE-1"}
+	],
+	"edges":[]
+}
