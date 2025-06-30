@@ -7,14 +7,14 @@ tags:
 ---
 # HuggingFace - LLM Course
 
-# 0. SETUP
+# CH-0 SETUP
 ## Commonly used libraries
 
 - transformers
 - datasets
 - torch
 
-# 1. TRANSFORMER MODELS
+# CH-1 TRANSFORMER MODELS
 ## Pipeline() Function
 
 The `pipeline()` function in the 🤗 Transformers library simplifies using models by integrating preprocessing and postprocessing steps.
