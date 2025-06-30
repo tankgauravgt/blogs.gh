@@ -78,8 +78,7 @@ e2e_model([
 
 ## Usage of Text Pipelines:
 
-### Text Generation
-
+- **Text Generation**
 ```python
 from transformers import pipeline
 
@@ -93,32 +92,27 @@ e2e_generator = pipeline(
 e2e_generator(text, num_return_sequences=5)
 ```
 
-### Text Classification
-
+**Text Classification**
 ```python
 
 ```
 
-### Text Summarization
-
+**Text Summarization**
 ```python
 
 ```
 
-### Text Translation
-
+**Text Translation**
 ```python
 
 ```
 
-### Text Zero-Shot Classification
-
+**Text Zero-Shot Classification**
 ```python
 
 ```
 
-### Text Feature Extraction
-
+**Text Feature Extraction**
 ```python
 
 ```
