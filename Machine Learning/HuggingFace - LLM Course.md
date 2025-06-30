@@ -5,6 +5,7 @@ tags:
   - LLMs
   - Course
 ---
+# HuggingFace - LLM Course
 
 # 0. SETUP
 ## Commonly used libraries
