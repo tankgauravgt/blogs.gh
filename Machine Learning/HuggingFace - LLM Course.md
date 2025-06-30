@@ -6,15 +6,17 @@ tags:
   - Course
 ---
 # HuggingFace - LLM Course
----
+
 # 0. SETUP
+
 ## Commonly used libraries
 
 - transformers
 - datasets
 - torch
----
+
 # 1. TRANSFORMER MODELS
+
 ## Pipeline() Function
 
 The `pipeline()` function in the 🤗 Transformers library simplifies using models by integrating preprocessing and postprocessing steps.
@@ -51,6 +53,7 @@ e2e_model([
 | translation              | Translate text from one language to another.                         |
 | zero-shot-classification | Classify text without prior training on specific labels.             |
 | feature-extraction       | Extract vector representations of text.                              |
+
 ### Image pipelines
 
 | **Task**             | **Description**                        |
@@ -58,6 +61,7 @@ e2e_model([
 | image-to-text        | Generate text descriptions of images.  |
 | image-classification | Identify objects in an image.          |
 | object-detection     | Locate and identify objects in images. |
+
 ### Audio pipelines
 
 | **Task**                     | **Description**                 |
@@ -65,6 +69,7 @@ e2e_model([
 | automatic-speech-recognition | Convert speech to text.         |
 | audio-classification         | Classify audio into categories. |
 | text-to-speech               | Convert text to spoken audio.   |
+
 ### Multimodal pipelines
 
 | **Task**           | **Description**                             |
