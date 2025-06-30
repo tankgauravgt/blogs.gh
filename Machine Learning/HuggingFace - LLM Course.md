@@ -6,12 +6,14 @@ tags:
   - Course
 ---
 
+# 0. SETUP
 ## Commonly used libraries
 
 - transformers
 - datasets
 - torch
 
+# 1. TRANSFORMER MODELS
 ## Pipeline() Function
 
 The `pipeline()` function in the 🤗 Transformers library simplifies using models by integrating preprocessing and postprocessing steps.
@@ -67,3 +69,41 @@ classifier([
 | **Task**           | **Description**                             |
 | ------------------ | ------------------------------------------- |
 | image-text-to-text | Respond to an image based on a text prompt. |
+
+## Usage of Text Pipelines:
+
+### Text Generation
+
+```python
+
+```
+
+### Text Classification
+
+```python
+
+```
+
+### Text Summarization
+
+```python
+
+```
+
+### Text Translation
+
+```python
+
+```
+
+### Text Zero-Shot Classification
+
+```python
+
+```
+
+### Text Feature Extraction
+
+```python
+
+```
