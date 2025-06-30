@@ -48,3 +48,22 @@ classifier([
 | translation              | Translate text from one language to another.                         |
 | zero-shot-classification | Classify text without prior training on specific labels.             |
 | feature-extraction       | Extract vector representations of text.                              |
+### Image pipelines
+
+| **Task**             | **Description**                        |
+| -------------------- | -------------------------------------- |
+| image-to-text        | Generate text descriptions of images.  |
+| image-classification | Identify objects in an image.          |
+| object-detection     | Locate and identify objects in images. |
+### Audio pipelines
+
+| **Task**                     | **Description**                 |
+| ---------------------------- | ------------------------------- |
+| automatic-speech-recognition | Convert speech to text.         |
+| audio-classification         | Classify audio into categories. |
+| text-to-speech               | Convert text to spoken audio.   |
+### Multimodal pipelines
+
+| **Task**           | **Description**                             |
+| ------------------ | ------------------------------------------- |
+| image-text-to-text | Respond to an image based on a text prompt. |
