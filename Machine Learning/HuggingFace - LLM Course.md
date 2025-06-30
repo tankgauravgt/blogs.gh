@@ -43,7 +43,8 @@ e2e_model([
 
 ## Available Pipelines
 
-### Text pipelines
+
+**Text pipelines**
 
 | **Task**                 | **Description**                                                      |
 | ------------------------ | -------------------------------------------------------------------- |
@@ -54,7 +55,7 @@ e2e_model([
 | zero-shot-classification | Classify text without prior training on specific labels.             |
 | feature-extraction       | Extract vector representations of text.                              |
 
-### Image pipelines
+**Image pipelines**
 
 | **Task**             | **Description**                        |
 | -------------------- | -------------------------------------- |
@@ -62,7 +63,7 @@ e2e_model([
 | image-classification | Identify objects in an image.          |
 | object-detection     | Locate and identify objects in images. |
 
-### Audio pipelines
+**Audio pipelines**
 
 | **Task**                     | **Description**                 |
 | ---------------------------- | ------------------------------- |
@@ -70,13 +71,12 @@ e2e_model([
 | audio-classification         | Classify audio into categories. |
 | text-to-speech               | Convert text to spoken audio.   |
 
-### Multimodal pipelines
+**Multimodal pipelines**
 
 | **Task**           | **Description**                             |
 | ------------------ | ------------------------------------------- |
 | image-text-to-text | Respond to an image based on a text prompt. |
-
-## Usage of Text Pipelines:
+## Usage of Text Pipelines
 
 - **Text Generation**
 ```python
