@@ -24,15 +24,15 @@ from transformers import pipeline
 text = "Huggingface is awesome!"
 
 # sentiment analysis:
-classifier = pipeline("sentiment-analysis")
-classifier(text)
+e2e_model = pipeline("sentiment-analysis")
+e2e_model(text)
 ```
 
 > [!TIP] 
 > We can pass several sentences in one go!
 
 ```python
-classifier([
+e2e_model([
 	"I've been waiting for a HuggingFace course my whole life.", 
 	"I hate this so much!"
 ])
@@ -75,7 +75,14 @@ classifier([
 ### Text Generation
 
 ```python
+from transformers import pipeline
 
+# generate text based on text:
+e2e_generator = pipeline(
+	task="text-generation",
+	model="gpt2"
+)
+e2e_generator("In this course, we will teach you how to", num_return_sequences=5)
 ```
 
 ### Text Classification
