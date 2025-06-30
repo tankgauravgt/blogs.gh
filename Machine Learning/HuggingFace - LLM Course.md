@@ -77,12 +77,14 @@ e2e_model([
 ```python
 from transformers import pipeline
 
-# generate text based on text:
+text = "In this course, we will teach you how to"
+
+# generate text based on prompt text:
 e2e_generator = pipeline(
 	task="text-generation",
 	model="gpt2"
 )
-e2e_generator("In this course, we will teach you how to", num_return_sequences=5)
+e2e_generator(text, num_return_sequences=5)
 ```
 
 ### Text Classification
