@@ -92,9 +92,32 @@ e2e_generator = pipeline(
 e2e_generator(text, num_return_sequences=5)
 ```
 
-**Text Classification**
+**Text Document Classification**
 ```python
+from transformers import pipeline
 
+document = "I've been waiting for a HuggingFace course my whole life."
+
+# classify the document based on text content:
+e2e_classifier = pipeline(
+	task="sentiment-analysis",
+	model="roberta-large-mnli"
+)
+e2e_classifier(document)
+```
+
+**Text Token Classification**
+```python
+from transformers import pipeline
+
+document = "Hello I'm Omar and I live in Zürich."
+
+# classify document tokens based on text content:
+e2e_classifier = pipeline(
+    task="token-classification",
+    model="vblagoje/bert-english-uncased-finetuned-pos"
+)
+e2eclassifier(document)
 ```
 
 **Text Summarization**
