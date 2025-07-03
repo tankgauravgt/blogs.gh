@@ -54,14 +54,18 @@ e2e_model([
 | translation              | Translate text from one language to another.                         |
 | zero-shot-classification | Classify text without prior training on specific labels.             |
 | feature-extraction       | Extract vector representations of text.                              |
+| fill-mask                | Fills masked text data.                                              |
 
-**Image pipelines**
+**Vision pipelines**
 
-| **Task**             | **Description**                        |
-| -------------------- | -------------------------------------- |
-| image-to-text        | Generate text descriptions of images.  |
-| image-classification | Identify objects in an image.          |
-| object-detection     | Locate and identify objects in images. |
+| **Task**                    | **Description**                                              |
+| --------------------------- | ------------------------------------------------------------ |
+| image-to-text               | Generate text descriptions of images.                        |
+| image-classification        | Identify objects in an image.                                |
+| object-detection            | Locate and identify objects in images.                       |
+| depth-estimation            | Estimate the depth of different objects present in an image. |
+| document-question-answering | Provide answers to questions posed about document images.    |
+| image-feature-extraction    | Extract semantically meaningful features given an image.     |
 
 **Audio pipelines**
 
@@ -76,6 +80,12 @@ e2e_model([
 | **Task**           | **Description**                             |
 | ------------------ | ------------------------------------------- |
 | image-text-to-text | Respond to an image based on a text prompt. |
+
+Other Pipelines
+
+| **Task**           | **Description**                     |
+| ------------------ | ----------------------------------- |
+| feature-extraction | Extract features learnt in a model. |
 ## Usage of Text Pipelines
 
 - **Text Generation**
@@ -117,7 +127,7 @@ e2e_classifier = pipeline(
     task="token-classification",
     model="vblagoje/bert-english-uncased-finetuned-pos"
 )
-e2eclassifier(document)
+e2e_classifier(document)
 ```
 
 **Text Summarization**
