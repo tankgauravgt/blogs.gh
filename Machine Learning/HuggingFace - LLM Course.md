@@ -86,21 +86,21 @@ e2e_model([
 
 - **Audio pipelines**
 
-| **Task**                     | **Description**                                                                                                                                     |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| audio-classification         | Classify audio into categories.                                                                                                                     |
-| audio-to-audio               | family of tasks in which the input is an audio and the output is one or multiple generated audios. (eg. speech enhancement, source separation, ...) |
-| automatic-speech-recognition | Convert speech to text.                                                                                                                             |
-| text-to-speech               | Convert text to spoken audio.                                                                                                                       |
+| **Task**                     | **Description**                                                                                                                                     | **Pipeline()** |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| audio-classification         | Classify audio into categories.                                                                                                                     | `[ yes ]`      |
+| audio-to-audio               | family of tasks in which the input is an audio and the output is one or multiple generated audios. (eg. speech enhancement, source separation, ...) | `[ no ]`       |
+| automatic-speech-recognition | Convert speech to text.                                                                                                                             | `[ yes ]`      |
+| text-to-audio                | Convert text to spoken audio.                                                                                                                       | `[ yes ]`      |
 
 - **Multimodal pipelines**
 
-| **Task**                    | **Description**                                                                        |
-| --------------------------- | -------------------------------------------------------------------------------------- |
-| any-to-any                  | Understand two or more modalities and output two or more modalities.                   |
-| audio-text-to-text          | Generate textual responses or summaries based on both audio input and text prompts.    |
-| document-question-answering | Take a (document, question) pair as input and return an answer in natural language.    |
-| visual-document-retrieval   | Searching for relevant image-based documents, such as PDFs based on input text prompt. |
-| image-text-to-text          | Take in an image and text prompt and output text.                                      |
-| video-text-to-text          | Take in a video and a text prompt and output text.                                     |
-| visual-question-answering   | Answering open-ended questions based on an image depending on text prompt.             |
+| **Task**                    | **Description**                                                                        | **Pipeline()** |
+| --------------------------- | -------------------------------------------------------------------------------------- | -------------- |
+| any-to-any                  | Understand two or more modalities and output two or more modalities.                   | `[ no ]`       |
+| audio-text-to-text          | Generate textual responses or summaries based on both audio input and text prompts.    | `[ no ]`       |
+| document-question-answering | Take a (document, question) pair as input and return an answer in natural language.    | `[ no ]`       |
+| visual-document-retrieval   | Searching for relevant image-based documents, such as PDFs based on input text prompt. | `[ yes ]`      |
+| image-text-to-text          | Take in an image and text prompt and output text.                                      | `[ yes ]`      |
+| video-text-to-text          | Take in a video and a text prompt and output text.                                     | `[ no ]`       |
+| visual-question-answering   | Answering open-ended questions based on an image depending on text prompt.             | `[ yes ]`      |
