@@ -41,33 +41,50 @@ e2e_model([
 ])
 ```
 
-## Available Pipelines
+## Tasks and Pipeline() Compatibility
 
+- **NLP Pipelines**
 
-**Text pipelines**
+| **Task**                 | **Description**                                                      | **Pipeline()** |
+| ------------------------ | -------------------------------------------------------------------- | -------------- |
+| feature-extraction       | Extract vector representations of text.                              | `[ yes ]`      |
+| fill-mask                | Fills masked text data.                                              | `[ yes ]`      |
+| question-answering       | Retrieve the answer to a question from a given text.                 | `[ yes ]`      |
+| sentence-similarity      | Determine how similar two texts are.                                 | `[ no ]`       |
+| summarization            | Create a shorter version of a text while preserving key information. | `[ yes ]`      |
+| table-question-answering | Answering a question about an information on a given table.          | `[ yes ]`      |
+| text-classification      | Classify text into predefined categories.                            | `[ yes ]`      |
+| text-generation          | Generate text from a prompt.                                         | `[ yes ]`      |
+| text-ranking             | Rank a set of texts based on their relevance to a query.             | `[ no ]`       |
+| token-classification     | NLU task in which a label is assigned to some tokens in a text.      | `[ yes ]`      |
+| translation              | Convert text from one language to another.                           | `[ yes ]`      |
+| zero-shot-classification | Classify text without prior training on specific labels.             | `[ yes ]`      |
 
-| **Task**                 | **Description**                                                      |
-| ------------------------ | -------------------------------------------------------------------- |
-| text-generation          | Generate text from a prompt.                                         |
-| text-classification      | Classify text into predefined categories.                            |
-| summarization            | Create a shorter version of a text while preserving key information. |
-| translation              | Translate text from one language to another.                         |
-| zero-shot-classification | Classify text without prior training on specific labels.             |
-| feature-extraction       | Extract vector representations of text.                              |
-| fill-mask                | Fills masked text data.                                              |
+- **Vision pipelines**
 
-**Vision pipelines**
+| **Task**                       | **Description**                                                                                     | Pipeline() |
+| ------------------------------ | --------------------------------------------------------------------------------------------------- | ---------- |
+| depth-estimation               | Estimate the depth of different objects present in an image.                                        | `[ yes ]`  |
+| image-classification           | Identify objects in an image.                                                                       | `[ yes ]`  |
+| image-feature-extraction       | Extract semantically meaningful features given an image.                                            | `[ yes ]`  |
+| image-segmentation             | Divides an image into segments where each pixel in the image is mapped to an object                 | `[ yes ]`  |
+| image-to-image                 | Transform image. (eg. inpainting, colorization, Super Resolution)                                   | `[ yes ]`  |
+| image-to-text                  | Generate text descriptions of images.                                                               | `[ yes ]`  |
+| image-to-video                 | Generate a video influenced by text prompts.                                                        | `[ no ]`   |
+| keypoint-detection             | Identify meaningful distinctive points or features in an image.                                     | `[ no ]`   |
+| mask-generation                | Generate masks that identify a specific object or region of interest in a given image.              | `[ yes ]`  |
+| object-detection               | Locate and identify objects in images.                                                              | `[ yes ]`  |
+| video-classification           | Assign a label or class to an entire video.                                                         | `[ yes ]`  |
+| text-to-image                  | Generating images from input text.                                                                  | `[ no ]`   |
+| text-to-video                  | Generating consistent sequence of images from text.                                                 | `[ no ]`   |
+| unconditional-image-generation | Generating images with no condition in any context.                                                 | `[ no ]`   |
+| video-to-video                 | Transform input video into a new video with altered visual styles, motion, or content.              | `[ no ]`   |
+| zero-shot-image-classification | Classify previously unseen classes during training of a model.                                      | `[ yes ]`  |
+| zero-shot-object-detection     | Detect objects and their classes in images, without any prior training or knowledge of the classes. | `[ yes ]`  |
+| text-to-3d                     | Text-to-3D models take in text input and produce 3D output.                                         | `[ no ]`   |
+| image-to-3d                    | Image-to-3D models take in image input and produce 3D output.                                       | `[ no ]`   |
 
-| **Task**                    | **Description**                                              |
-| --------------------------- | ------------------------------------------------------------ |
-| image-to-text               | Generate text descriptions of images.                        |
-| image-classification        | Identify objects in an image.                                |
-| object-detection            | Locate and identify objects in images.                       |
-| depth-estimation            | Estimate the depth of different objects present in an image. |
-| document-question-answering | Provide answers to questions posed about document images.    |
-| image-feature-extraction    | Extract semantically meaningful features given an image.     |
-
-**Audio pipelines**
+- **Audio pipelines**
 
 | **Task**                     | **Description**                 |
 | ---------------------------- | ------------------------------- |
@@ -75,78 +92,14 @@ e2e_model([
 | audio-classification         | Classify audio into categories. |
 | text-to-speech               | Convert text to spoken audio.   |
 
-**Multimodal pipelines**
+- **Multimodal pipelines**
 
 | **Task**           | **Description**                             |
 | ------------------ | ------------------------------------------- |
 | image-text-to-text | Respond to an image based on a text prompt. |
 
-Other Pipelines
+- **Other Pipelines**
 
 | **Task**           | **Description**                     |
 | ------------------ | ----------------------------------- |
 | feature-extraction | Extract features learnt in a model. |
-## Usage of Text Pipelines
-
-- **Text Generation**
-```python
-from transformers import pipeline
-
-text = "In this course, we will teach you how to"
-
-# generate text based on prompt text:
-e2e_generator = pipeline(
-	task="text-generation",
-	model="gpt2"
-)
-e2e_generator(text, num_return_sequences=5)
-```
-
-**Text Document Classification**
-```python
-from transformers import pipeline
-
-document = "I've been waiting for a HuggingFace course my whole life."
-
-# classify the document based on text content:
-e2e_classifier = pipeline(
-	task="sentiment-analysis",
-	model="roberta-large-mnli"
-)
-e2e_classifier(document)
-```
-
-**Text Token Classification**
-```python
-from transformers import pipeline
-
-document = "Hello I'm Omar and I live in Zürich."
-
-# classify document tokens based on text content:
-e2e_classifier = pipeline(
-    task="token-classification",
-    model="vblagoje/bert-english-uncased-finetuned-pos"
-)
-e2e_classifier(document)
-```
-
-**Text Summarization**
-```python
-
-```
-
-**Text Translation**
-```python
-
-```
-
-**Text Zero-Shot Classification**
-```python
-
-```
-
-**Text Feature Extraction**
-```python
-
-```
-
