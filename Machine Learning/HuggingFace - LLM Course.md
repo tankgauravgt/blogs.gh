@@ -86,20 +86,21 @@ e2e_model([
 
 - **Audio pipelines**
 
-| **Task**                     | **Description**                 |
-| ---------------------------- | ------------------------------- |
-| automatic-speech-recognition | Convert speech to text.         |
-| audio-classification         | Classify audio into categories. |
-| text-to-speech               | Convert text to spoken audio.   |
+| **Task**                     | **Description**                                                                                                                                     |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| audio-classification         | Classify audio into categories.                                                                                                                     |
+| audio-to-audio               | family of tasks in which the input is an audio and the output is one or multiple generated audios. (eg. speech enhancement, source separation, ...) |
+| automatic-speech-recognition | Convert speech to text.                                                                                                                             |
+| text-to-speech               | Convert text to spoken audio.                                                                                                                       |
 
 - **Multimodal pipelines**
 
-| **Task**           | **Description**                             |
-| ------------------ | ------------------------------------------- |
-| image-text-to-text | Respond to an image based on a text prompt. |
-
-- **Other Pipelines**
-
-| **Task**           | **Description**                     |
-| ------------------ | ----------------------------------- |
-| feature-extraction | Extract features learnt in a model. |
+| **Task**                    | **Description**                                                                        |
+| --------------------------- | -------------------------------------------------------------------------------------- |
+| any-to-any                  | Understand two or more modalities and output two or more modalities.                   |
+| audio-text-to-text          | Generate textual responses or summaries based on both audio input and text prompts.    |
+| document-question-answering | Take a (document, question) pair as input and return an answer in natural language.    |
+| visual-document-retrieval   | Searching for relevant image-based documents, such as PDFs based on input text prompt. |
+| image-text-to-text          | Take in an image and text prompt and output text.                                      |
+| video-text-to-text          | Take in a video and a text prompt and output text.                                     |
+| visual-question-answering   | Answering open-ended questions based on an image depending on text prompt.             |
