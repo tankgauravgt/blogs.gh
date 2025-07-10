@@ -104,3 +104,18 @@ e2e_model([
 | image-text-to-text          | Take in an image and text prompt and output text.                                      | &check;        |
 | video-text-to-text          | Take in a video and a text prompt and output text.                                     | &cross;        |
 | visual-question-answering   | Answering open-ended questions based on an image depending on text prompt.             | &check;        |
+
+## Classification of LLM Models
+
+### 1: Auto-Encoding Transformer Models
+
+Good for tasks that require understanding of the input, such as sentence classification and named entity recognition.
+
+### 2: Auto-Regressive Transformer Models
+
+Good for generative tasks such as text generation.
+
+### 3: Seq-To-Seq Transformer Models
+
+Good for generative tasks that require an input, such as translation or summarization.
+
