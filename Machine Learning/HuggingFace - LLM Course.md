@@ -109,13 +109,24 @@ e2e_model([
 
 ### 1: Auto-Encoding Transformer Models
 
-Good for tasks that require understanding of the input, such as sentence classification and named entity recognition.
+- **Focus:** Understanding context, generating embeddings.
+- **Mechanism:** Bidirectional attention (sees past & future tokens).
+- **Training:** Masked Language Modeling (MLM).
+- **Use Cases:** Text classification, sentiment analysis, Named Entity Recognition (NER), question answering (understanding).
+- **Examples:** BERT, RoBERTa.
 
 ### 2: Auto-Regressive Transformer Models
 
-Good for generative tasks such as text generation.
+- **Focus:** Generating new text, predicting next token.
+- **Mechanism:** Unidirectional attention (sees only past tokens).
+- **Training:** Predicts next word in a sequence.
+- **Use Cases:** Text generation, summarization, chatbots, code generation.
+- **Examples:** GPT series, LLaMA, Claude.
 
 ### 3: Seq-To-Seq Transformer Models
 
-Good for generative tasks that require an input, such as translation or summarization.
-
+- **Focus:** Transforming one sequence into another.
+- **Mechanism:** Encoder-Decoder architecture. Encoder processes input, Decoder generates output.
+- **Training:** Maps input sequence to output sequence.
+- **Use Cases:** Machine translation, abstractive summarization, text style transfer.
+- **Examples:** T5, BART, NMT models.
