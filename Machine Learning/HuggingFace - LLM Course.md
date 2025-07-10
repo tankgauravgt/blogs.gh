@@ -114,7 +114,6 @@ e2e_model([
 - **Training:** Masked Language Modeling (MLM).
 - **Use Cases:** Text classification, sentiment analysis, Named Entity Recognition (NER), question answering (understanding).
 - **Examples:** BERT, RoBERTa.
-
 ### 2: Decoder Based (Auto-Regressive)
 
 - **Focus:** Generating new text, predicting next token.
@@ -122,7 +121,6 @@ e2e_model([
 - **Training:** Predicts next word in a sequence.
 - **Use Cases:** Text generation, summarization, chatbots, code generation.
 - **Examples:** GPT series, LLaMA, Claude.
-
 ### 3: Encoder + Decoder Based
 
 - **Focus:** Transforming one sequence into another.
