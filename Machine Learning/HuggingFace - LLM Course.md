@@ -108,21 +108,18 @@ e2e_model([
 ## Classification of LLM Models
 
 ### 1: Encoder Based (Auto-Encoding)
-
 - **Focus:** Understanding context, generating embeddings.
 - **Mechanism:** Bidirectional attention (sees past & future tokens).
 - **Training:** Masked Language Modeling (MLM).
 - **Use Cases:** Text classification, sentiment analysis, Named Entity Recognition (NER), question answering (understanding).
 - **Examples:** BERT, RoBERTa.
 ### 2: Decoder Based (Auto-Regressive)
-
 - **Focus:** Generating new text, predicting next token.
 - **Mechanism:** Unidirectional attention (sees only past tokens).
 - **Training:** Predicts next word in a sequence.
 - **Use Cases:** Text generation, summarization, chatbots, code generation.
 - **Examples:** GPT series, LLaMA, Claude.
 ### 3: Encoder + Decoder Based
-
 - **Focus:** Transforming one sequence into another.
 - **Mechanism:** Encoder-Decoder architecture. Encoder processes input, Decoder generates output having influenced by input.
 - **Training:** Maps input sequence to output sequence.
