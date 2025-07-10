@@ -123,7 +123,7 @@ e2e_model([
 - **Use Cases:** Text generation, summarization, chatbots, code generation.
 - **Examples:** GPT series, LLaMA, Claude.
 
-### 3: Encoder+Decoder Based
+### 3: Encoder + Decoder Based
 
 - **Focus:** Transforming one sequence into another.
 - **Mechanism:** Encoder-Decoder architecture. Encoder processes input, Decoder generates output having influenced by input.
