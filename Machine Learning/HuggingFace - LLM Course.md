@@ -107,7 +107,7 @@ e2e_model([
 
 ## Classification of LLM Models
 
-### 1: Auto-Encoding Transformer Models
+### 1: Auto-Encoding Transformer (Encoder Based) Models
 
 - **Focus:** Understanding context, generating embeddings.
 - **Mechanism:** Bidirectional attention (sees past & future tokens).
@@ -115,7 +115,7 @@ e2e_model([
 - **Use Cases:** Text classification, sentiment analysis, Named Entity Recognition (NER), question answering (understanding).
 - **Examples:** BERT, RoBERTa.
 
-### 2: Auto-Regressive Transformer Models
+### 2: Auto-Regressive Transformer (Decoder Based) Models
 
 - **Focus:** Generating new text, predicting next token.
 - **Mechanism:** Unidirectional attention (sees only past tokens).
@@ -123,7 +123,7 @@ e2e_model([
 - **Use Cases:** Text generation, summarization, chatbots, code generation.
 - **Examples:** GPT series, LLaMA, Claude.
 
-### 3: Seq-To-Seq Transformer Models
+### 3: Seq-To-Seq Transformer (Encoder + Decoder) Models
 
 - **Focus:** Transforming one sequence into another.
 - **Mechanism:** Encoder-Decoder architecture. Encoder processes input, Decoder generates output.
