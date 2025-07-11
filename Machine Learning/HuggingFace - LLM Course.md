@@ -126,6 +126,53 @@ e2e_model([
 - **Use Cases:** Machine translation, abstractive summarization, text style transfer.
 - **Examples:** T5, BART, NMT models.
 
+## Auto-Encoding Models
+
+### Model: BaseAutoEncodingModel
+
+```python
+BaseAutoEncodingModel(
+	(embeddings): BaseAutoEncodingModelEmbeddings,
+	(encoder): BaseAutoEncodingModelEncoder,
+	(dropout): BaseAutoEncodingModelPooler
+)
+```
+
+### Module: BaseAutoEncodingModelEmbedder
+
+```python
+BaseAutoEncodingModelEmbedder(
+    (word_embeddings): Embedding(30522, 768, padding_idx=0), 
+    (position_embeddings): Embedding(512, 768), 
+    (token_type_embeddings): Embedding(2, 768), 
+    (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+)
+```
+
+### Module: BaseAutoEncodingModelEncoder
+
+```python
+BaseAutoEncodingModelEncoder(
+    (layer): ModuleList(
+		(0-11): 12 x BaseAutoEncodingModelEncoderLayer(
+		    (attention): BaseAutoEncodingModelAttention,
+	        (intermediate): BaseAutoEncodingModelIntermediate,
+	        (output): BaseAutoEncodingModelOutput
+		)
+	)
+)
+```
+
+### Module: BaseAutoEncodingModelPooler
+
+```python
+BaseAutoEncodingModelPooler(
+	(dense): Linear(in_features=768, out_features=768, bias=True)
+	(activation): Tanh()
+)
+```
+
 ## Some Influential Transformer Models
 
 | **Time** | **Model**                | **Novelty**                                                                                                  |
@@ -133,58 +180,3 @@ e2e_model([
 | 2017     | Transformer Architecture | Introduced Encoder + Decoder based transformers for machine learning translation task and outperformed SOTA. |
 | 2018     | GPT                      | First pretrained transformer model. Finetuned for various NLP tasks obtaining SOTA performance.              |
 | 2018     | BERT                     |                                                                                                              |
-## Encoder Based Model
-
-```python
-# bert model:
-BertModel(
-	BertEmbeddings,
-	BertEncoder,
-	BertPooler
-)
-
-# bert embedding module:
-BertEmbeddings(
-    (word_embeddings): Embedding(30522, 768, padding_idx=0)
-    (position_embeddings): Embedding(512, 768)
-    (token_type_embeddings): Embedding(2, 768)
-    (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
-    (dropout): Dropout(p=0.1, inplace=False)
-)
-
-# bert encoder module:
-BertEncoder(
-    (layer): ModuleList(
-      (0-11): 12 x BertLayer(
-        (attention): BertAttention(
-          (self): BertSdpaSelfAttention(
-            (query): Linear(in_features=768, out_features=768, bias=True)
-            (key): Linear(in_features=768, out_features=768, bias=True)
-            (value): Linear(in_features=768, out_features=768, bias=True)
-            (dropout): Dropout(p=0.1, inplace=False)
-          )
-          (output): BertSelfOutput(
-            (dense): Linear(in_features=768, out_features=768, bias=True)
-            (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
-            (dropout): Dropout(p=0.1, inplace=False)
-          )
-        )
-        (intermediate): BertIntermediate(
-          (dense): Linear(in_features=768, out_features=3072, bias=True)
-          (intermediate_act_fn): GELUActivation()
-        )
-        (output): BertOutput(
-          (dense): Linear(in_features=3072, out_features=768, bias=True)
-          (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
-          (dropout): Dropout(p=0.1, inplace=False)
-        )
-      )
-    )
-  )
-
-# bert pooler module:
-(pooler): BertPooler(
-	(dense): Linear(in_features=768, out_features=768, bias=True)
-	(activation): Tanh()
-)
-```
