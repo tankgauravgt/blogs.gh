@@ -132,9 +132,9 @@ e2e_model([
 
 ```python
 BaseAutoEncodingModel(
-	(embeddings): BaseAutoEncodingModelEmbeddings,
-	(encoder): BaseAutoEncodingModelEncoder,
-	(dropout): BaseAutoEncodingModelPooler
+	'embedder': BaseAutoEncodingModelEmbedderModule(...),
+	'encoder': BaseAutoEncodingModelEncoderModule(...),
+	'pooler': BaseAutoEncodingModelPoolerModule(...)
 )
 ```
 
@@ -142,11 +142,11 @@ BaseAutoEncodingModel(
 
 ```python
 BaseAutoEncodingModelEmbedder(
-    (word_embeddings): Embedding(30522, 768, padding_idx=0), 
-    (position_embeddings): Embedding(512, 768), 
-    (token_type_embeddings): Embedding(2, 768), 
-    (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
-    (dropout): Dropout(p=0.1, inplace=False)
+    'word_emb': WordEmbedder(...), 
+    'pos_emb': PositionEmbedder(...), 
+    'tok_type_emb': TokenTypeEmbedder(...), 
+    'layernorm': LayerNorm(...)
+    'dropout': Dropout(...)
 )
 ```
 
@@ -154,22 +154,31 @@ BaseAutoEncodingModelEmbedder(
 
 ```python
 BaseAutoEncodingModelEncoder(
-    (layer): ModuleList(
-		(0-11): 12 x BaseAutoEncodingModelEncoderLayer(
-		    (attention): BaseAutoEncodingModelAttention,
-	        (intermediate): BaseAutoEncodingModelIntermediate,
-	        (output): BaseAutoEncodingModelOutput
+    'layers': ModuleList(
+		'layer': N x BaseAutoEncodingModelEncoderLayer(
+		    'attention': BaseAutoEncodingModelAttention,
+	        'intermediate': BaseAutoEncodingModelIntermediate,
+	        'output': BaseAutoEncodingModelOutput
 		)
 	)
 )
+
+# BaseAutoEncodingModelAttention Module:
+BaseAutoEncodingModelAttention()
+
+# BaseAutoEncodingModelIntermediate Module:
+BaseAutoEncodingModelIntermediate()
+
+# BaseAutoEncodingModelOutput Module:
+BaseAutoEncodingModelOutput()
 ```
 
 ### Module: BaseAutoEncodingModelPooler
 
 ```python
 BaseAutoEncodingModelPooler(
-	(dense): Linear(in_features=768, out_features=768, bias=True)
-	(activation): Tanh()
+	'dense': Linear(...)
+	'activation': Activation(...)
 )
 ```
 
