@@ -131,6 +131,7 @@ e2e_model([
 ### Model: BaseAutoEncodingModel
 
 ```python
+# Model: BaseAutoEncodingModel
 BaseAutoEncodingModel(
 	'embedder': BaseAutoEncodingModelEmbedderModule(...),
 	'encoder': BaseAutoEncodingModelEncoderModule(...),
@@ -141,11 +142,12 @@ BaseAutoEncodingModel(
 ### Module: BaseAutoEncodingModelEmbedder
 
 ```python
+# Module: BaseAutoEncodingModelEmbedder
 BaseAutoEncodingModelEmbedder(
     'word_emb': WordEmbedder(...), 
     'pos_emb': PositionEmbedder(...), 
     'tok_type_emb': TokenTypeEmbedder(...), 
-    'layernorm': LayerNorm(...)
+    'layer_norm': LayerNorm(...), 
     'dropout': Dropout(...)
 )
 ```
@@ -153,39 +155,58 @@ BaseAutoEncodingModelEmbedder(
 ### Module: BaseAutoEncodingModelEncoder
 
 ```python
+# Module: BaseAutoEncodingModelEncoder
 BaseAutoEncodingModelEncoder(
     'layers': ModuleList(
 		'layer': N x BaseAutoEncodingModelEncoderLayer(
-		    'attention': BaseAutoEncodingModelAttention,
-	        'intermediate': BaseAutoEncodingModelIntermediate,
-	        'output': BaseAutoEncodingModelOutput
+		    'attention': BaseAutoEncodingModelAttention(...), 
+	        'intermediate': BaseAutoEncodingModelIntermediate(...), 
+	        'output': BaseAutoEncodingModelOutput(...)
 		)
 	)
 )
 
-# BaseAutoEncodingModelAttention Module:
-BaseAutoEncodingModelAttention()
+# SubModule: BaseAutoEncodingModelAttention
+BaseAutoEncodingModelAttention(
+	'self_attention': BaseAutoEncodingModelSelfAttention(
+		'Q': Linear(...), 
+		'K': Linear(...), 
+		'V': Linear(...), 
+		'dropout': Dropout(...)
+	),
+	'self_output': BaseAutoEncodingModelSelfOutput(
+		'dense': Linear(...), 
+		'layer_norm': LayerNorm(...), 
+		'dropout': Dropout(...)
+	),
+)
 
-# BaseAutoEncodingModelIntermediate Module:
-BaseAutoEncodingModelIntermediate()
+# SubModule: BaseAutoEncodingModelIntermediate
+BaseAutoEncodingModelIntermediate(
+	'dense': Linear(...), 
+	'activation': Activation(...)
+)
 
-# BaseAutoEncodingModelOutput Module:
-BaseAutoEncodingModelOutput()
+# SubModule: BaseAutoEncodingModelOutput
+BaseAutoEncodingModelOutput(
+	'dense': Linear(...), 
+	'layer_norm': LayerNorm(...), 
+	'dropout': Dropout(...) 
+)
 ```
 
 ### Module: BaseAutoEncodingModelPooler
 
 ```python
 BaseAutoEncodingModelPooler(
-	'dense': Linear(...)
+	'dense': Linear(...), 
 	'activation': Activation(...)
 )
 ```
 
-## Some Influential Transformer Models
+## Timeline: Transformers
 
 | **Time** | **Model**                | **Novelty**                                                                                                  |
 | -------- | ------------------------ | ------------------------------------------------------------------------------------------------------------ |
 | 2017     | Transformer Architecture | Introduced Encoder + Decoder based transformers for machine learning translation task and outperformed SOTA. |
 | 2018     | GPT                      | First pretrained transformer model. Finetuned for various NLP tasks obtaining SOTA performance.              |
-| 2018     | BERT                     |                                                                                                              |
