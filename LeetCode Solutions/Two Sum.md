@@ -1,5 +1,8 @@
 ---
 title: "01: Two Sum"
+tags:
+  - Array
+  - HashTable
 ---
 ```python
 class Solution:
