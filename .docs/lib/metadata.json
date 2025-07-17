@@ -1,15 +1,15 @@
 {
   "vaultName": "GT Notes",
-  "lastExport": 1752789648174,
+  "lastExport": 1752790095730,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon is-fullscreen",
   "useCustomHeadContent": true,
   "useCustomFavicon": true,
   "files": [
-    "LeetCode Solutions/All Solutions/01-Two Sum.md",
-    "LeetCode Solutions/All Solutions/02-Add Two Numbers.md",
-    "LeetCode Solutions/All Solutions/03-Longest Substring Without Repeating Characters.md",
-    "LeetCode Solutions/All Solutions/04-Median of Two Sorted Arrays.md",
+    "LeetCode Solutions/All Solutions/0001-Two Sum.md",
+    "LeetCode Solutions/All Solutions/0002-Add Two Numbers.md",
+    "LeetCode Solutions/All Solutions/0003-Longest Substring Without Repeating Characters.md",
+    "LeetCode Solutions/All Solutions/0004-Median of Two Sorted Arrays.md",
     "LeetCode Solutions/index.md",
     "Machine Learning/HuggingFace - LLM Course.md",
     "Machine Learning/index.md",
@@ -66,103 +66,103 @@
   ],
   "fileInfo": {
     "Machine Learning/index.md": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 95,
       "exportedPath": "machine-learning/index.html",
       "dependencies": []
     },
     "System Design/index.md": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 38,
       "exportedPath": "system-design/index.html",
       "dependencies": []
     },
     "index.md": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 215,
       "exportedPath": "index.html",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
@@ -300,93 +300,93 @@
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1752789648174,
-      "sourceSize": 11541,
+      "modifiedTime": 1752790095730,
+      "sourceSize": 11557,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 48407,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/html/custom-head-content.html": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 88,
       "exportedPath": "lib/html/custom-head-content.html",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 138258,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 12962,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 262,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 1637,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "Machine Learning/HuggingFace - LLM Course.md": {
-      "modifiedTime": 1752789648174,
+      "modifiedTime": 1752790095730,
       "sourceSize": 11642,
       "exportedPath": "machine-learning/huggingface-llm-course.html",
       "dependencies": []
     },
     "LeetCode Solutions/index.md": {
-      "modifiedTime": 1752789648174,
-      "sourceSize": 293,
+      "modifiedTime": 1752790095730,
+      "sourceSize": 854,
       "exportedPath": "leetcode-solutions/index.html",
       "dependencies": []
     },
-    "LeetCode Solutions/All Solutions/01-Two Sum.md": {
-      "modifiedTime": 1752789648174,
-      "sourceSize": 327,
-      "exportedPath": "leetcode-solutions/all-solutions/01-two-sum.html",
+    "LeetCode Solutions/All Solutions/0001-Two Sum.md": {
+      "modifiedTime": 1752790095730,
+      "sourceSize": 329,
+      "exportedPath": "leetcode-solutions/all-solutions/0001-two-sum.html",
       "dependencies": []
     },
-    "LeetCode Solutions/All Solutions/02-Add Two Numbers.md": {
-      "modifiedTime": 1752789648174,
-      "sourceSize": 767,
-      "exportedPath": "leetcode-solutions/all-solutions/02-add-two-numbers.html",
+    "LeetCode Solutions/All Solutions/0002-Add Two Numbers.md": {
+      "modifiedTime": 1752790095730,
+      "sourceSize": 769,
+      "exportedPath": "leetcode-solutions/all-solutions/0002-add-two-numbers.html",
       "dependencies": []
     },
-    "LeetCode Solutions/All Solutions/03-Longest Substring Without Repeating Characters.md": {
-      "modifiedTime": 1752789648174,
-      "sourceSize": 574,
-      "exportedPath": "leetcode-solutions/all-solutions/03-longest-substring-without-repeating-characters.html",
+    "LeetCode Solutions/All Solutions/0003-Longest Substring Without Repeating Characters.md": {
+      "modifiedTime": 1752790095730,
+      "sourceSize": 576,
+      "exportedPath": "leetcode-solutions/all-solutions/0003-longest-substring-without-repeating-characters.html",
       "dependencies": []
     },
-    "LeetCode Solutions/All Solutions/04-Median of Two Sorted Arrays.md": {
-      "modifiedTime": 1752789648174,
-      "sourceSize": 1056,
-      "exportedPath": "leetcode-solutions/all-solutions/04-median-of-two-sorted-arrays.html",
+    "LeetCode Solutions/All Solutions/0004-Median of Two Sorted Arrays.md": {
+      "modifiedTime": 1752790095730,
+      "sourceSize": 1058,
+      "exportedPath": "leetcode-solutions/all-solutions/0004-median-of-two-sorted-arrays.html",
       "dependencies": []
     }
   }

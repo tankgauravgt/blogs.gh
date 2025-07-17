@@ -1,5 +1,5 @@
 ---
-title: "01: Two Sum"
+title: "0001: Two Sum"
 tags:
   - Array
   - HashTable

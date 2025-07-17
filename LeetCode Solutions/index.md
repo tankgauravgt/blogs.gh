@@ -1,7 +1,10 @@
 ---
 title: "Index: LeetCode Solutions"
 ---
-- [[01-Two Sum|01: Two Sum]]
-- [[02-Add Two Numbers|02: Add Two Numbers]]
-- [[03-Longest Substring Without Repeating Characters|03: Longest Substring Without Repeating Characters]]
-- [[04-Median of Two Sorted Arrays|04: Median of Two Sorted Arrays]]
+
+| No   | Title                                          | Difficulty | Solution Link                                                 |
+| ---- | ---------------------------------------------- | ---------- | ------------------------------------------------------------- |
+| 0001 | Two Sum                                        | Easy       | [[0001-Two Sum\|Link]]                                        |
+| 0002 | Add Two Numbers                                | Medium     | [[0002-Add Two Numbers\|Link]]                                |
+| 0003 | Longest Substring Without Repeating Characters | Medium     | [[0003-Longest Substring Without Repeating Characters\|Link]] |
+| 0004 | Median of Two Sorted Arrays                    | Hard       | [[0004-Median of Two Sorted Arrays\|Link]]                    |

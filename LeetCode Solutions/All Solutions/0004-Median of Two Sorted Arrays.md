@@ -1,5 +1,5 @@
 ---
-title: "04: Median of Two Sorted Arrays"
+title: "0004: Median of Two Sorted Arrays"
 tags:
   - Array
   - BinarySearch

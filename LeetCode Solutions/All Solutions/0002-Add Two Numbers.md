@@ -1,5 +1,5 @@
 ---
-title: "02: Add Two Numbers"
+title: "0002: Add Two Numbers"
 tags:
   - LinkedList
   - Math
