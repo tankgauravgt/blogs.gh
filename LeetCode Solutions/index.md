@@ -2,7 +2,7 @@
 title: "Index: LeetCode Solutions"
 ---
 
-| No   | Title                                          | LC-Level | Felt   | Solution                                                      |
+| LC#  | Title                                          | LC-Level | Felt   | Solution                                                      |
 | ---- | ---------------------------------------------- | :------- | ------ | ------------------------------------------------------------- |
 | 0001 | Two Sum                                        | Easy     | Easy   | [[0001-Two Sum\|Link]]                                        |
 | 0002 | Add Two Numbers                                | Medium   | Medium | [[0002-Add Two Numbers\|Link]]                                |
