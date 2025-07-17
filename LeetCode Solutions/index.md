@@ -1,4 +1,5 @@
 ---
 title: "Index: LeetCode Solutions"
 ---
-- [[Two Sum|01: Two Sum]]
+- [[01-Two Sum|01: Two Sum]]
+- [[02-Add Two Numbers|02: Add Two Numbers]]
