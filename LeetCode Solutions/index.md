@@ -13,3 +13,14 @@ title: "Index: LeetCode Solutions"
 | 0007 | Reverse Integer                                | Medium   | Medium | [[0007-Reverse Integer\|Link]]                                |
 | 0008 | String to Integer (atoi)                       | Medium   | Hard   | [[0008-String to Integer (atoi)\|Link]]                       |
 | 0009 | Palindrome Number                              | Easy     | Easy   | [[0009-Palindrome Number\|Link]]                              |
+| 0010 | Regular Expression Matching                    | Hard     |        |                                                               |
+| 0011 | Container With Most Water                      | Medium   |        |                                                               |
+| 0012 | Integer to Roman                               | Medium   |        |                                                               |
+| 0013 | Roman to Integer                               | Easy     |        |                                                               |
+| 0014 | Longest Common Prefix                          | Easy     |        |                                                               |
+| 0015 | 3Sum                                           | Medium   |        |                                                               |
+| 0016 |                                                |          |        |                                                               |
+| 0017 |                                                |          |        |                                                               |
+| 0018 |                                                |          |        |                                                               |
+| 0019 |                                                |          |        |                                                               |
+| 0020 |                                                |          |        |                                                               |
