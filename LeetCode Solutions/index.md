@@ -19,8 +19,8 @@ title: "Index: LeetCode Solutions"
 | 0013 | Roman to Integer                               | Easy     |        |                                                               |
 | 0014 | Longest Common Prefix                          | Easy     |        |                                                               |
 | 0015 | 3Sum                                           | Medium   |        |                                                               |
-| 0016 |                                                |          |        |                                                               |
-| 0017 |                                                |          |        |                                                               |
-| 0018 |                                                |          |        |                                                               |
-| 0019 |                                                |          |        |                                                               |
-| 0020 |                                                |          |        |                                                               |
+| 0016 | 3Sum Closest                                   | Medium   |        |                                                               |
+| 0017 | Letter Combinations of a Phone Number          | Medium   |        |                                                               |
+| 0018 | 4Sum                                           | Medium   |        |                                                               |
+| 0019 | Remove Nth Node From End of List               | Medium   |        |                                                               |
+| 0020 | Valid Parentheses                              | Easy     |        |                                                               |
