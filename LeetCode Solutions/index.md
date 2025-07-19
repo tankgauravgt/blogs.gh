@@ -7,8 +7,8 @@ title: "Index: LeetCode Solutions"
 | 0001 | Two Sum                                            | Easy   | &check; | 00:02:34 | [[0001-Two Sum\|Link]]                                            |
 | 0002 | Add Two Numbers                                    | Medium | &check; | 00:03:48 | [[0002-Add Two Numbers\|Link]]                                    |
 | 0003 | Longest Substring Without Repeating Characters     | Medium | &check; | 00:06:23 | [[0003-Longest Substring Without Repeating Characters\|Link]]     |
-| 0004 | Median of Two Sorted Arrays                        | Hard   | &check; |          | [[0004-Median of Two Sorted Arrays\|Link]]                        |
-| 0005 | Longest Palindromic Substring                      | Medium | &check; |          | [[0005-Longest Palindromic Substring\|Link]]                      |
+| 0004 | Median of Two Sorted Arrays                        | Hard   | &check; | 00:36:21 | [[0004-Median of Two Sorted Arrays\|Link]]                        |
+| 0005 | Longest Palindromic Substring                      | Medium | &check; | 00:04:16 | [[0005-Longest Palindromic Substring\|Link]]                      |
 | 0006 | Zigzag Conversion                                  | Medium | &check; |          | [[0006-Zigzag Conversion\|Link]]                                  |
 | 0007 | Reverse Integer                                    | Medium | &check; |          | [[0007-Reverse Integer\|Link]]                                    |
 | 0008 | String to Integer (atoi)                           | Medium | &check; |          | [[0008-String to Integer (atoi)\|Link]]                           |
