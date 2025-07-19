@@ -17,17 +17,18 @@
   <span class="token punctuation">-</span> String
   <span class="token punctuation">-</span> SlidingWindow</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="0003: Longest Substring Without Repeating Characters">0003: Longest Substring Without Repeating Characters</h1><div class="el-pre"><pre class="language-python" tabindex="0"><code data-line="0" class="language-python is-loaded"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">lengthOfLongestSubstring</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        
+		
         lx <span class="token operator">=</span> <span class="token number">0</span>
-        rec <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-        
         cmax <span class="token operator">=</span> <span class="token number">0</span>
+        
+        cache <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
         <span class="token keyword">for</span> rx<span class="token punctuation">,</span> c <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	        
+			<span class="token comment"># only look in current window:</span>
+            <span class="token keyword">if</span> c <span class="token keyword">in</span> cache <span class="token keyword">and</span> cache<span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> lx<span class="token punctuation">:</span>
+                lx <span class="token operator">=</span> cache<span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span>
             
-            <span class="token keyword">if</span> c <span class="token keyword">in</span> rec <span class="token keyword">and</span> rec<span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> lx<span class="token punctuation">:</span>
-                lx <span class="token operator">=</span> rec<span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span>
-            
-            rec<span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">=</span> rx
+            cache<span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">=</span> rx
             cmax <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>cmax<span class="token punctuation">,</span> rx <span class="token operator">-</span> lx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
         
         <span class="token keyword">return</span> cmax

@@ -8,17 +8,18 @@ tags:
 ```python
 class Solution:
     def lengthOfLongestSubstring(self, s):
-        
+		
         lx = 0
-        rec = {}
-        
         cmax = 0
+        
+        cache = {}
         for rx, c in enumerate(s):
+	        
+			# only look in current window:
+            if c in cache and cache[c] >= lx:
+                lx = cache[c] + 1
             
-            if c in rec and rec[c] >= lx:
-                lx = rec[c] + 1
-            
-            rec[c] = rx
+            cache[c] = rx
             cmax = max(cmax, rx - lx + 1)
         
         return cmax
