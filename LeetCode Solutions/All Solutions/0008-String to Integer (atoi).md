@@ -3,42 +3,30 @@ title: "0008: String to Integer (atoi)"
 ---
 ```python
 class Solution:
-    def myAtoi(self, s):
-    
-        skipWhiteSpace = True
-        parseNumberSign = True
-        skipInitZeros = True
+    def myAtoi(self, s: str) -> int:
+	    
+        ix = 0
+        N = len(s)
         
-        sign = '+'
-        out = []
-        for ix, c in enumerate(s):
-            
-            if skipWhiteSpace and c == ' ':
-                continue
-            skipWhiteSpace = False
-            
-            if parseNumberSign and c in '+-':
-                parseNumberSign = False
-                sign = c
-                continue
-            parseNumberSign = False
-            
-            if c in '+-':
-                break
-            
-            if skipInitZeros and c == '0':
-                continue
-            skipInitZeros = False
-            
-            if c not in '0123456789':
-                break
-            
-            out.append(c)
-            
-        if not out: return 0
+        # remove whitespaces
+        while ix < N and s[ix] == ' ':
+            ix = ix + 1
         
-        out = int("".join(out)) * (-1 if sign == '-' else +1)
-        out = -(2 ** 31) if out <= -(2 ** 31) else out
-        out = (2 ** 31 - 1) if out >= (2 ** 31 - 1) else out
-        return out
+        sign = +1
+        
+        # infer sign
+        if ix < N and s[ix] in {'+', '-'}:
+            sign = (+1 if s[ix] == '+' else -1)
+            ix = ix + 1
+        
+        # read max non-digits
+        out = 0
+        while ix < N:
+            if not s[ix].isdigit():
+                break
+            out = out * 10 + int(s[ix])
+            ix = ix + 1
+        
+        # clamp and return number
+        return min(max(sign * out, -(2 ** 31)), (2 ** 31) - 1)
 ```
