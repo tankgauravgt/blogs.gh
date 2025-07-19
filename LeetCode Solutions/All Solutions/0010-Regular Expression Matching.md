@@ -3,20 +3,33 @@ title: "0010: Regular Expression Matching"
 ---
 ```python
 class Solution:
-    def isMatch(self, s1, p1):
-        @cache
-        def rec(s, p, sx, px):
-            
-            if px == len(p): 
-                return sx == len(s)
-                
-            fmatch = (sx < len(s)) and (s[sx] == p[px] or p[px] == '.')
-            if px < len(p) - 1 and p[px + 1] == '*':
-	            flag1 = rec(s, p, sx, 2 + px)
-	            flag2 = fmatch and rec(s, p, 1 + sx, px)
-	            return flag1 or flag2
-            else:
-                return fmatch and rec(s, p, 1 + sx, 1 + px)
+    def isMatch(self, s: str, p: str) -> bool:
         
-        return rec(s1, p1, 0, 0)
+        @cache
+        def rec(sx, px):
+            
+            # if pattern ends, string must end too
+            if px >= len(p):
+                return sx == len(s)
+            
+            # check if prefix `can_match`:
+            can_match = sx < len(s) and p[px] in {s[sx], '.'}
+            
+            # ---------------------------------
+            # next_char == '*': 
+            #     return `take_it` or `skip_it`
+            # ---------------------------------
+            if px < len(p) - 1 and p[px + 1] == '*':
+                take_it = can_match and rec(sx + 1, px)
+                skip_it = rec(sx, px + 2)
+                return take_it or skip_it
+            # ----------------
+            # next_char != '*'
+            # ----------------
+            else:
+                return can_match and rec(sx + 1, px + 1)
+            
+            return False
+        
+        return rec(0, 0)
 ```

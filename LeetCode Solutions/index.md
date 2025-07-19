@@ -12,7 +12,7 @@ title: "Index: LeetCode Solutions"
 | 0006 | Zigzag Conversion                                  | Medium | &check; | 00:04:19 | [[0006-Zigzag Conversion\|Link]]                                  |
 | 0007 | Reverse Integer                                    | Medium | &check; | 00:06:57 | [[0007-Reverse Integer\|Link]]                                    |
 | 0008 | String to Integer (atoi)                           | Medium | &check; | 00:06:21 | [[0008-String to Integer (atoi)\|Link]]                           |
-| 0009 | Palindrome Number                                  | Easy   | &check; | 00:00:53 | [[0009-Palindrome Number\|Link]]                                  |
+| 0009 | Palindrome Number                                  | Easy   | &check; | 00:02:53 | [[0009-Palindrome Number\|Link]]                                  |
 | 0010 | Regular Expression Matching                        | Hard   | &check; |          | [[0010-Regular Expression Matching\|Link]]                        |
 | 0011 | Container With Most Water                          | Medium | &check; |          | [[0011-Container With Most Water\|Link]]                          |
 | 0012 | Integer to Roman                                   | Medium | &check; |          | [[0012-Integer to Roman\|Link]]                                   |
