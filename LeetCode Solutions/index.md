@@ -13,7 +13,7 @@ title: "Index: LeetCode Solutions"
 | 0007 | Reverse Integer                                    | Medium | &check; | 00:06:57 | [[0007-Reverse Integer\|Link]]                                    |
 | 0008 | String to Integer (atoi)                           | Medium | &check; | 00:06:21 | [[0008-String to Integer (atoi)\|Link]]                           |
 | 0009 | Palindrome Number                                  | Easy   | &check; | 00:02:53 | [[0009-Palindrome Number\|Link]]                                  |
-| 0010 | Regular Expression Matching                        | Hard   | &check; | 00:14:58 | [[0010-Regular Expression Matching\|Link]]                        |
+| 0010 | Regular Expression Matching                        | Hard   | &check; | 00:19:58 | [[0010-Regular Expression Matching\|Link]]                        |
 | 0011 | Container With Most Water                          | Medium | &check; | 00:05:24 | [[0011-Container With Most Water\|Link]]                          |
 | 0012 | Integer to Roman                                   | Medium | &check; | 00:04:37 | [[0012-Integer to Roman\|Link]]                                   |
 | 0013 | Roman to Integer                                   | Easy   | &check; | 00:05:17 | [[0013-Roman to Integer\|Link]]                                   |
