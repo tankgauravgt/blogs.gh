@@ -32,5 +32,5 @@ title: "Index: LeetCode Solutions"
 | 0026 | Remove Duplicates from Sorted Array                | Easy   | &check; | 00:04:52 | [[0026-Remove Duplicates from Sorted Array\|Link]]                |
 | 0027 | Remove Element                                     | Easy   | &check; | 00:04:38 | [[0027-Remove Element\|Link]]                                     |
 | 0028 | Find the Index of the First Occurrence in a String | Easy   | &check; | 00:02:16 | [[0028-Find the Index of the First Occurrence in a String\|Link]] |
-| 0029 | Divide Two Integers                                | Medium | &check; |          | [[0029-Divide Two Integers\|Link]]                                |
+| 0029 | Divide Two Integers                                | Medium | &check; | 00:27:31 | [[0029-Divide Two Integers\|Link]]                                |
 | 0030 | Substring with Concatenation of All Words          | Hard   | &check; |          | [[0030-Substring with Concatenation of All Words\|Link]]          |

@@ -4,25 +4,25 @@ title: "0029: Divide Two Integers"
 ```python
 class Solution:
     def divide(self, dividend, divisor):
+	    
+        MIN_VAL, MAX_VAL = -(2 ** 31), +(2 ** 31 - 1)
         
-        neg = (dividend < 0) ^ (divisor < 0)
+        if dividend == MIN_VAL and divisor == -1:
+            return MAX_VAL
+        
+        sign = -1 if (dividend < 0) ^ (divisor < 0) else +1
+        
         dividend = abs(dividend)
         divisor = abs(divisor)
         
-        if divisor == dividend:
-            return 1 if not neg else -1
-        if divisor == 1:
-            dividend = dividend if not neg else -dividend
-            return max(-(2 ** 31), min(2 ** 31 - 1, dividend))
+        quotient = 0
+        for ix in range(31, -1, -1):
             
-        count = 0
-        while dividend >= divisor:
-            ix = 0
-            while dividend >= divisor ** (1 + ix):
-                ix = ix + 1
-            dividend = dividend - (divisor ** ix)
-            count = count + (divisor ** (ix - 1))
+            subtrahend = (divisor << ix)
+            
+            if dividend >= subtrahend:
+                dividend = dividend - subtrahend
+                quotient = quotient + (1 << ix)
         
-        count = count if not neg else -count
-        return max(-(2 ** 31), min(2 ** 31 - 1, count))
+        return -quotient if sign == -1 else quotient
 ```
