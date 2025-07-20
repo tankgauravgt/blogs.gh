@@ -3,22 +3,21 @@ title: "0020: Valid Parentheses"
 ---
 ```python
 class Solution:
-    def isValid(self, s):
-        
-        count = []
+    def isValid(self, s):        
+        stk = []
         for cx, c in enumerate(s):
-            if c in '()':
-                if c == '(' or not count: count.append(c)
-                if c == ')' and count and count[-1] != '(': count.append(c)
-                if c == ')' and count and count[-1] == '(': count.pop()
-            if c in '[]':
-                if c == '[' or not count: count.append(c)
-                if c == ']' and count and count[-1] != '[': count.append(c)
-                if c == ']' and count and count[-1] == '[': count.pop()
-            if c in '{}':
-                if c == '{' or not count: count.append(c)
-                if c == '}' and count and count[-1] != '{': count.append(c)
-                if c == '}' and count and count[-1] == '{': count.pop()
-        
-        return len(count) == 0
+            if c in '[{(':
+                stk.append(c)
+                continue
+            if c == ')' and stk and stk[-1] == '(':
+                stk.pop()
+                continue
+            if c == ']' and stk and stk[-1] == '[':
+                stk.pop()
+                continue
+            if c == '}' and stk and stk[-1] == '{':
+                stk.pop()
+                continue
+            return False
+        return len(stk) == 0
 ```

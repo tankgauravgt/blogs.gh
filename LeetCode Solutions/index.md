@@ -20,11 +20,11 @@ title: "Index: LeetCode Solutions"
 | 0014 | Longest Common Prefix                              | Easy   | &check; | 00:04:12 | [[0014-Longest Common Prefix\|Link]]                              |
 | 0015 | 3Sum                                               | Medium | &check; | 00:07:26 | [[0015-3Sum\|Link]]                                               |
 | 0016 | 3Sum Closest                                       | Medium | &check; | 00:08:11 | [[0016-3Sum Closest\|Link]]                                       |
-| 0017 | Letter Combinations of a Phone Number              | Medium | &check; |          | [[0017-Letter Combinations of a Phone Number\|Link]]              |
-| 0018 | 4Sum                                               | Medium | &check; |          | [[0018-4Sum\|Link]]                                               |
-| 0019 | Remove Nth Node From End of List                   | Medium | &check; |          | [[0019-Remove Nth Node From End of List\|Link]]                   |
-| 0020 | Valid Parentheses                                  | Easy   | &check; |          | [[0020-Valid Parentheses\|Link]]                                  |
-| 0021 | Merge Two Sorted Lists                             | Easy   | &check; |          | [[0021-Merge Two Sorted Lists\|Link]]                             |
+| 0017 | Letter Combinations of a Phone Number              | Medium | &check; | 00:06:16 | [[0017-Letter Combinations of a Phone Number\|Link]]              |
+| 0018 | 4Sum                                               | Medium | &check; | 00:05:19 | [[0018-4Sum\|Link]]                                               |
+| 0019 | Remove Nth Node From End of List                   | Medium | &check; | 00:06:34 | [[0019-Remove Nth Node From End of List\|Link]]                   |
+| 0020 | Valid Parentheses                                  | Easy   | &check; | 00:03:28 | [[0020-Valid Parentheses\|Link]]                                  |
+| 0021 | Merge Two Sorted Lists                             | Easy   | &check; | 00:04:49 | [[0021-Merge Two Sorted Lists\|Link]]                             |
 | 0022 | Generate Parentheses                               | Medium | &check; |          | [[0022-Generate Parentheses\|Link]]                               |
 | 0023 | Merge k Sorted Lists                               | Hard   | &check; |          | [[0023-Merge k Sorted Lists\|Link]]                               |
 | 0024 | Swap Nodes in Pairs                                | Medium | &check; |          | [[0024-Swap Nodes in Pairs\|Link]]                                |
