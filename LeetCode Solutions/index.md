@@ -5,7 +5,7 @@ title: "Index: LeetCode Solutions"
 | LC#  | Title                                              | Level  | Solved? | Time     | Soln                                                              |
 | ---- | -------------------------------------------------- | :----- | ------- | -------- | ----------------------------------------------------------------- |
 | 0001 | Two Sum                                            | Easy   | &check; | 00:02:34 | [[0001-Two Sum\|Link]]                                            |
-| 0002 | Add Two Numbers                                    | Medium | &check; | 00:03:48 | [[0002-Add Two Numbers\|Link]]                                    |
+| 0002 | Add Two Numbers                                    | Medium | &check; | 00:04:48 | [[0002-Add Two Numbers\|Link]]                                    |
 | 0003 | Longest Substring Without Repeating Characters     | Medium | &check; | 00:06:23 | [[0003-Longest Substring Without Repeating Characters\|Link]]     |
 | 0004 | Median of Two Sorted Arrays                        | Hard   | &check; | 00:36:21 | [[0004-Median of Two Sorted Arrays\|Link]]                        |
 | 0005 | Longest Palindromic Substring                      | Medium | &check; | 00:04:16 | [[0005-Longest Palindromic Substring\|Link]]                      |
@@ -14,10 +14,10 @@ title: "Index: LeetCode Solutions"
 | 0008 | String to Integer (atoi)                           | Medium | &check; | 00:06:21 | [[0008-String to Integer (atoi)\|Link]]                           |
 | 0009 | Palindrome Number                                  | Easy   | &check; | 00:02:53 | [[0009-Palindrome Number\|Link]]                                  |
 | 0010 | Regular Expression Matching                        | Hard   | &check; | 00:14:58 | [[0010-Regular Expression Matching\|Link]]                        |
-| 0011 | Container With Most Water                          | Medium | &check; |          | [[0011-Container With Most Water\|Link]]                          |
-| 0012 | Integer to Roman                                   | Medium | &check; |          | [[0012-Integer to Roman\|Link]]                                   |
-| 0013 | Roman to Integer                                   | Easy   | &check; |          | [[0013-Roman to Integer\|Link]]                                   |
-| 0014 | Longest Common Prefix                              | Easy   | &check; |          | [[0014-Longest Common Prefix\|Link]]                              |
+| 0011 | Container With Most Water                          | Medium | &check; | 00:05:24 | [[0011-Container With Most Water\|Link]]                          |
+| 0012 | Integer to Roman                                   | Medium | &check; | 00:04:37 | [[0012-Integer to Roman\|Link]]                                   |
+| 0013 | Roman to Integer                                   | Easy   | &check; | 00:05:17 | [[0013-Roman to Integer\|Link]]                                   |
+| 0014 | Longest Common Prefix                              | Easy   | &check; | 00:04:12 | [[0014-Longest Common Prefix\|Link]]                              |
 | 0015 | 3Sum                                               | Medium | &check; |          | [[0015-3Sum\|Link]]                                               |
 | 0016 | 3Sum Closest                                       | Medium | &check; |          | [[0016-3Sum Closest\|Link]]                                       |
 | 0017 | Letter Combinations of a Phone Number              | Medium | &check; |          | [[0017-Letter Combinations of a Phone Number\|Link]]              |
