@@ -26,7 +26,7 @@ title: "Index: LeetCode Solutions"
 | 0020 | Valid Parentheses                                  | Easy   | &check; | 00:03:28 | [[0020-Valid Parentheses\|Link]]                                  |
 | 0021 | Merge Two Sorted Lists                             | Easy   | &check; | 00:04:49 | [[0021-Merge Two Sorted Lists\|Link]]                             |
 | 0022 | Generate Parentheses                               | Medium | &check; | 00:06:37 | [[0022-Generate Parentheses\|Link]]                               |
-| 0023 | Merge k Sorted Lists                               | Hard   | &check; |          | [[0023-Merge k Sorted Lists\|Link]]                               |
+| 0023 | Merge k Sorted Lists                               | Hard   | &check; | 00:07:06 | [[0023-Merge k Sorted Lists\|Link]]                               |
 | 0024 | Swap Nodes in Pairs                                | Medium | &check; |          | [[0024-Swap Nodes in Pairs\|Link]]                                |
 | 0025 | Reverse Nodes in k-Group                           | Hard   | &check; |          | [[0025-Reverse Nodes in k-Group\|Link]]                           |
 | 0026 | Remove Duplicates from Sorted Array                | Easy   | &check; |          | [[0026-Remove Duplicates from Sorted Array\|Link]]                |

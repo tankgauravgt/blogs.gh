@@ -5,18 +5,18 @@ title: "0024: Swap Nodes in Pairs"
 class Solution:
     def swapPairs(self, head):
         
-        dummy = ListNode(-1, head)
+        dummy = ListNode(0, head)
         
-        prev = dummy
-        while prev and prev.next and prev.next.next:
-            first = prev.next
-            second = prev.next.next
+        it = dummy
+        while it and it.next and it.next.next:
+            first = it.next
+            second = it.next.next
             
             first.next = second.next
             second.next = first
-            prev.next = second
+            it.next = second
             
-            prev = first
+            it = it.next.next
         
         return dummy.next
 ```
