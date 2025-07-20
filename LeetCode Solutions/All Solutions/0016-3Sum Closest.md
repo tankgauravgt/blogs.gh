@@ -13,8 +13,8 @@ class Solution:
                 s = nums[ix] + nums[lx] + nums[rx]
                 if s == target: 
 	                return s
-                cmin = min(cmin, csum, key=lambda x: abs(target - x))
-                if csum <= target:
+                cmin = min(cmin, s, key=lambda x: abs(target - x))
+                if s <= target:
                     lx += 1
                 else:
                     rx -= 1
