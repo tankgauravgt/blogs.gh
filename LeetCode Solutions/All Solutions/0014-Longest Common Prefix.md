@@ -4,12 +4,9 @@ title: "0014: Longest Common Prefix"
 ```python
 class Solution:
     def longestCommonPrefix(self, strs):
-        
-        pfx = []
-        for t in zip(*strs):
-            if len(t) == len(strs) and len(set(t)) == 1:
-                pfx.append(t[0])
-                continue
-            break
-        return "".join(pfx)
+        smin = min(strs, key=len)
+        for ix, c in enumerate(smin):
+            if len(set([s[ix] for s in strs])) != 1:
+                return smin[:ix]
+        return smin
 ```
