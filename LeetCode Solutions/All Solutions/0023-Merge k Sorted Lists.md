@@ -4,33 +4,33 @@ title: "0023: Merge k Sorted Lists"
 ```python
 import heapq
 
-class LNWrap:
+
+class CustomNode:
+	
     def __init__(self, node):
         self.node = node
-        
+    
     def __lt__(self, other):
         return self.node.val < other.node.val
-        
-    def get(self):
-        return self.node
-        
+
+
 class Solution:
     def mergeKLists(self, lists):
-        
+	    
         hq = []
-        for lst in lists:
-            if lst != None:
-                hq.append(LNWrap(lst))
+        for l in lists:
+            if not l: continue
+            heapq.heappush(hq, CustomNode(l))
         
-        heapq.heapify(hq)
+        dummy = temp = ListNode(0)
         
-        head = temp = ListNode(-1, None)
         while hq:
-            lst = heapq.heappop(hq)
-            temp.next = ListNode(lst.get().val, None)
+            curr_node = heapq.heappop(hq)
+            temp.next = ListNode(curr_node.node.val)
             temp = temp.next
-            if lst.get().next:
-                heapq.heappush(hq, LNWrap(lst.get().next))
+            next_node = curr_node.node.next
+            if next_node:
+                heapq.heappush(hq, CustomNode(next_node))
         
-        return head.next
+        return dummy.next
 ```
