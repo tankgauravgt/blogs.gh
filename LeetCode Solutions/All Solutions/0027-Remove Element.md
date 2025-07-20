@@ -4,13 +4,14 @@ title: "0027: Remove Element"
 ```python
 class Solution:
     def removeElement(self, nums, val):
+        N = len(nums)
         
-        lx = 0
-        for ix, n in enumerate(nums):
-            if n == val:
+        write_head = 0
+        for read_head in range(N):
+            if nums[read_head] == val:
                 continue
-            nums[lx] = n
-            lx = lx + 1
-        
-        return lx
+            nums[write_head] = nums[read_head]
+            write_head = write_head + 1
+            
+        return write_head
 ```
