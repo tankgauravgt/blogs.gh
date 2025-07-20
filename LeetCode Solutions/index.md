@@ -27,8 +27,8 @@ title: "Index: LeetCode Solutions"
 | 0021 | Merge Two Sorted Lists                             | Easy   | &check; | 00:04:49 | [[0021-Merge Two Sorted Lists\|Link]]                             |
 | 0022 | Generate Parentheses                               | Medium | &check; | 00:06:37 | [[0022-Generate Parentheses\|Link]]                               |
 | 0023 | Merge k Sorted Lists                               | Hard   | &check; | 00:07:06 | [[0023-Merge k Sorted Lists\|Link]]                               |
-| 0024 | Swap Nodes in Pairs                                | Medium | &check; |          | [[0024-Swap Nodes in Pairs\|Link]]                                |
-| 0025 | Reverse Nodes in k-Group                           | Hard   | &check; |          | [[0025-Reverse Nodes in k-Group\|Link]]                           |
+| 0024 | Swap Nodes in Pairs                                | Medium | &check; | 00:05:25 | [[0024-Swap Nodes in Pairs\|Link]]                                |
+| 0025 | Reverse Nodes in k-Group                           | Hard   | &check; | 00:09:06 | [[0025-Reverse Nodes in k-Group\|Link]]                           |
 | 0026 | Remove Duplicates from Sorted Array                | Easy   | &check; |          | [[0026-Remove Duplicates from Sorted Array\|Link]]                |
 | 0027 | Remove Element                                     | Easy   | &check; |          | [[0027-Remove Element\|Link]]                                     |
 | 0028 | Find the Index of the First Occurrence in a String | Easy   | &check; |          | [[0028-Find the Index of the First Occurrence in a String\|Link]] |
