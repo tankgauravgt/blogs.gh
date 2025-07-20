@@ -4,21 +4,22 @@ title: "0022: Generate Parenthesis"
 ```python
 class Solution:
     def generateParenthesis(self, n):
-        def rec(k, o, c, buf, res):
-            if o > k:
+	    
+        def generate(ob, cb, buf, output):
+            if cb > ob:
                 return
-            if c - o > 0:
+            if len(buf) == 2 * n:
+                output.append("".join(buf))
                 return
-            if c == o and len(buf) == 2 * k:
-                res.append("".join(buf))
-                return
-            buf.append('(')
-            rec(k, 1 + o, c, buf, res)
-            buf.pop()
+            if ob < n:
+                buf.append('(')
+                generate(ob + 1, cb, buf, output)
+                buf.pop()
             buf.append(')')
-            rec(k, o, 1 + c, buf, res)
+            generate(ob, cb + 1, buf, output)
             buf.pop()
-        res = []
-        rec(n, 0, 0, [], res)
-        return res
+        
+        result = []
+        generate(0, 0, [], result)
+        return result
 ```
