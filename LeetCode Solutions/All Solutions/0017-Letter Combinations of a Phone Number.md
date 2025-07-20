@@ -16,16 +16,17 @@ class Solution:
             '9': 'wxyz'
         }
         
-        def btrack(digits, ix, buf, res):
+        def btrack(ix, buf, res):
             if ix == len(digits):
-                if buf: res.append("".join(buf))
+                if buf:
+                    res.append("".join(buf))
                 return
             for c in cmap[digits[ix]]:
                 buf.append(c)
-                btrack(digits, ix + 1, buf, res)
+                btrack(ix + 1, buf, res)
                 buf.pop()
-        
+                
         result = []
-        btrack(digits, 0, [], result)
+        btrack(0, [], result)
         return result
 ```
