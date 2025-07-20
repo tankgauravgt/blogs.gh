@@ -10,8 +10,9 @@ class Solution:
             lx = ix + 1
             rx = len(nums) - 1
             while lx < rx:
-                csum = nums[ix] + nums[lx] + nums[rx]
-                if csum == target: return csum
+                s = nums[ix] + nums[lx] + nums[rx]
+                if s == target: 
+	                return s
                 cmin = min(cmin, csum, key=lambda x: abs(target - x))
                 if csum <= target:
                     lx += 1

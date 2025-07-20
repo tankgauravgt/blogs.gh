@@ -18,8 +18,8 @@ title: "Index: LeetCode Solutions"
 | 0012 | Integer to Roman                                   | Medium | &check; | 00:04:37 | [[0012-Integer to Roman\|Link]]                                   |
 | 0013 | Roman to Integer                                   | Easy   | &check; | 00:05:17 | [[0013-Roman to Integer\|Link]]                                   |
 | 0014 | Longest Common Prefix                              | Easy   | &check; | 00:04:12 | [[0014-Longest Common Prefix\|Link]]                              |
-| 0015 | 3Sum                                               | Medium | &check; |          | [[0015-3Sum\|Link]]                                               |
-| 0016 | 3Sum Closest                                       | Medium | &check; |          | [[0016-3Sum Closest\|Link]]                                       |
+| 0015 | 3Sum                                               | Medium | &check; | 00:07:26 | [[0015-3Sum\|Link]]                                               |
+| 0016 | 3Sum Closest                                       | Medium | &check; | 00:08:11 | [[0016-3Sum Closest\|Link]]                                       |
 | 0017 | Letter Combinations of a Phone Number              | Medium | &check; |          | [[0017-Letter Combinations of a Phone Number\|Link]]              |
 | 0018 | 4Sum                                               | Medium | &check; |          | [[0018-4Sum\|Link]]                                               |
 | 0019 | Remove Nth Node From End of List                   | Medium | &check; |          | [[0019-Remove Nth Node From End of List\|Link]]                   |
