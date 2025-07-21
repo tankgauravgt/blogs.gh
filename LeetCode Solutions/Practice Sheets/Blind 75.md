@@ -64,52 +64,52 @@ title: Blind 75
 
 ## Greedy
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0055 | Jump Game                                                 | Medium | &check; |          |                        |
-| 0053 | Maximum Subarray                                          | Medium | &check; |          |                        |
+| LC#  | Title            | Level  | Solved? | Time | Soln                            |
+| ---- | ---------------- | :----- | ------- | ---- | ------------------------------- |
+| 0055 | Jump Game        | Medium | &check; |      | [[0055-Jump Game\|Link]]        |
+| 0053 | Maximum Subarray | Medium | &check; |      | [[0053-Maximum Subarray\|Link]] |
 
 ## Heaps
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0295 | Find Median from Data Stream                              | Hard   | &check; |          |                        |
+| LC#  | Title                        | Level | Solved? | Time | Soln                                        |
+| ---- | ---------------------------- | :---- | ------- | ---- | ------------------------------------------- |
+| 0295 | Find Median from Data Stream | Hard  | &check; |      | [[0295-Find Median from Data Stream\|Link]] |
 
 ## Intervals
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0252 | Meeting Rooms                                             | Easy   | &check; |          |                        |
-| 0057 | Insert Interval                                           | Medium | &check; |          |                        |
-| 0056 | Merge Intervals                                           | Medium | &check; |          |                        |
-| 0435 | Non-overlapping Intervals                                 | Medium | &check; |          |                        |
-| 0253 | Meeting Rooms II                                          | Medium | &check; |          |                        |
+| LC#  | Title                     | Level  | Solved? | Time | Soln                                     |
+| ---- | ------------------------- | :----- | ------- | ---- | ---------------------------------------- |
+| 0252 | Meeting Rooms             | Easy   | &check; |      | [[0252-Meeting Rooms\|Link]]             |
+| 0057 | Insert Interval           | Medium | &check; |      | [[0057-Insert Interval\|Link]]           |
+| 0056 | Merge Intervals           | Medium | &check; |      | [[0056-Merge Intervals\|Link]]           |
+| 0435 | Non-overlapping Intervals | Medium | &check; |      | [[0435-Non-overlapping Intervals\|Link]] |
+| 0253 | Meeting Rooms II          | Medium | &check; |      | [[0253-Meeting Rooms II\|Link]]          |
 
 ## Linked Lists
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0206 | Reverse Linked List                                       | Easy   | &check; |          |                        |
-| 0141 | Linked List Cycle                                         | Easy   | &check; |          |                        |
-| 0021 | Merge Two Sorted Lists                                    | Easy   | &check; |          |                        |
-| 0019 | Remove Nth Node From End of List                          | Medium | &check; |          |                        |
-| 0143 | Reorder List                                              | Medium | &check; |          |                        |
-| 0023 | Merge k Sorted Lists                                      | Hard   | &check; |          |                        |
+| LC#  | Title                            | Level  | Solved? | Time | Soln                                            |
+| ---- | -------------------------------- | :----- | ------- | ---- | ----------------------------------------------- |
+| 0206 | Reverse Linked List              | Easy   | &check; |      | [[0206-Reverse Linked List\|Link]]              |
+| 0141 | Linked List Cycle                | Easy   | &check; |      | [[0141-Linked List Cycle\|Link]]                |
+| 0021 | Merge Two Sorted Lists           | Easy   | &check; |      | [[0021-Merge Two Sorted Lists\|Link]]           |
+| 0019 | Remove Nth Node From End of List | Medium | &check; |      | [[0019-Remove Nth Node From End of List\|Link]] |
+| 0143 | Reorder List                     | Medium | &check; |      | [[0143-Reorder List\|Link]]                     |
+| 0023 | Merge k Sorted Lists             | Hard   | &check; |      | [[0023-Merge k Sorted Lists\|Link]]             |
 
 ## Sliding Window
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0121 | Best Time to Buy and Sell Stock                           | Easy   | &check; |          |                        |
-| 0424 | Longest Repeating Character Replacement                   | Medium | &check; |          |                        |
-| 0003 | Longest Substring Without Repeating Characters            | Medium | &check; |          |                        |
-| 0076 | Minimum Window Substring                                  | Hard   | &check; |          |                        |
+| LC#  | Title                                          | Level  | Solved? | Time | Soln |
+| ---- | ---------------------------------------------- | :----- | ------- | ---- | ---- |
+| 0121 | Best Time to Buy and Sell Stock                | Easy   | &check; |      |      |
+| 0424 | Longest Repeating Character Replacement        | Medium | &check; |      |      |
+| 0003 | Longest Substring Without Repeating Characters | Medium | &check; |      |      |
+| 0076 | Minimum Window Substring                       | Hard   | &check; |      |      |
 
 ## Stacks
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0020 | Valid Parentheses                                         | Easy   | &check; |          |                        |
+| LC#  | Title             | Level | Solved? | Time | Soln |
+| ---- | ----------------- | :---- | ------- | ---- | ---- |
+| 0020 | Valid Parentheses | Easy  | &check; |      |      |
 
 ## Trees
 
