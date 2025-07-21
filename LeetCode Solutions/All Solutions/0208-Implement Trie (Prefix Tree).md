@@ -7,11 +7,11 @@ class TNode:
         self.val = val
         self.end = False
         self.children = {}
-
+        
 class Trie:
     def __init__(self):
         self.root = TNode('')
-
+        
     def insert(self, word):
         temp = self.root
         for cx, c in enumerate(word):
@@ -19,7 +19,7 @@ class Trie:
                 temp.children[c] = TNode(c)
             temp = temp.children[c]
         temp.end = True
-
+    
     def search(self, word):
         temp = self.root
         for c in word:
@@ -27,7 +27,7 @@ class Trie:
                 return False
             temp = temp.children[c]
         return temp.end
-
+	    
     def startsWith(self, prefix):
         temp = self.root
         for c in prefix:

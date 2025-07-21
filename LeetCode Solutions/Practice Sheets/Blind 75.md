@@ -98,55 +98,55 @@ title: Blind 75
 
 ## Sliding Window
 
-| LC#  | Title                                          | Level  | Solved? | Time | Soln |
-| ---- | ---------------------------------------------- | :----- | ------- | ---- | ---- |
-| 0121 | Best Time to Buy and Sell Stock                | Easy   | &check; |      |      |
-| 0424 | Longest Repeating Character Replacement        | Medium | &check; |      |      |
-| 0003 | Longest Substring Without Repeating Characters | Medium | &check; |      |      |
-| 0076 | Minimum Window Substring                       | Hard   | &check; |      |      |
+| LC#  | Title                                          | Level  | Solved? | Time | Soln                                                          |
+| ---- | ---------------------------------------------- | :----- | ------- | ---- | ------------------------------------------------------------- |
+| 0121 | Best Time to Buy and Sell Stock                | Easy   | &check; |      | [[0121-Best Time to Buy and Sell Stock\|Link]]                |
+| 0424 | Longest Repeating Character Replacement        | Medium | &check; |      | [[0424-Longest Repeating Character Replacement\|Link]]        |
+| 0003 | Longest Substring Without Repeating Characters | Medium | &check; |      | [[0003-Longest Substring Without Repeating Characters\|Link]] |
+| 0076 | Minimum Window Substring                       | Hard   | &check; |      | [[0076-Minimum Window Substring\|Link]]                       |
 
 ## Stacks
 
-| LC#  | Title             | Level | Solved? | Time | Soln |
-| ---- | ----------------- | :---- | ------- | ---- | ---- |
-| 0020 | Valid Parentheses | Easy  | &check; |      |      |
+| LC#  | Title             | Level | Solved? | Time | Soln                             |
+| ---- | ----------------- | :---- | ------- | ---- | -------------------------------- |
+| 0020 | Valid Parentheses | Easy  | &check; |      | [[0020-Valid Parentheses\|Link]] |
 
 ## Trees
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0104 | Maximum Depth of Binary Tree                              | Easy   | &check; |          |                        |
-| 0100 | Same Tree                                                 | Easy   | &check; |          |                        |
-| 0226 | Invert Binary Tree                                        | Easy   | &check; |          |                        |
-| 0572 | Subtree of Another Tree                                   | Easy   | &check; |          |                        |
-| 0102 | Binary Tree Level Order Traversal                         | Medium | &check; |          |                        |
-| 0105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | &check; |          |                        |
-| 0098 | Validate Binary Search Tree                               | Medium | &check; |          |                        |
-| 0230 | Kth Smallest Element in a BST                             | Medium | &check; |          |                        |
-| 0235 | Lowest Common Ancestor of a Binary Search Tree            | Medium | &check; |          |                        |
-| 0124 | Binary Tree Maximum Path Sum                              | Hard   | &check; |          |                        |
-| 0297 | Serialize and Deserialize Binary Tree                     | Hard   | &check; |          |                        |
+| LC#  | Title                                                     | Level  | Solved? | Time | Soln                                                                     |
+| ---- | --------------------------------------------------------- | :----- | ------- | ---- | ------------------------------------------------------------------------ |
+| 0104 | Maximum Depth of Binary Tree                              | Easy   | &check; |      | [[0104-Maximum Depth of Binary Tree\|Link]]                              |
+| 0100 | Same Tree                                                 | Easy   | &check; |      | [[0100-Same Tree\|Link]]                                                 |
+| 0226 | Invert Binary Tree                                        | Easy   | &check; |      | [[0226-Invert Binary Tree\|Link]]                                        |
+| 0572 | Subtree of Another Tree                                   | Easy   | &check; |      | [[0572-Subtree of Another Tree\|Link]]                                   |
+| 0102 | Binary Tree Level Order Traversal                         | Medium | &check; |      | [[0102-Binary Tree Level Order Traversal\|Link]]                         |
+| 0105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | &check; |      | [[0105-Construct Binary Tree from Preorder and Inorder Traversal\|Link]] |
+| 0098 | Validate Binary Search Tree                               | Medium | &check; |      | [[0098-Validate Binary Search Tree\|Link]]                               |
+| 0230 | Kth Smallest Element in a BST                             | Medium | &check; |      | [[0230-Kth Smallest Element in a BST\|Link]]                             |
+| 0235 | Lowest Common Ancestor of a Binary Search Tree            | Medium | &check; |      | [[0235-Lowest Common Ancestor of a Binary Search Tree\|Link]]            |
+| 0124 | Binary Tree Maximum Path Sum                              | Hard   | &check; |      | [[0124-Binary Tree Maximum Path Sum\|Link]]                              |
+| 0297 | Serialize and Deserialize Binary Tree                     | Hard   | &check; |      | [[0297-Serialize and Deserialize Binary Tree\|Link]]                     |
 
 ## Tries
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0208 | Implement Trie (Prefix Tree)                              | Medium | &check; |          |                        |
-| 0211 | Design Add and Search Words Data Structure                | Medium | &check; |          |                        |
-| 0212 | Word Search II                                            | Hard   | &check; |          |                        |
+| LC#  | Title                                      | Level  | Solved? | Time | Soln                                                      |
+| ---- | ------------------------------------------ | :----- | ------- | ---- | --------------------------------------------------------- |
+| 0208 | Implement Trie (Prefix Tree)               | Medium | &check; |      | [[0208-Implement Trie (Prefix Tree)\|Link]]               |
+| 0211 | Design Add and Search Words Data Structure | Medium | &check; |      | [[0211-Design Add and Search Words Data Structure\|Link]] |
+| 0212 | Word Search II                             | Hard   | &check; |      | [[0212-Word Search II\|Link]]                             |
 
 ## Two Pointers
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0125 | Valid Palindrome                                          | Easy   | &check; |          |                        |
-| 0015 | 3Sum                                                      | Medium | &check; |          |                        |
-| 0011 | Container With Most Water                                 | Medium | &check; |          |                        |
+| LC#  | Title                     | Level  | Solved? | Time | Soln                                     |
+| ---- | ------------------------- | :----- | ------- | ---- | ---------------------------------------- |
+| 0125 | Valid Palindrome          | Easy   | &check; |      | [[0125-Valid Palindrome\|Link]]          |
+| 0015 | 3Sum                      | Medium | &check; |      | [[0015-3Sum\|Link]]                      |
+| 0011 | Container With Most Water | Medium | &check; |      | [[0011-Container With Most Water\|Link]] |
 
 ## Math and Geometry
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0048 | Rotate Image                                              | Medium | &check; |          |                        |
-| 0054 | Spiral Matrix                                             | Medium | &check; |          |                        |
-| 0073 | Set Matrix Zeroes                                         | Medium | &check; |          |                        |
+| LC#  | Title             | Level  | Solved? | Time | Soln                             |
+| ---- | ----------------- | :----- | ------- | ---- | -------------------------------- |
+| 0048 | Rotate Image      | Medium | &check; |      | [[0048-Rotate Image\|Link]]      |
+| 0054 | Spiral Matrix     | Medium | &check; |      | [[0054-Spiral Matrix\|Link]]     |
+| 0073 | Set Matrix Zeroes | Medium | &check; |      | [[0073-Set Matrix Zeroes\|Link]] |
