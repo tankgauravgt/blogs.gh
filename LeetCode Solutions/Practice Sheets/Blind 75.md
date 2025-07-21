@@ -16,51 +16,51 @@ title: Blind 75
 
 ## Binary Search
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0153 | Find Minimum in Rotated Sorted Array                      | Medium | &check; |          |                        |
-| 0033 | Search in Rotated Sorted Array                            | Medium | &check; |          |                        |
+| LC#  | Title                                | Level  | Solved? | Time | Soln                                                |
+| ---- | ------------------------------------ | :----- | ------- | ---- | --------------------------------------------------- |
+| 0153 | Find Minimum in Rotated Sorted Array | Medium | &check; |      | [[0153-Find Minimum in Rotated Sorted Array\|Link]] |
+| 0033 | Search in Rotated Sorted Array       | Medium | &check; |      | [[0033-Search in Rotated Sorted Array\|Link]]       |
 
 ## Bit Manipulation
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0191 | Number of 1 Bits                                          | Easy   | &check; |          |                        |
-| 0338 | Counting Bits                                             | Easy   | &check; |          |                        |
-| 0268 | Missing Number                                            | Easy   | &check; |          |                        |
-| 0190 | Reverse Bits                                              | Easy   | &check; |          |                        |
-| 0371 | Sum of Two Integers                                       | Medium | &check; |          |                        |
+| LC#  | Title               | Level  | Solved? | Time | Soln                               |
+| ---- | ------------------- | :----- | ------- | ---- | ---------------------------------- |
+| 0191 | Number of 1 Bits    | Easy   | &check; |      | [[0191-Number of 1 Bits\|Link]]    |
+| 0338 | Counting Bits       | Easy   | &check; |      | [[0338-Counting Bits\|Link]]       |
+| 0268 | Missing Number      | Easy   | &check; |      | [[0268-Missing Number\|Link]]      |
+| 0190 | Reverse Bits        | Easy   | &check; |      | [[0190-Reverse Bits\|Link]]        |
+| 0371 | Sum of Two Integers | Medium | &check; |      | [[0371-Sum of Two Integers\|Link]] |
 
 ## Dynamic Programming
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0070 | Climbing Stairs                                           | Easy   | &check; |          |                        |
-| 0139 | Word Break                                                | Easy   | &check; |          |                        |
-| 0198 | House Robber                                              | Medium | &check; |          |                        |
-| 0322 | Coin Change                                               | Medium | &check; |          |                        |
-| 0300 | Longest Increasing Subsequence                            | Medium | &check; |          |                        |
-| 1143 | Longest Common Subsequence                                | Medium | &check; |          |                        |
-| 0005 | Longest Palindromic Substring                             | Medium | &check; |          |                        |
-| 0152 | Maximum Product Subarray                                  | Medium | &check; |          |                        |
-| 0647 | Palindromic Substrings                                    | Medium | &check; |          |                        |
-| 0377 | Combination Sum IV                                        | Medium | &check; |          |                        |
-| 0213 | House Robber II                                           | Medium | &check; |          |                        |
-| 0091 | Decode Ways                                               | Medium | &check; |          |                        |
-| 0062 | Unique Paths                                              | Medium | &check; |          |                        |
+| LC#  | Title                          | Level  | Solved? | Time | Soln                                          |
+| ---- | ------------------------------ | :----- | ------- | ---- | --------------------------------------------- |
+| 0070 | Climbing Stairs                | Easy   | &check; |      | [[0070-Climbing Stairs\|Link]]                |
+| 0139 | Word Break                     | Easy   | &check; |      | [[0139-Word Break\|Link]]                     |
+| 0198 | House Robber                   | Medium | &check; |      | [[0198-House Robber\|Link]]                   |
+| 0322 | Coin Change                    | Medium | &check; |      | [[0322-Coin Change\|Link]]                    |
+| 0300 | Longest Increasing Subsequence | Medium | &check; |      | [[0300-Longest Increasing Subsequence\|Link]] |
+| 1143 | Longest Common Subsequence     | Medium | &check; |      | [[1143-Longest Common Subsequence\|Link]]     |
+| 0005 | Longest Palindromic Substring  | Medium | &check; |      | [[0005-Longest Palindromic Substring\|Link]]  |
+| 0152 | Maximum Product Subarray       | Medium | &check; |      | [[0152-Maximum Product Subarray\|Link]]       |
+| 0647 | Palindromic Substrings         | Medium | &check; |      | [[0647-Palindromic Substrings\|Link]]         |
+| 0377 | Combination Sum IV             | Medium | &check; |      | [[0377-Combination Sum IV\|Link]]             |
+| 0213 | House Robber II                | Medium | &check; |      | [[0213-House Robber II\|Link]]                |
+| 0091 | Decode Ways                    | Medium | &check; |      | [[0091-Decode Ways\|Link]]                    |
+| 0062 | Unique Paths                   | Medium | &check; |      | [[0062-Unique Paths\|Link]]                   |
 
 ## Graphs
 
-| LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
-| ---- | --------------------------------------------------------- | :----- | ------- | -------- | ---------------------- |
-| 0133 | Clone Graph                                               | Medium | &check; |          |                        |
-| 0207 | Course Schedule                                           | Medium | &check; |          |                        |
-| 0417 | Pacific Atlantic Water Flow                               | Medium | &check; |          |                        |
-| 0200 | Number of Islands                                         | Medium | &check; |          |                        |
-| 0128 | Longest Consecutive Sequence                              | Medium | &check; |          |                        |
-| 0269 | Alien Dictionary                                          | Hard   | &check; |          |                        |
-| 0261 | Graph Valid Tree                                          | Hard   | &check; |          |                        |
-| 0323 | Number of Connected Components in an Undirected Graph     | Hard   | &check; |          |                        |
+| LC#  | Title                                                 | Level  | Solved? | Time | Soln                                                                 |
+| ---- | ----------------------------------------------------- | :----- | ------- | ---- | -------------------------------------------------------------------- |
+| 0133 | Clone Graph                                           | Medium | &check; |      | [[0133-Clone Graph\|Link]]                                           |
+| 0207 | Course Schedule                                       | Medium | &check; |      | [[0207-Course Schedule\|Link]]                                       |
+| 0417 | Pacific Atlantic Water Flow                           | Medium | &check; |      | [[0417-Pacific Atlantic Water Flow\|Link]]                           |
+| 0200 | Number of Islands                                     | Medium | &check; |      | [[0200-Number of Islands\|Link]]                                     |
+| 0128 | Longest Consecutive Sequence                          | Medium | &check; |      | [[0128-Longest Consecutive Sequence\|Link]]                          |
+| 0269 | Alien Dictionary                                      | Hard   | &check; |      | [[0269-Alien Dictionary\|Link]]                                      |
+| 0261 | Graph Valid Tree                                      | Hard   | &check; |      | [[0261-Graph Valid Tree\|Link]]                                      |
+| 0323 | Number of Connected Components in an Undirected Graph | Hard   | &check; |      | [[0323-Number of Connected Components in an Undirected Graph\|Link]] |
 
 ## Greedy
 
