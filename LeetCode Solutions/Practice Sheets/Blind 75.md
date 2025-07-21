@@ -1,5 +1,5 @@
 ---
-title: LeetCode Blind 75
+title: Blind 75
 ---
 
 ## Array and Hashing
