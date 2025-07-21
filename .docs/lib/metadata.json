@@ -1,6 +1,6 @@
 {
   "vaultName": "GT Notes",
-  "lastExport": 1753126493491,
+  "lastExport": 1753126622104,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon is-fullscreen",
   "useCustomHeadContent": true,
@@ -36,7 +36,7 @@
     "LeetCode Solutions/All Solutions/0028-Find the Index of the First Occurrence in a String.md",
     "LeetCode Solutions/All Solutions/0029-Divide Two Integers.md",
     "LeetCode Solutions/All Solutions/0030-Substring with Concatenation of All Words.md",
-    "LeetCode Solutions/Practice Sheets/Blind 75 Sheet.md",
+    "LeetCode Solutions/Practice Sheets/Blind 75.md",
     "LeetCode Solutions/index.md",
     "Machine Learning/HuggingFace - LLM Course.md",
     "Machine Learning/index.md",
@@ -93,357 +93,357 @@
   ],
   "fileInfo": {
     "LeetCode Solutions/All Solutions/0001-Two Sum.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 329,
       "exportedPath": "leetcode-solutions/all-solutions/0001-two-sum.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0002-Add Two Numbers.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 769,
       "exportedPath": "leetcode-solutions/all-solutions/0002-add-two-numbers.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0003-Longest Substring Without Repeating Characters.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 524,
       "exportedPath": "leetcode-solutions/all-solutions/0003-longest-substring-without-repeating-characters.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0004-Median of Two Sorted Arrays.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 1454,
       "exportedPath": "leetcode-solutions/all-solutions/0004-median-of-two-sorted-arrays.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0005-Longest Palindromic Substring.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 800,
       "exportedPath": "leetcode-solutions/all-solutions/0005-longest-palindromic-substring.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0006-Zigzag Conversion.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 478,
       "exportedPath": "leetcode-solutions/all-solutions/0006-zigzag-conversion.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0007-Reverse Integer.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 804,
       "exportedPath": "leetcode-solutions/all-solutions/0007-reverse-integer.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0008-String to Integer (atoi).md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 733,
       "exportedPath": "leetcode-solutions/all-solutions/0008-string-to-integer-(atoi).html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0009-Palindrome Number.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 305,
       "exportedPath": "leetcode-solutions/all-solutions/0009-palindrome-number.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0010-Regular Expression Matching.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 1047,
       "exportedPath": "leetcode-solutions/all-solutions/0010-regular-expression-matching.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0011-Container With Most Water.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 566,
       "exportedPath": "leetcode-solutions/all-solutions/0011-container-with-most-water.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0012-Integer to Roman.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 589,
       "exportedPath": "leetcode-solutions/all-solutions/0012-integer-to-roman.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0013-Roman to Integer.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 984,
       "exportedPath": "leetcode-solutions/all-solutions/0013-roman-to-integer.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0014-Longest Common Prefix.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 294,
       "exportedPath": "leetcode-solutions/all-solutions/0014-longest-common-prefix.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0015-3Sum.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 1041,
       "exportedPath": "leetcode-solutions/all-solutions/0015-3sum.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0016-3Sum Closest.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 588,
       "exportedPath": "leetcode-solutions/all-solutions/0016-3sum-closest.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0017-Letter Combinations of a Phone Number.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 756,
       "exportedPath": "leetcode-solutions/all-solutions/0017-letter-combinations-of-a-phone-number.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0018-4Sum.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 1486,
       "exportedPath": "leetcode-solutions/all-solutions/0018-4sum.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0019-Remove Nth Node From End of List.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 448,
       "exportedPath": "leetcode-solutions/all-solutions/0019-remove-nth-node-from-end-of-list.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0020-Valid Parentheses.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 602,
       "exportedPath": "leetcode-solutions/all-solutions/0020-valid-parentheses.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0021-Merge Two Sorted Lists.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 627,
       "exportedPath": "leetcode-solutions/all-solutions/0021-merge-two-sorted-lists.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0022-Generate Parentheses.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 622,
       "exportedPath": "leetcode-solutions/all-solutions/0022-generate-parentheses.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0023-Merge k Sorted Lists.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 761,
       "exportedPath": "leetcode-solutions/all-solutions/0023-merge-k-sorted-lists.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0024-Swap Nodes in Pairs.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 473,
       "exportedPath": "leetcode-solutions/all-solutions/0024-swap-nodes-in-pairs.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0025-Reverse Nodes in k-Group.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 709,
       "exportedPath": "leetcode-solutions/all-solutions/0025-reverse-nodes-in-k-group.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0026-Remove Duplicates from Sorted Array.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 440,
       "exportedPath": "leetcode-solutions/all-solutions/0026-remove-duplicates-from-sorted-array.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0027-Remove Element.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 387,
       "exportedPath": "leetcode-solutions/all-solutions/0027-remove-element.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0028-Find the Index of the First Occurrence in a String.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 172,
       "exportedPath": "leetcode-solutions/all-solutions/0028-find-the-index-of-the-first-occurrence-in-a-string.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0029-Divide Two Integers.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 734,
       "exportedPath": "leetcode-solutions/all-solutions/0029-divide-two-integers.html",
       "dependencies": []
     },
     "LeetCode Solutions/All Solutions/0030-Substring with Concatenation of All Words.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 1040,
       "exportedPath": "leetcode-solutions/all-solutions/0030-substring-with-concatenation-of-all-words.html",
       "dependencies": []
     },
     "LeetCode Solutions/index.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 5388,
       "exportedPath": "leetcode-solutions/index.html",
       "dependencies": []
     },
     "Machine Learning/HuggingFace - LLM Course.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 11642,
       "exportedPath": "machine-learning/huggingface-llm-course.html",
       "dependencies": []
     },
     "Machine Learning/index.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 95,
       "exportedPath": "machine-learning/index.html",
       "dependencies": []
     },
     "System Design/index.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 38,
       "exportedPath": "system-design/index.html",
       "dependencies": []
     },
     "index.md": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 215,
       "exportedPath": "index.html",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1753126493491,
-      "sourceSize": 32822,
+      "modifiedTime": 1753126622104,
+      "sourceSize": 32810,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 48407,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/html/custom-head-content.html": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 88,
       "exportedPath": "lib/html/custom-head-content.html",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 138258,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 12962,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 262,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 1637,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1753126493491,
+      "modifiedTime": 1753126622104,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
-    "LeetCode Solutions/Practice Sheets/Blind 75 Sheet.md": {
-      "modifiedTime": 1753126493491,
-      "sourceSize": 9472,
-      "exportedPath": "leetcode-solutions/practice-sheets/blind-75-sheet.html",
+    "LeetCode Solutions/Practice Sheets/Blind 75.md": {
+      "modifiedTime": 1753126622104,
+      "sourceSize": 9466,
+      "exportedPath": "leetcode-solutions/practice-sheets/blind-75.html",
       "dependencies": []
     }
   }

@@ -1,5 +1,5 @@
 ---
-title: "Practice Sheet: Blind 75 Sheet"
+title: "Practice Sheet: Blind 75"
 ---
 
 | LC#  | Title                                                     | Level  | Solved? | Time     | Soln                   |
