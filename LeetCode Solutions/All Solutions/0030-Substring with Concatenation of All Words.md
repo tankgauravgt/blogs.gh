@@ -2,7 +2,7 @@
 title: "0030: Substring with Concatenation of All Words"
 ---
 ```python
-from collections import deque
+from collections import Counter
 
 class Solution:
     def findSubstring(self, s, words):
