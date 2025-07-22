@@ -139,9 +139,7 @@ BaseAutoEncodingModel(
 )
 ```
 
-#### Transformer Block
-
-
+![](https://raw.githubusercontent.com/tankgauravgt/blogs.gh/refs/heads/images/zero-layer-transformer.svg)
 
 ### Module: BaseAutoEncodingModelEmbedder
 
