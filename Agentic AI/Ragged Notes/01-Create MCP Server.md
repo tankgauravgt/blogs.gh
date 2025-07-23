@@ -1,5 +1,5 @@
 ---
-title: "Agentic AI: Create MCP Server"
+title: "01: Create MCP Server"
 ---
 # Create First MCP Server
 
@@ -69,6 +69,6 @@ if __name__ == "__main__":
 ## References:
 
 - Kartik Marwah
-- Reference: https://github.com/theailanguage/terminal_server
-- <a href="https://www.linkedin.com/in/kartikmarwah">LinkedIn</a>
-- <a href="https://github.com/theailanguage">GitHub</a>
+	- https://github.com/theailanguage/terminal_server
+	- https://www.linkedin.com/in/kartikmarwah
+	- https://github.com/theailanguage
