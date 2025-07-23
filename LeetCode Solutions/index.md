@@ -3,7 +3,7 @@ title: "Index: LeetCode Solutions"
 description: Personal coding problem tracker with solution links. A structured way to monitor progress and enhance problem-solving skills.
 ---
 
-| LC#  | Title                                              | Level  | Solved? | Time     | Soln                                                              | TC                                                 | SC                 |
+| LC#  | Title                                              | Level  | Solved? | Time     | Soln                                                              | Time Complexity                                    | Space Complexity   |
 | ---- | -------------------------------------------------- | :----- | ------- | -------- | ----------------------------------------------------------------- | -------------------------------------------------- | ------------------ |
 | 0001 | Two Sum                                            | Easy   | &check; | 00:02:34 | [[0001-Two Sum\|Link]]                                            | $O(N)$                                             | $O(N)$             |
 | 0002 | Add Two Numbers                                    | Medium | &check; | 00:04:48 | [[0002-Add Two Numbers\|Link]]                                    | $O(N)$                                             | $O(N)$             |
