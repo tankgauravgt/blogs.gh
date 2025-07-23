@@ -3,7 +3,7 @@ title: "Index: LeetCode Solutions"
 description: Personal coding problem tracker with solution links. A structured way to monitor progress and enhance problem-solving skills.
 ---
 
-| LC#  | Title                                              | Level  | Solved? | Time     | Soln                                                              | Time Complexity                                    | Space Complexity   |
+| LC#  | Title                                              | Level  | Solved? | Time     | Soln                                                              | T.C.                                               | S.C.               |
 | ---- | -------------------------------------------------- | :----- | ------- | -------- | ----------------------------------------------------------------- | -------------------------------------------------- | ------------------ |
 | 0001 | Two Sum                                            | Easy   | &check; | 00:02:34 | [[0001-Two Sum\|Link]]                                            | $O(N)$                                             | $O(N)$             |
 | 0002 | Add Two Numbers                                    | Medium | &check; | 00:04:48 | [[0002-Add Two Numbers\|Link]]                                    | $O(N)$                                             | $O(N)$             |
@@ -33,5 +33,5 @@ description: Personal coding problem tracker with solution links. A structured w
 | 0026 | Remove Duplicates from Sorted Array                | Easy   | &check; | 00:04:52 | [[0026-Remove Duplicates from Sorted Array\|Link]]                | $O(N)$                                             | $O(1)$             |
 | 0027 | Remove Element                                     | Easy   | &check; | 00:04:38 | [[0027-Remove Element\|Link]]                                     | $O(N)$                                             | $O(1)$             |
 | 0028 | Find the Index of the First Occurrence in a String | Easy   | &check; | 00:02:16 | [[0028-Find the Index of the First Occurrence in a String\|Link]] | $O(N)$                                             | $O(1)$             |
-| 0029 | Divide Two Integers                                | Medium | &check; | 00:27:31 | [[0029-Divide Two Integers\|Link]]                                |                                                    |                    |
-| 0030 | Substring with Concatenation of All Words          | Hard   | &check; |          | [[0030-Substring with Concatenation of All Words\|Link]]          |                                                    |                    |
+| 0029 | Divide Two Integers                                | Medium | &check; | 00:27:31 | [[0029-Divide Two Integers\|Link]]                                | $O(\log^2{(N)})$                                   | $O(1)$             |
+| 0030 | Substring with Concatenation of All Words          | Hard   | &check; |          | [[0030-Substring with Concatenation of All Words\|Link]]          | $O((M - (N \cdot L)) \cdot (N \cdot L))$           | $O(N \cdot L)$     |
