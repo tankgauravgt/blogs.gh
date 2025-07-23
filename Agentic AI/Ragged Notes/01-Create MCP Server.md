@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
 ## References:
 
-- Kartik Marwah
-	- https://github.com/theailanguage/terminal_server
-	- https://www.linkedin.com/in/kartikmarwah
-	- https://github.com/theailanguage
+> Kartik Marwah
+> https://github.com/theailanguage/terminal_server
+> https://www.linkedin.com/in/kartikmarwah
+> https://github.com/theailanguage
