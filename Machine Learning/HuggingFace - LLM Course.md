@@ -136,7 +136,7 @@ e2e_model([
 # Model: BaseAutoEncodingModel
 BaseAutoEncodingModel(
 	'embedder': BaseAutoEncodingModelEmbedderModule(...),
-	'auto-encoder': BaseAutoEncodingModelEncoderModule(...),
+	'encoder': BaseAutoEncodingModelEncoderModule(...),
 	'pooler': BaseAutoEncodingModelPoolerModule(...)
 )
 ```
