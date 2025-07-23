@@ -4,15 +4,15 @@ title: Blind 75
 
 ## Array and Hashing
 
-| LC#  | Title                        | Level  | Solved? | Time     | Soln                                        |
-| ---- | ---------------------------- | :----- | ------- | -------- | ------------------------------------------- |
-| 0001 | Two Sum                      | Easy   | &check; | 00:02:34 | [[0001-Two Sum\|Link]]                      |
-| 0242 | Valid Anagram                | Easy   | &check; |          | [[0242-Valid Anagram\|Link]]                |
-| 0217 | Contains Duplicate           | Easy   | &check; |          | [[0217-Contains Duplicate\|Link]]           |
-| 0238 | Product of Array Except Self | Medium | &check; |          | [[0238-Product of Array Except Self\|Link]] |
-| 0049 | Group Anagrams               | Medium | &check; |          | [[0049-Group Anagrams\|Link]]               |
-| 0271 | Encode and Decode Strings    | Medium | &check; |          | [[0271-Encode and Decode Strings\|Link]]    |
-| 0347 | Top K Frequent Elements      | Medium | &check; |          | [[0347-Top K Frequent Elements\|Link]]      |
+| LC#  | Title                        | Level  | Solved? | Time | Soln                                        |
+| ---- | ---------------------------- | :----- | ------- | ---- | ------------------------------------------- |
+| 0001 | Two Sum                      | Easy   | &check; |      | [[0001-Two Sum\|Link]]                      |
+| 0242 | Valid Anagram                | Easy   | &check; |      | [[0242-Valid Anagram\|Link]]                |
+| 0217 | Contains Duplicate           | Easy   | &check; |      | [[0217-Contains Duplicate\|Link]]           |
+| 0238 | Product of Array Except Self | Medium | &check; |      | [[0238-Product of Array Except Self\|Link]] |
+| 0049 | Group Anagrams               | Medium | &check; |      | [[0049-Group Anagrams\|Link]]               |
+| 0271 | Encode and Decode Strings    | Medium | &check; |      | [[0271-Encode and Decode Strings\|Link]]    |
+| 0347 | Top K Frequent Elements      | Medium | &check; |      | [[0347-Top K Frequent Elements\|Link]]      |
 
 ## Binary Search
 
