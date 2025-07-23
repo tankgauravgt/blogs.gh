@@ -205,10 +205,3 @@ BaseAutoEncodingModelPooler(
 	'activation': Activation(...)
 )
 ```
-
-## Timeline: Transformers
-
-| **Time** | **Model**                | **Novelty**                                                                                                  |
-| -------- | ------------------------ | ------------------------------------------------------------------------------------------------------------ |
-| 2017     | Transformer Architecture | Introduced Encoder + Decoder based transformers for machine learning translation task and outperformed SOTA. |
-| 2018     | GPT                      | First pretrained transformer model. Finetuned for various NLP tasks obtaining SOTA performance.              |
