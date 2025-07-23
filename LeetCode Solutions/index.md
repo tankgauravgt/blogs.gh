@@ -1,6 +1,6 @@
 ---
 title: "Index: LeetCode Solutions"
-description: My personal coding problem tracker with detailed notes on titles, difficulty levels, completion times, and solution links. A structured way to monitor progress and enhance problem-solving skills.
+description: Personal coding problem tracker with solution links. A structured way to monitor progress and enhance problem-solving skills.
 ---
 
 | LC#  | Title                                              | Level  | Solved? | Time     | Soln                                                              |
