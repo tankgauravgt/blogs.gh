@@ -17,55 +17,53 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv init
 uv venv
 source .venv/bin/activate # (or `.venv\Scripts\activate` in windows)
-uv add "mcp[cli]"
+uv pip install fastmcp
 ```
 
 ### 03: Write Supported Tools 
 
 ```python
-import os
-import subprocess
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
+import asyncio
 
-mcp = FastMCP("terminal")
-DEFAULT_WORKSPACE = os.path.expanduser("~/mcp/workspace")
+# =========================================================
+# Create MCP server:
+# =========================================================
 
-@mcp.tool()
-async def run_command(command):
-    try:
-        result = subprocess.run(
-	        command, 
-	        shell=True, 
-	        cwd=DEFAULT_WORKSPACE, 
-	        capture_output=True, 
-	        text=True
-	    )
-        return result.stdout or result.stderr
-    except Exception as e:
-        return str(e)
+mcp = FastMCP()
+
+# =========================================================
+# Define tools:
+# =========================================================
+
+@mcp.tool(output_schema={
+    "type": "object",
+    "properties": {
+        "result": {
+            "type": "integer",
+            "description": "The sum of the two input integers."
+        }
+    },
+    "required": ["result"]
+})
+def add(a: int, b: int) -> int:
+    """Add two numbers and return the result."""
+    return {"result": a + b}
+
+# =========================================================
+# Run the server:
+# =========================================================
 
 if __name__ == "__main__":
-    mcp.run(transport='stdio')
+    asyncio.run(
+        mcp.run_async(
+            transport="streamable-http",
+            host="localhost",
+            port=8000,
+        )
+    )
 ```
 
 ### 04: Use in MCP Client
 
-```json
-{
-    "mcpServers": {
-        "terminal": {
-            "command": "/Users/tankgauravgt/.local/bin/uv", 
-            "args": [
-                "--directory", 
-                "/Users/tankgauravgt/mcp/servers/terminal_server", 
-                "run",
-                "terminal_server.py"
-            ]
-        }
-    }
-}
-```
-
-## References:
-
-> Awesome <a href="https://github.com/theailanguage/terminal_server">repo</a> by Kartik Marwah
+MCP server should be now running at `http://localhost:8000/mcp`
