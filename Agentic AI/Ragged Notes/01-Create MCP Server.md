@@ -3,7 +3,7 @@ title: "01: Create MCP Server"
 ---
 # Create First MCP Server
 
-## Steps:
+## Steps
 
 ### 01: Install uv Package Manager
 
