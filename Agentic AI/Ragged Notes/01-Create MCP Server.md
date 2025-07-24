@@ -36,16 +36,20 @@ mcp = FastMCP()
 # Define tools:
 # =========================================================
 
-@mcp.tool(output_schema={
-    "type": "object",
-    "properties": {
-        "result": {
-            "type": "integer",
-            "description": "The sum of the two input integers."
-        }
-    },
-    "required": ["result"]
-})
+@mcp.tool(
+	name="add_numbers",
+	description="The sum of the two input integers.",
+	output_schema={
+	    "type": "object",
+	    "properties": {
+	        "result": {
+	            "type": "integer",
+	            "description": "The sum of the two input integers."
+	        }
+	    },
+	    "required": ["result"]
+	}
+)
 def add(a: int, b: int) -> int:
     """Add two numbers and return the result."""
     return {"result": a + b}
@@ -55,15 +59,26 @@ def add(a: int, b: int) -> int:
 # =========================================================
 
 if __name__ == "__main__":
+	# ====================================
+	# synchronous execution:
+	# ====================================
+	# mcp.run(
+    #     transport="streamable-http",
+    #     host="localhost",
+    #     port=8000
+    # )
+	# ====================================
+	# asynchronous execution:
+	# ====================================
     asyncio.run(
         mcp.run_async(
             transport="streamable-http",
             host="localhost",
-            port=8000,
+            port=8000
         )
     )
 ```
 
 ### 04: Use in MCP Client
 
-MCP server should be now running at `http://localhost:8000/mcp`
+MCP server will start running at `http://localhost:8000/mcp`
