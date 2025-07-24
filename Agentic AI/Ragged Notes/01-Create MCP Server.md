@@ -20,7 +20,7 @@ source .venv/bin/activate # (or `.venv\Scripts\activate` in windows)
 uv pip install fastmcp
 ```
 
-### 03: Write Supported Tools 
+### 03: Write Tools Exposed by MCP Server
 
 ```python
 from fastmcp import FastMCP
