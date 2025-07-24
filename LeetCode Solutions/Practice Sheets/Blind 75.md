@@ -4,149 +4,149 @@ title: Blind 75
 
 ## Array and Hashing
 
-| LC#  | Title                        | Level  | Solved? | Time | Soln                                        |
-| ---- | ---------------------------- | :----- | ------- | ---- | ------------------------------------------- |
-| 0001 | Two Sum                      | Easy   | &check; |      | [[0001-Two Sum\|Link]]                      |
-| 0242 | Valid Anagram                | Easy   | &check; |      | [[0242-Valid Anagram\|Link]]                |
-| 0217 | Contains Duplicate           | Easy   | &check; |      | [[0217-Contains Duplicate\|Link]]           |
-| 0238 | Product of Array Except Self | Medium | &check; |      | [[0238-Product of Array Except Self\|Link]] |
-| 0049 | Group Anagrams               | Medium | &check; |      | [[0049-Group Anagrams\|Link]]               |
-| 0271 | Encode and Decode Strings    | Medium | &check; |      | [[0271-Encode and Decode Strings\|Link]]    |
-| 0347 | Top K Frequent Elements      | Medium | &check; |      | [[0347-Top K Frequent Elements\|Link]]      |
+| LC#  | Title                        | Level  | Solved? | Time     | Soln                                        | T.C.                  | S.C.           |
+| ---- | ---------------------------- | :----- | ------- | -------- | ------------------------------------------- | --------------------- | -------------- |
+| 0001 | Two Sum                      | Easy   | &check; | 00:02:34 | [[0001-Two Sum\|Link]]                      | $O(N)$                | $O(N)$         |
+| 0242 | Valid Anagram                | Easy   | &check; | 00:01:46 | [[0242-Valid Anagram\|Link]]                | $O(M + N)$            | $O(1)$         |
+| 0217 | Contains Duplicate           | Easy   | &check; | 00:02:09 | [[0217-Contains Duplicate\|Link]]           | $O(N)$                | $O(N)$         |
+| 0238 | Product of Array Except Self | Medium | &check; | 00:07:15 | [[0238-Product of Array Except Self\|Link]] | $O(N)$                | $O(N)$         |
+| 0049 | Group Anagrams               | Medium | &check; | 00:03:27 | [[0049-Group Anagrams\|Link]]               | $O(N \cdot K \log K)$ | $O(N \cdot K)$ |
+| 0271 | Encode and Decode Strings    | Medium | &check; | 00:04:51 | [[0271-Encode and Decode Strings\|Link]]    | $O(N)$                | $O(N)$         |
+| 0347 | Top K Frequent Elements      | Medium | &check; |          | [[0347-Top K Frequent Elements\|Link]]      | $O(N\log N)$          | $O(N)$         |
 
 ## Binary Search
 
-| LC#  | Title                                | Level  | Solved? | Time | Soln                                                |
-| ---- | ------------------------------------ | :----- | ------- | ---- | --------------------------------------------------- |
-| 0153 | Find Minimum in Rotated Sorted Array | Medium | &check; |      | [[0153-Find Minimum in Rotated Sorted Array\|Link]] |
-| 0033 | Search in Rotated Sorted Array       | Medium | &check; |      | [[0033-Search in Rotated Sorted Array\|Link]]       |
+| LC#  | Title                                | Level  | Solved? | Time | Soln                                                | T.C.        | S.C.        |
+| ---- | ------------------------------------ | :----- | ------- | ---- | --------------------------------------------------- | ----------- | ----------- |
+| 0153 | Find Minimum in Rotated Sorted Array | Medium | &check; |      | [[0153-Find Minimum in Rotated Sorted Array\|Link]] | $O(\log N)$ | $O(\log N)$ |
+| 0033 | Search in Rotated Sorted Array       | Medium | &check; |      | [[0033-Search in Rotated Sorted Array\|Link]]       | $O(\log N)$ | $O(\log N)$ |
 
 ## Bit Manipulation
 
-| LC#  | Title               | Level  | Solved? | Time | Soln                               |
-| ---- | ------------------- | :----- | ------- | ---- | ---------------------------------- |
-| 0191 | Number of 1 Bits    | Easy   | &check; |      | [[0191-Number of 1 Bits\|Link]]    |
-| 0338 | Counting Bits       | Easy   | &check; |      | [[0338-Counting Bits\|Link]]       |
-| 0268 | Missing Number      | Easy   | &check; |      | [[0268-Missing Number\|Link]]      |
-| 0190 | Reverse Bits        | Easy   | &check; |      | [[0190-Reverse Bits\|Link]]        |
-| 0371 | Sum of Two Integers | Medium | &check; |      | [[0371-Sum of Two Integers\|Link]] |
+| LC#  | Title               | Level  | Solved? | Time | Soln                               | T.C.  | S.C.  |
+| ---- | ------------------- | :----- | ------- | ---- | ---------------------------------- | ----- | ----- |
+| 0191 | Number of 1 Bits    | Easy   | &check; |      | [[0191-Number of 1 Bits\|Link]]    | $O()$ | $O()$ |
+| 0338 | Counting Bits       | Easy   | &check; |      | [[0338-Counting Bits\|Link]]       | $O()$ | $O()$ |
+| 0268 | Missing Number      | Easy   | &check; |      | [[0268-Missing Number\|Link]]      | $O()$ | $O()$ |
+| 0190 | Reverse Bits        | Easy   | &check; |      | [[0190-Reverse Bits\|Link]]        | $O()$ | $O()$ |
+| 0371 | Sum of Two Integers | Medium | &check; |      | [[0371-Sum of Two Integers\|Link]] | $O()$ | $O()$ |
 
 ## Dynamic Programming
 
-| LC#  | Title                          | Level  | Solved? | Time | Soln                                          |
-| ---- | ------------------------------ | :----- | ------- | ---- | --------------------------------------------- |
-| 0070 | Climbing Stairs                | Easy   | &check; |      | [[0070-Climbing Stairs\|Link]]                |
-| 0139 | Word Break                     | Easy   | &check; |      | [[0139-Word Break\|Link]]                     |
-| 0198 | House Robber                   | Medium | &check; |      | [[0198-House Robber\|Link]]                   |
-| 0322 | Coin Change                    | Medium | &check; |      | [[0322-Coin Change\|Link]]                    |
-| 0300 | Longest Increasing Subsequence | Medium | &check; |      | [[0300-Longest Increasing Subsequence\|Link]] |
-| 1143 | Longest Common Subsequence     | Medium | &check; |      | [[1143-Longest Common Subsequence\|Link]]     |
-| 0005 | Longest Palindromic Substring  | Medium | &check; |      | [[0005-Longest Palindromic Substring\|Link]]  |
-| 0152 | Maximum Product Subarray       | Medium | &check; |      | [[0152-Maximum Product Subarray\|Link]]       |
-| 0647 | Palindromic Substrings         | Medium | &check; |      | [[0647-Palindromic Substrings\|Link]]         |
-| 0377 | Combination Sum IV             | Medium | &check; |      | [[0377-Combination Sum IV\|Link]]             |
-| 0213 | House Robber II                | Medium | &check; |      | [[0213-House Robber II\|Link]]                |
-| 0091 | Decode Ways                    | Medium | &check; |      | [[0091-Decode Ways\|Link]]                    |
-| 0062 | Unique Paths                   | Medium | &check; |      | [[0062-Unique Paths\|Link]]                   |
+| LC#  | Title                          | Level  | Solved? | Time | Soln                                          | T.C.  | S.C.  |
+| ---- | ------------------------------ | :----- | ------- | ---- | --------------------------------------------- | ----- | ----- |
+| 0070 | Climbing Stairs                | Easy   | &check; |      | [[0070-Climbing Stairs\|Link]]                | $O()$ | $O()$ |
+| 0139 | Word Break                     | Easy   | &check; |      | [[0139-Word Break\|Link]]                     | $O()$ | $O()$ |
+| 0198 | House Robber                   | Medium | &check; |      | [[0198-House Robber\|Link]]                   | $O()$ | $O()$ |
+| 0322 | Coin Change                    | Medium | &check; |      | [[0322-Coin Change\|Link]]                    | $O()$ | $O()$ |
+| 0300 | Longest Increasing Subsequence | Medium | &check; |      | [[0300-Longest Increasing Subsequence\|Link]] | $O()$ | $O()$ |
+| 1143 | Longest Common Subsequence     | Medium | &check; |      | [[1143-Longest Common Subsequence\|Link]]     | $O()$ | $O()$ |
+| 0005 | Longest Palindromic Substring  | Medium | &check; |      | [[0005-Longest Palindromic Substring\|Link]]  | $O()$ | $O()$ |
+| 0152 | Maximum Product Subarray       | Medium | &check; |      | [[0152-Maximum Product Subarray\|Link]]       | $O()$ | $O()$ |
+| 0647 | Palindromic Substrings         | Medium | &check; |      | [[0647-Palindromic Substrings\|Link]]         | $O()$ | $O()$ |
+| 0377 | Combination Sum IV             | Medium | &check; |      | [[0377-Combination Sum IV\|Link]]             | $O()$ | $O()$ |
+| 0213 | House Robber II                | Medium | &check; |      | [[0213-House Robber II\|Link]]                | $O()$ | $O()$ |
+| 0091 | Decode Ways                    | Medium | &check; |      | [[0091-Decode Ways\|Link]]                    | $O()$ | $O()$ |
+| 0062 | Unique Paths                   | Medium | &check; |      | [[0062-Unique Paths\|Link]]                   | $O()$ | $O()$ |
 
 ## Graphs
 
-| LC#  | Title                                                 | Level  | Solved? | Time | Soln                                                                 |
-| ---- | ----------------------------------------------------- | :----- | ------- | ---- | -------------------------------------------------------------------- |
-| 0133 | Clone Graph                                           | Medium | &check; |      | [[0133-Clone Graph\|Link]]                                           |
-| 0207 | Course Schedule                                       | Medium | &check; |      | [[0207-Course Schedule\|Link]]                                       |
-| 0417 | Pacific Atlantic Water Flow                           | Medium | &check; |      | [[0417-Pacific Atlantic Water Flow\|Link]]                           |
-| 0200 | Number of Islands                                     | Medium | &check; |      | [[0200-Number of Islands\|Link]]                                     |
-| 0128 | Longest Consecutive Sequence                          | Medium | &check; |      | [[0128-Longest Consecutive Sequence\|Link]]                          |
-| 0269 | Alien Dictionary                                      | Hard   | &check; |      | [[0269-Alien Dictionary\|Link]]                                      |
-| 0261 | Graph Valid Tree                                      | Hard   | &check; |      | [[0261-Graph Valid Tree\|Link]]                                      |
-| 0323 | Number of Connected Components in an Undirected Graph | Hard   | &check; |      | [[0323-Number of Connected Components in an Undirected Graph\|Link]] |
+| LC#  | Title                                                 | Level  | Solved? | Time | Soln                                                                 | T.C.  | S.C.  |
+| ---- | ----------------------------------------------------- | :----- | ------- | ---- | -------------------------------------------------------------------- | ----- | ----- |
+| 0133 | Clone Graph                                           | Medium | &check; |      | [[0133-Clone Graph\|Link]]                                           | $O()$ | $O()$ |
+| 0207 | Course Schedule                                       | Medium | &check; |      | [[0207-Course Schedule\|Link]]                                       | $O()$ | $O()$ |
+| 0417 | Pacific Atlantic Water Flow                           | Medium | &check; |      | [[0417-Pacific Atlantic Water Flow\|Link]]                           | $O()$ | $O()$ |
+| 0200 | Number of Islands                                     | Medium | &check; |      | [[0200-Number of Islands\|Link]]                                     | $O()$ | $O()$ |
+| 0128 | Longest Consecutive Sequence                          | Medium | &check; |      | [[0128-Longest Consecutive Sequence\|Link]]                          | $O()$ | $O()$ |
+| 0269 | Alien Dictionary                                      | Hard   | &check; |      | [[0269-Alien Dictionary\|Link]]                                      | $O()$ | $O()$ |
+| 0261 | Graph Valid Tree                                      | Hard   | &check; |      | [[0261-Graph Valid Tree\|Link]]                                      | $O()$ | $O()$ |
+| 0323 | Number of Connected Components in an Undirected Graph | Hard   | &check; |      | [[0323-Number of Connected Components in an Undirected Graph\|Link]] | $O()$ | $O()$ |
 
 ## Greedy
 
-| LC#  | Title            | Level  | Solved? | Time | Soln                            |
-| ---- | ---------------- | :----- | ------- | ---- | ------------------------------- |
-| 0055 | Jump Game        | Medium | &check; |      | [[0055-Jump Game\|Link]]        |
-| 0053 | Maximum Subarray | Medium | &check; |      | [[0053-Maximum Subarray\|Link]] |
+| LC#  | Title            | Level  | Solved? | Time | Soln                            | T.C.  | S.C.  |
+| ---- | ---------------- | :----- | ------- | ---- | ------------------------------- | ----- | ----- |
+| 0055 | Jump Game        | Medium | &check; |      | [[0055-Jump Game\|Link]]        | $O()$ | $O()$ |
+| 0053 | Maximum Subarray | Medium | &check; |      | [[0053-Maximum Subarray\|Link]] | $O()$ | $O()$ |
 
 ## Heaps
 
-| LC#  | Title                        | Level | Solved? | Time | Soln                                        |
-| ---- | ---------------------------- | :---- | ------- | ---- | ------------------------------------------- |
-| 0295 | Find Median from Data Stream | Hard  | &check; |      | [[0295-Find Median from Data Stream\|Link]] |
+| LC#  | Title                        | Level | Solved? | Time | Soln                                        | T.C.  | S.C   |
+| ---- | ---------------------------- | :---- | ------- | ---- | ------------------------------------------- | ----- | ----- |
+| 0295 | Find Median from Data Stream | Hard  | &check; |      | [[0295-Find Median from Data Stream\|Link]] | $O()$ | $O()$ |
 
 ## Intervals
 
-| LC#  | Title                     | Level  | Solved? | Time | Soln                                     |
-| ---- | ------------------------- | :----- | ------- | ---- | ---------------------------------------- |
-| 0252 | Meeting Rooms             | Easy   | &check; |      | [[0252-Meeting Rooms\|Link]]             |
-| 0057 | Insert Interval           | Medium | &check; |      | [[0057-Insert Interval\|Link]]           |
-| 0056 | Merge Intervals           | Medium | &check; |      | [[0056-Merge Intervals\|Link]]           |
-| 0435 | Non-overlapping Intervals | Medium | &check; |      | [[0435-Non-overlapping Intervals\|Link]] |
-| 0253 | Meeting Rooms II          | Medium | &check; |      | [[0253-Meeting Rooms II\|Link]]          |
+| LC#  | Title                     | Level  | Solved? | Time | Soln                                     | T.C.  | S.C.  |
+| ---- | ------------------------- | :----- | ------- | ---- | ---------------------------------------- | ----- | ----- |
+| 0252 | Meeting Rooms             | Easy   | &check; |      | [[0252-Meeting Rooms\|Link]]             | $O()$ | $O()$ |
+| 0057 | Insert Interval           | Medium | &check; |      | [[0057-Insert Interval\|Link]]           | $O()$ | $O()$ |
+| 0056 | Merge Intervals           | Medium | &check; |      | [[0056-Merge Intervals\|Link]]           | $O()$ | $O()$ |
+| 0435 | Non-overlapping Intervals | Medium | &check; |      | [[0435-Non-overlapping Intervals\|Link]] | $O()$ | $O()$ |
+| 0253 | Meeting Rooms II          | Medium | &check; |      | [[0253-Meeting Rooms II\|Link]]          | $O()$ | $O()$ |
 
 ## Linked Lists
 
-| LC#  | Title                            | Level  | Solved? | Time | Soln                                            |
-| ---- | -------------------------------- | :----- | ------- | ---- | ----------------------------------------------- |
-| 0206 | Reverse Linked List              | Easy   | &check; |      | [[0206-Reverse Linked List\|Link]]              |
-| 0141 | Linked List Cycle                | Easy   | &check; |      | [[0141-Linked List Cycle\|Link]]                |
-| 0021 | Merge Two Sorted Lists           | Easy   | &check; |      | [[0021-Merge Two Sorted Lists\|Link]]           |
-| 0019 | Remove Nth Node From End of List | Medium | &check; |      | [[0019-Remove Nth Node From End of List\|Link]] |
-| 0143 | Reorder List                     | Medium | &check; |      | [[0143-Reorder List\|Link]]                     |
-| 0023 | Merge k Sorted Lists             | Hard   | &check; |      | [[0023-Merge k Sorted Lists\|Link]]             |
+| LC#  | Title                            | Level  | Solved? | Time | Soln                                            | T.C.  | S.C.  |
+| ---- | -------------------------------- | :----- | ------- | ---- | ----------------------------------------------- | ----- | ----- |
+| 0206 | Reverse Linked List              | Easy   | &check; |      | [[0206-Reverse Linked List\|Link]]              | $O()$ | $O()$ |
+| 0141 | Linked List Cycle                | Easy   | &check; |      | [[0141-Linked List Cycle\|Link]]                | $O()$ | $O()$ |
+| 0021 | Merge Two Sorted Lists           | Easy   | &check; |      | [[0021-Merge Two Sorted Lists\|Link]]           | $O()$ | $O()$ |
+| 0019 | Remove Nth Node From End of List | Medium | &check; |      | [[0019-Remove Nth Node From End of List\|Link]] | $O()$ | $O()$ |
+| 0143 | Reorder List                     | Medium | &check; |      | [[0143-Reorder List\|Link]]                     | $O()$ | $O()$ |
+| 0023 | Merge k Sorted Lists             | Hard   | &check; |      | [[0023-Merge k Sorted Lists\|Link]]             | $O()$ | $O()$ |
 
 ## Sliding Window
 
-| LC#  | Title                                          | Level  | Solved? | Time | Soln                                                          |
-| ---- | ---------------------------------------------- | :----- | ------- | ---- | ------------------------------------------------------------- |
-| 0121 | Best Time to Buy and Sell Stock                | Easy   | &check; |      | [[0121-Best Time to Buy and Sell Stock\|Link]]                |
-| 0424 | Longest Repeating Character Replacement        | Medium | &check; |      | [[0424-Longest Repeating Character Replacement\|Link]]        |
-| 0003 | Longest Substring Without Repeating Characters | Medium | &check; |      | [[0003-Longest Substring Without Repeating Characters\|Link]] |
-| 0076 | Minimum Window Substring                       | Hard   | &check; |      | [[0076-Minimum Window Substring\|Link]]                       |
+| LC#  | Title                                          | Level  | Solved? | Time | Soln                                                          | T.C.  | S.C.  |
+| ---- | ---------------------------------------------- | :----- | ------- | ---- | ------------------------------------------------------------- | ----- | ----- |
+| 0121 | Best Time to Buy and Sell Stock                | Easy   | &check; |      | [[0121-Best Time to Buy and Sell Stock\|Link]]                | $O()$ | $O()$ |
+| 0424 | Longest Repeating Character Replacement        | Medium | &check; |      | [[0424-Longest Repeating Character Replacement\|Link]]        | $O()$ | $O()$ |
+| 0003 | Longest Substring Without Repeating Characters | Medium | &check; |      | [[0003-Longest Substring Without Repeating Characters\|Link]] | $O()$ | $O()$ |
+| 0076 | Minimum Window Substring                       | Hard   | &check; |      | [[0076-Minimum Window Substring\|Link]]                       | $O()$ | $O()$ |
 
 ## Stacks
 
-| LC#  | Title             | Level | Solved? | Time | Soln                             |
-| ---- | ----------------- | :---- | ------- | ---- | -------------------------------- |
-| 0020 | Valid Parentheses | Easy  | &check; |      | [[0020-Valid Parentheses\|Link]] |
+| LC#  | Title             | Level | Solved? | Time | Soln                             | T.C.  | S.C.  |
+| ---- | ----------------- | :---- | ------- | ---- | -------------------------------- | ----- | ----- |
+| 0020 | Valid Parentheses | Easy  | &check; |      | [[0020-Valid Parentheses\|Link]] | $O()$ | $O()$ |
 
 ## Trees
 
-| LC#  | Title                                                     | Level  | Solved? | Time | Soln                                                                     |
-| ---- | --------------------------------------------------------- | :----- | ------- | ---- | ------------------------------------------------------------------------ |
-| 0104 | Maximum Depth of Binary Tree                              | Easy   | &check; |      | [[0104-Maximum Depth of Binary Tree\|Link]]                              |
-| 0100 | Same Tree                                                 | Easy   | &check; |      | [[0100-Same Tree\|Link]]                                                 |
-| 0226 | Invert Binary Tree                                        | Easy   | &check; |      | [[0226-Invert Binary Tree\|Link]]                                        |
-| 0572 | Subtree of Another Tree                                   | Easy   | &check; |      | [[0572-Subtree of Another Tree\|Link]]                                   |
-| 0102 | Binary Tree Level Order Traversal                         | Medium | &check; |      | [[0102-Binary Tree Level Order Traversal\|Link]]                         |
-| 0105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | &check; |      | [[0105-Construct Binary Tree from Preorder and Inorder Traversal\|Link]] |
-| 0098 | Validate Binary Search Tree                               | Medium | &check; |      | [[0098-Validate Binary Search Tree\|Link]]                               |
-| 0230 | Kth Smallest Element in a BST                             | Medium | &check; |      | [[0230-Kth Smallest Element in a BST\|Link]]                             |
-| 0235 | Lowest Common Ancestor of a Binary Search Tree            | Medium | &check; |      | [[0235-Lowest Common Ancestor of a Binary Search Tree\|Link]]            |
-| 0124 | Binary Tree Maximum Path Sum                              | Hard   | &check; |      | [[0124-Binary Tree Maximum Path Sum\|Link]]                              |
-| 0297 | Serialize and Deserialize Binary Tree                     | Hard   | &check; |      | [[0297-Serialize and Deserialize Binary Tree\|Link]]                     |
+| LC#  | Title                                                     | Level  | Solved? | Time | Soln                                                                     | T.C.  | S.C.  |
+| ---- | --------------------------------------------------------- | :----- | ------- | ---- | ------------------------------------------------------------------------ | ----- | ----- |
+| 0104 | Maximum Depth of Binary Tree                              | Easy   | &check; |      | [[0104-Maximum Depth of Binary Tree\|Link]]                              | $O()$ | $O()$ |
+| 0100 | Same Tree                                                 | Easy   | &check; |      | [[0100-Same Tree\|Link]]                                                 | $O()$ | $O()$ |
+| 0226 | Invert Binary Tree                                        | Easy   | &check; |      | [[0226-Invert Binary Tree\|Link]]                                        | $O()$ | $O()$ |
+| 0572 | Subtree of Another Tree                                   | Easy   | &check; |      | [[0572-Subtree of Another Tree\|Link]]                                   | $O()$ | $O()$ |
+| 0102 | Binary Tree Level Order Traversal                         | Medium | &check; |      | [[0102-Binary Tree Level Order Traversal\|Link]]                         | $O()$ | $O()$ |
+| 0105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | &check; |      | [[0105-Construct Binary Tree from Preorder and Inorder Traversal\|Link]] | $O()$ | $O()$ |
+| 0098 | Validate Binary Search Tree                               | Medium | &check; |      | [[0098-Validate Binary Search Tree\|Link]]                               | $O()$ | $O()$ |
+| 0230 | Kth Smallest Element in a BST                             | Medium | &check; |      | [[0230-Kth Smallest Element in a BST\|Link]]                             | $O()$ | $O()$ |
+| 0235 | Lowest Common Ancestor of a Binary Search Tree            | Medium | &check; |      | [[0235-Lowest Common Ancestor of a Binary Search Tree\|Link]]            | $O()$ | $O()$ |
+| 0124 | Binary Tree Maximum Path Sum                              | Hard   | &check; |      | [[0124-Binary Tree Maximum Path Sum\|Link]]                              | $O()$ | $O()$ |
+| 0297 | Serialize and Deserialize Binary Tree                     | Hard   | &check; |      | [[0297-Serialize and Deserialize Binary Tree\|Link]]                     | $O()$ | $O()$ |
 
 ## Tries
 
-| LC#  | Title                                      | Level  | Solved? | Time | Soln                                                      |
-| ---- | ------------------------------------------ | :----- | ------- | ---- | --------------------------------------------------------- |
-| 0208 | Implement Trie (Prefix Tree)               | Medium | &check; |      | [[0208-Implement Trie (Prefix Tree)\|Link]]               |
-| 0211 | Design Add and Search Words Data Structure | Medium | &check; |      | [[0211-Design Add and Search Words Data Structure\|Link]] |
-| 0212 | Word Search II                             | Hard   | &check; |      | [[0212-Word Search II\|Link]]                             |
+| LC#  | Title                                      | Level  | Solved? | Time | Soln                                                      | T.C.  | S.C.  |
+| ---- | ------------------------------------------ | :----- | ------- | ---- | --------------------------------------------------------- | ----- | ----- |
+| 0208 | Implement Trie (Prefix Tree)               | Medium | &check; |      | [[0208-Implement Trie (Prefix Tree)\|Link]]               | $O()$ | $O()$ |
+| 0211 | Design Add and Search Words Data Structure | Medium | &check; |      | [[0211-Design Add and Search Words Data Structure\|Link]] | $O()$ | $O()$ |
+| 0212 | Word Search II                             | Hard   | &check; |      | [[0212-Word Search II\|Link]]                             | $O()$ | $O()$ |
 
 ## Two Pointers
 
-| LC#  | Title                     | Level  | Solved? | Time | Soln                                     |
-| ---- | ------------------------- | :----- | ------- | ---- | ---------------------------------------- |
-| 0125 | Valid Palindrome          | Easy   | &check; |      | [[0125-Valid Palindrome\|Link]]          |
-| 0015 | 3Sum                      | Medium | &check; |      | [[0015-3Sum\|Link]]                      |
-| 0011 | Container With Most Water | Medium | &check; |      | [[0011-Container With Most Water\|Link]] |
+| LC#  | Title                     | Level  | Solved? | Time | Soln                                     | T.C.  | S.C.  |
+| ---- | ------------------------- | :----- | ------- | ---- | ---------------------------------------- | ----- | ----- |
+| 0125 | Valid Palindrome          | Easy   | &check; |      | [[0125-Valid Palindrome\|Link]]          | $O()$ | $O()$ |
+| 0015 | 3Sum                      | Medium | &check; |      | [[0015-3Sum\|Link]]                      | $O()$ | $O()$ |
+| 0011 | Container With Most Water | Medium | &check; |      | [[0011-Container With Most Water\|Link]] | $O()$ | $O()$ |
 
 ## Math and Geometry
 
-| LC#  | Title             | Level  | Solved? | Time | Soln                             |
-| ---- | ----------------- | :----- | ------- | ---- | -------------------------------- |
-| 0048 | Rotate Image      | Medium | &check; |      | [[0048-Rotate Image\|Link]]      |
-| 0054 | Spiral Matrix     | Medium | &check; |      | [[0054-Spiral Matrix\|Link]]     |
-| 0073 | Set Matrix Zeroes | Medium | &check; |      | [[0073-Set Matrix Zeroes\|Link]] |
+| LC#  | Title             | Level  | Solved? | Time | Soln                             | T.C.  | S.C.  |
+| ---- | ----------------- | :----- | ------- | ---- | -------------------------------- | ----- | ----- |
+| 0048 | Rotate Image      | Medium | &check; |      | [[0048-Rotate Image\|Link]]      | $O()$ | $O()$ |
+| 0054 | Spiral Matrix     | Medium | &check; |      | [[0054-Spiral Matrix\|Link]]     | $O()$ | $O()$ |
+| 0073 | Set Matrix Zeroes | Medium | &check; |      | [[0073-Set Matrix Zeroes\|Link]] | $O()$ | $O()$ |
