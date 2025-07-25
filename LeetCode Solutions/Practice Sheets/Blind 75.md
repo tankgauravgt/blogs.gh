@@ -23,31 +23,31 @@ title: Blind 75
 
 ## Bit Manipulation
 
-| LC#  | Title               | Level  | Solved? | Time     | Soln                               | T.C.         | S.C.        |
-| ---- | ------------------- | :----- | ------- | -------- | ---------------------------------- | ------------ | ----------- |
-| 0191 | Number of 1 Bits    | Easy   | &check; | 00:02:17 | [[0191-Number of 1 Bits\|Link]]    | $O(\log N)$  | $O(1)$      |
-| 0338 | Counting Bits       | Easy   | &check; | 00:03:18 | [[0338-Counting Bits\|Link]]       | $O(N\log N)$ | $O(N)$      |
-| 0268 | Missing Number      | Easy   | &check; | 00:01:54 | [[0268-Missing Number\|Link]]      | $O(N)$       | $O(1)$      |
-| 0190 | Reverse Bits        | Easy   | &check; | 00:03:49 | [[0190-Reverse Bits\|Link]]        | $O(\log N)$  | $O(\log N)$ |
-| 0371 | Sum of Two Integers | Medium | &check; |          | [[0371-Sum of Two Integers\|Link]] | $O()$        | $O()$       |
+| LC#  | Title               | Level  | Solved? | Time     | Soln                               | T.C.   | S.C.   |
+| ---- | ------------------- | :----- | ------- | -------- | ---------------------------------- | ------ | ------ |
+| 0191 | Number of 1 Bits    | Easy   | &check; | 00:02:17 | [[0191-Number of 1 Bits\|Link]]    | $O(1)$ | $O(1)$ |
+| 0338 | Counting Bits       | Easy   | &check; | 00:03:18 | [[0338-Counting Bits\|Link]]       | $O(N)$ | $O(N)$ |
+| 0268 | Missing Number      | Easy   | &check; | 00:01:54 | [[0268-Missing Number\|Link]]      | $O(N)$ | $O(1)$ |
+| 0190 | Reverse Bits        | Easy   | &check; | 00:03:49 | [[0190-Reverse Bits\|Link]]        | $O(1)$ | $O(1)$ |
+| 0371 | Sum of Two Integers | Medium | &check; | 00:09:16 | [[0371-Sum of Two Integers\|Link]] | $O(1)$ | $O(1)$ |
 
 ## Dynamic Programming
 
-| LC#  | Title                          | Level  | Solved? | Time | Soln                                          | T.C.  | S.C.  |
-| ---- | ------------------------------ | :----- | ------- | ---- | --------------------------------------------- | ----- | ----- |
-| 0070 | Climbing Stairs                | Easy   | &check; |      | [[0070-Climbing Stairs\|Link]]                | $O()$ | $O()$ |
-| 0139 | Word Break                     | Easy   | &check; |      | [[0139-Word Break\|Link]]                     | $O()$ | $O()$ |
-| 0198 | House Robber                   | Medium | &check; |      | [[0198-House Robber\|Link]]                   | $O()$ | $O()$ |
-| 0322 | Coin Change                    | Medium | &check; |      | [[0322-Coin Change\|Link]]                    | $O()$ | $O()$ |
-| 0300 | Longest Increasing Subsequence | Medium | &check; |      | [[0300-Longest Increasing Subsequence\|Link]] | $O()$ | $O()$ |
-| 1143 | Longest Common Subsequence     | Medium | &check; |      | [[1143-Longest Common Subsequence\|Link]]     | $O()$ | $O()$ |
-| 0005 | Longest Palindromic Substring  | Medium | &check; |      | [[0005-Longest Palindromic Substring\|Link]]  | $O()$ | $O()$ |
-| 0152 | Maximum Product Subarray       | Medium | &check; |      | [[0152-Maximum Product Subarray\|Link]]       | $O()$ | $O()$ |
-| 0647 | Palindromic Substrings         | Medium | &check; |      | [[0647-Palindromic Substrings\|Link]]         | $O()$ | $O()$ |
-| 0377 | Combination Sum IV             | Medium | &check; |      | [[0377-Combination Sum IV\|Link]]             | $O()$ | $O()$ |
-| 0213 | House Robber II                | Medium | &check; |      | [[0213-House Robber II\|Link]]                | $O()$ | $O()$ |
-| 0091 | Decode Ways                    | Medium | &check; |      | [[0091-Decode Ways\|Link]]                    | $O()$ | $O()$ |
-| 0062 | Unique Paths                   | Medium | &check; |      | [[0062-Unique Paths\|Link]]                   | $O()$ | $O()$ |
+| LC#  | Title                          | Level  | Solved? | Time     | Soln                                          | T.C.                 | S.C.   |
+| ---- | ------------------------------ | :----- | ------- | -------- | --------------------------------------------- | -------------------- | ------ |
+| 0070 | Climbing Stairs                | Easy   | &check; | 00:02:21 | [[0070-Climbing Stairs\|Link]]                | $O(N)$               | $O(N)$ |
+| 0139 | Word Break                     | Easy   | &check; | 00:04:27 | [[0139-Word Break\|Link]]                     | $O(W_{max} \cdot N)$ | $O(N)$ |
+| 0198 | House Robber                   | Medium | &check; |          | [[0198-House Robber\|Link]]                   | $O()$                | $O()$  |
+| 0322 | Coin Change                    | Medium | &check; |          | [[0322-Coin Change\|Link]]                    | $O()$                | $O()$  |
+| 0300 | Longest Increasing Subsequence | Medium | &check; |          | [[0300-Longest Increasing Subsequence\|Link]] | $O()$                | $O()$  |
+| 1143 | Longest Common Subsequence     | Medium | &check; |          | [[1143-Longest Common Subsequence\|Link]]     | $O()$                | $O()$  |
+| 0005 | Longest Palindromic Substring  | Medium | &check; |          | [[0005-Longest Palindromic Substring\|Link]]  | $O()$                | $O()$  |
+| 0152 | Maximum Product Subarray       | Medium | &check; |          | [[0152-Maximum Product Subarray\|Link]]       | $O()$                | $O()$  |
+| 0647 | Palindromic Substrings         | Medium | &check; |          | [[0647-Palindromic Substrings\|Link]]         | $O()$                | $O()$  |
+| 0377 | Combination Sum IV             | Medium | &check; |          | [[0377-Combination Sum IV\|Link]]             | $O()$                | $O()$  |
+| 0213 | House Robber II                | Medium | &check; |          | [[0213-House Robber II\|Link]]                | $O()$                | $O()$  |
+| 0091 | Decode Ways                    | Medium | &check; |          | [[0091-Decode Ways\|Link]]                    | $O()$                | $O()$  |
+| 0062 | Unique Paths                   | Medium | &check; |          | [[0062-Unique Paths\|Link]]                   | $O()$                | $O()$  |
 
 ## Graphs
 
