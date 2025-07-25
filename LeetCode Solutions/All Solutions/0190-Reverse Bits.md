@@ -3,15 +3,10 @@ title: "0190: Reverse Bits"
 ---
 ```python
 class Solution:
-    def reverseBits(self, n):
-        bits = []
-        while n:
-            bits.append(n % 2)
-            n = n // 2
-        while len(bits) < 32:
-            bits.append(0)
-        count = 0
-        for n in bits:
-            count = 2 * count + n
-        return count
+    def reverseBits(self, n: int) -> int:
+        out = 0
+        for ix in range(31, -1, -1):
+            out = (out << 1) | (n & 1)
+            n = n >> 1
+        return out
 ```

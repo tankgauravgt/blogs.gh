@@ -12,24 +12,24 @@ title: Blind 75
 | 0238 | Product of Array Except Self | Medium | &check; | 00:07:15 | [[0238-Product of Array Except Self\|Link]] | $O(N)$                | $O(N)$         |
 | 0049 | Group Anagrams               | Medium | &check; | 00:03:27 | [[0049-Group Anagrams\|Link]]               | $O(N \cdot K \log K)$ | $O(N \cdot K)$ |
 | 0271 | Encode and Decode Strings    | Medium | &check; | 00:04:51 | [[0271-Encode and Decode Strings\|Link]]    | $O(N)$                | $O(N)$         |
-| 0347 | Top K Frequent Elements      | Medium | &check; |          | [[0347-Top K Frequent Elements\|Link]]      | $O(N\log N)$          | $O(N)$         |
+| 0347 | Top K Frequent Elements      | Medium | &check; | 00:05:16 | [[0347-Top K Frequent Elements\|Link]]      | $O(N)$                | $O(N)$         |
 
 ## Binary Search
 
-| LC#  | Title                                | Level  | Solved? | Time | Soln                                                | T.C.        | S.C.        |
-| ---- | ------------------------------------ | :----- | ------- | ---- | --------------------------------------------------- | ----------- | ----------- |
-| 0153 | Find Minimum in Rotated Sorted Array | Medium | &check; |      | [[0153-Find Minimum in Rotated Sorted Array\|Link]] | $O(\log N)$ | $O(\log N)$ |
-| 0033 | Search in Rotated Sorted Array       | Medium | &check; |      | [[0033-Search in Rotated Sorted Array\|Link]]       | $O(\log N)$ | $O(\log N)$ |
+| LC#  | Title                                | Level  | Solved? | Time     | Soln                                                | T.C.        | S.C.        |
+| ---- | ------------------------------------ | :----- | ------- | -------- | --------------------------------------------------- | ----------- | ----------- |
+| 0153 | Find Minimum in Rotated Sorted Array | Medium | &check; | 00:04:16 | [[0153-Find Minimum in Rotated Sorted Array\|Link]] | $O(\log N)$ | $O(\log N)$ |
+| 0033 | Search in Rotated Sorted Array       | Medium | &check; | 00:11:03 | [[0033-Search in Rotated Sorted Array\|Link]]       | $O(\log N)$ | $O(\log N)$ |
 
 ## Bit Manipulation
 
-| LC#  | Title               | Level  | Solved? | Time | Soln                               | T.C.  | S.C.  |
-| ---- | ------------------- | :----- | ------- | ---- | ---------------------------------- | ----- | ----- |
-| 0191 | Number of 1 Bits    | Easy   | &check; |      | [[0191-Number of 1 Bits\|Link]]    | $O()$ | $O()$ |
-| 0338 | Counting Bits       | Easy   | &check; |      | [[0338-Counting Bits\|Link]]       | $O()$ | $O()$ |
-| 0268 | Missing Number      | Easy   | &check; |      | [[0268-Missing Number\|Link]]      | $O()$ | $O()$ |
-| 0190 | Reverse Bits        | Easy   | &check; |      | [[0190-Reverse Bits\|Link]]        | $O()$ | $O()$ |
-| 0371 | Sum of Two Integers | Medium | &check; |      | [[0371-Sum of Two Integers\|Link]] | $O()$ | $O()$ |
+| LC#  | Title               | Level  | Solved? | Time     | Soln                               | T.C.         | S.C.        |
+| ---- | ------------------- | :----- | ------- | -------- | ---------------------------------- | ------------ | ----------- |
+| 0191 | Number of 1 Bits    | Easy   | &check; | 00:02:17 | [[0191-Number of 1 Bits\|Link]]    | $O(\log N)$  | $O(1)$      |
+| 0338 | Counting Bits       | Easy   | &check; | 00:03:18 | [[0338-Counting Bits\|Link]]       | $O(N\log N)$ | $O(N)$      |
+| 0268 | Missing Number      | Easy   | &check; | 00:01:54 | [[0268-Missing Number\|Link]]      | $O(N)$       | $O(1)$      |
+| 0190 | Reverse Bits        | Easy   | &check; | 00:03:49 | [[0190-Reverse Bits\|Link]]        | $O(\log N)$  | $O(\log N)$ |
+| 0371 | Sum of Two Integers | Medium | &check; |          | [[0371-Sum of Two Integers\|Link]] | $O()$        | $O()$       |
 
 ## Dynamic Programming
 
