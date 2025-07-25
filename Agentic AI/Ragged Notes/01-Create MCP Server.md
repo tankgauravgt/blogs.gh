@@ -1,5 +1,5 @@
 ---
-title: Create MCP Server
+title: "Agentic AI: Create MCP Server"
 ---
 # Create First MCP Server
 

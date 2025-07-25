@@ -1,5 +1,5 @@
 ---
-title: Create MCP Client
+title: "Agentic AI: Create MCP Client"
 ---
 # Create First MCP Client
 
