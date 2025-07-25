@@ -3,11 +3,11 @@ title: Create MCP Server
 ---
 # Create First MCP Server
 
-## 00: Primer:
+## Note
 
 In this article, we will create an MCP server with **"streamable-http"** transport. The reason behind this selection is due to it's scalability, portability and ease of integration.
 
-## 01: Setup Project
+## Setup Project
 
 ### Step 1: Download and Install `uv` Package Manager
 
@@ -33,7 +33,7 @@ source .venv/bin/activate # (use `.venv\Scripts\activate` for windows)
 uv pip install fastmcp
 ```
 
-## 03: Write Tools Exposed by MCP Server
+## Write Tools Exposed by MCP Server
 
 ```python
 from fastmcp import FastMCP
@@ -90,6 +90,6 @@ if __name__ == "__main__":
     )
 ```
 
-## 04: Done
+## Done
 
 MCP server will start running at `http://localhost:8000/mcp`

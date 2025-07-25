@@ -1,5 +1,5 @@
 ---
-title: "02: Create MCP Client"
+title: Create MCP Client
 ---
 # Create First MCP Client
 
