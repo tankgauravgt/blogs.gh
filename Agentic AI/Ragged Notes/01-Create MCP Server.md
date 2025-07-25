@@ -5,7 +5,7 @@ title: Create MCP Server
 
 ## 00: Primer:
 
-Here we will create an MCP server with **"streamable-http"** transport. Reason behind this selection is due to it's portability, scalability and ease of integration.
+In this article, we will create an MCP server with **"streamable-http"** transport. The reason behind this selection is due to it's scalability, portability and ease of integration.
 
 ## 01: Setup Project
 
