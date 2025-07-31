@@ -1,0 +1,1110 @@
+{
+  "vaultName": "GT Notes",
+  "lastExport": 1753674321086,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon is-fullscreen",
+  "useCustomHeadContent": true,
+  "useCustomFavicon": true,
+  "files": [
+    "Agentic AI/Ragged Notes/02-Create MCP Client.md",
+    "Agentic AI/Ragged Notes/01-Create MCP Server.md",
+    "Agentic AI/index.md",
+    "LeetCode Solutions/All Solutions/0001-Two Sum.md",
+    "LeetCode Solutions/All Solutions/0002-Add Two Numbers.md",
+    "LeetCode Solutions/All Solutions/0003-Longest Substring Without Repeating Characters.md",
+    "LeetCode Solutions/All Solutions/0004-Median of Two Sorted Arrays.md",
+    "LeetCode Solutions/All Solutions/0005-Longest Palindromic Substring.md",
+    "LeetCode Solutions/All Solutions/0006-Zigzag Conversion.md",
+    "LeetCode Solutions/All Solutions/0007-Reverse Integer.md",
+    "LeetCode Solutions/All Solutions/0008-String to Integer (atoi).md",
+    "LeetCode Solutions/All Solutions/0009-Palindrome Number.md",
+    "LeetCode Solutions/All Solutions/0010-Regular Expression Matching.md",
+    "LeetCode Solutions/All Solutions/0011-Container With Most Water.md",
+    "LeetCode Solutions/All Solutions/0012-Integer to Roman.md",
+    "LeetCode Solutions/All Solutions/0013-Roman to Integer.md",
+    "LeetCode Solutions/All Solutions/0014-Longest Common Prefix.md",
+    "LeetCode Solutions/All Solutions/0015-3Sum.md",
+    "LeetCode Solutions/All Solutions/0016-3Sum Closest.md",
+    "LeetCode Solutions/All Solutions/0017-Letter Combinations of a Phone Number.md",
+    "LeetCode Solutions/All Solutions/0018-4Sum.md",
+    "LeetCode Solutions/All Solutions/0019-Remove Nth Node From End of List.md",
+    "LeetCode Solutions/All Solutions/0020-Valid Parentheses.md",
+    "LeetCode Solutions/All Solutions/0021-Merge Two Sorted Lists.md",
+    "LeetCode Solutions/All Solutions/0022-Generate Parentheses.md",
+    "LeetCode Solutions/All Solutions/0023-Merge k Sorted Lists.md",
+    "LeetCode Solutions/All Solutions/0024-Swap Nodes in Pairs.md",
+    "LeetCode Solutions/All Solutions/0025-Reverse Nodes in k-Group.md",
+    "LeetCode Solutions/All Solutions/0026-Remove Duplicates from Sorted Array.md",
+    "LeetCode Solutions/All Solutions/0027-Remove Element.md",
+    "LeetCode Solutions/All Solutions/0028-Find the Index of the First Occurrence in a String.md",
+    "LeetCode Solutions/All Solutions/0029-Divide Two Integers.md",
+    "LeetCode Solutions/All Solutions/0030-Substring with Concatenation of All Words.md",
+    "LeetCode Solutions/All Solutions/0033-Search in Rotated Sorted Array.md",
+    "LeetCode Solutions/All Solutions/0048-Rotate Image.md",
+    "LeetCode Solutions/All Solutions/0049-Group Anagrams.md",
+    "LeetCode Solutions/All Solutions/0053-Maximum Subarray.md",
+    "LeetCode Solutions/All Solutions/0054-Spiral Matrix.md",
+    "LeetCode Solutions/All Solutions/0055-Jump Game.md",
+    "LeetCode Solutions/All Solutions/0056-Merge Intervals.md",
+    "LeetCode Solutions/All Solutions/0057-Insert Interval.md",
+    "LeetCode Solutions/All Solutions/0062-Unique Paths.md",
+    "LeetCode Solutions/All Solutions/0070-Climbing Stairs.md",
+    "LeetCode Solutions/All Solutions/0073-Set Matrix Zeroes.md",
+    "LeetCode Solutions/All Solutions/0076-Minimum Window Substring.md",
+    "LeetCode Solutions/All Solutions/0091-Decode Ways.md",
+    "LeetCode Solutions/All Solutions/0098-Validate Binary Search Tree.md",
+    "LeetCode Solutions/All Solutions/0100-Same Tree.md",
+    "LeetCode Solutions/All Solutions/0102-Binary Tree Level Order Traversal.md",
+    "LeetCode Solutions/All Solutions/0104-Maximum Depth of Binary Tree.md",
+    "LeetCode Solutions/All Solutions/0105-Construct Binary Tree from Preorder and Inorder Traversal.md",
+    "LeetCode Solutions/All Solutions/0121-Best Time to Buy and Sell Stock.md",
+    "LeetCode Solutions/All Solutions/0124-Binary Tree Maximum Path Sum.md",
+    "LeetCode Solutions/All Solutions/0125-Valid Palindrome.md",
+    "LeetCode Solutions/All Solutions/0128-Longest Consecutive Sequence.md",
+    "LeetCode Solutions/All Solutions/0133-Clone Graph.md",
+    "LeetCode Solutions/All Solutions/0139-Word Break.md",
+    "LeetCode Solutions/All Solutions/0141-Linked List Cycle.md",
+    "LeetCode Solutions/All Solutions/0143-Reorder List.md",
+    "LeetCode Solutions/All Solutions/0152-Maximum Product Subarray.md",
+    "LeetCode Solutions/All Solutions/0153-Find Minimum in Rotated Sorted Array.md",
+    "LeetCode Solutions/All Solutions/0190-Reverse Bits.md",
+    "LeetCode Solutions/All Solutions/0191-Number of 1 Bits.md",
+    "LeetCode Solutions/All Solutions/0198-House Robber.md",
+    "LeetCode Solutions/All Solutions/0200-Number of Islands.md",
+    "LeetCode Solutions/All Solutions/0206-Reverse Linked List.md",
+    "LeetCode Solutions/All Solutions/0207-Course Schedule.md",
+    "LeetCode Solutions/All Solutions/0208-Implement Trie (Prefix Tree).md",
+    "LeetCode Solutions/All Solutions/0211-Design Add and Search Words Data Structure.md",
+    "LeetCode Solutions/All Solutions/0212-Word Search II.md",
+    "LeetCode Solutions/All Solutions/0213-House Robber II.md",
+    "LeetCode Solutions/All Solutions/0217-Contains Duplicate.md",
+    "LeetCode Solutions/All Solutions/0226-Invert Binary Tree.md",
+    "LeetCode Solutions/All Solutions/0230-Kth Smallest Element in a BST.md",
+    "LeetCode Solutions/All Solutions/0235-Lowest Common Ancestor of a Binary Search Tree.md",
+    "LeetCode Solutions/All Solutions/0238-Product of Array Except Self.md",
+    "LeetCode Solutions/All Solutions/0242-Valid Anagram.md",
+    "LeetCode Solutions/All Solutions/0252-Meeting Rooms.md",
+    "LeetCode Solutions/All Solutions/0253-Meeting Rooms II.md",
+    "LeetCode Solutions/All Solutions/0261-Graph Valid Tree.md",
+    "LeetCode Solutions/All Solutions/0268-Missing Number.md",
+    "LeetCode Solutions/All Solutions/0269-Alien Dictionary.md",
+    "LeetCode Solutions/All Solutions/0271-Encode and Decode Strings.md",
+    "LeetCode Solutions/All Solutions/0295-Find Median from Data Stream.md",
+    "LeetCode Solutions/All Solutions/0297-Serialize and Deserialize Binary Tree.md",
+    "LeetCode Solutions/All Solutions/0300-Longest Increasing Subsequence.md",
+    "LeetCode Solutions/All Solutions/0322-Coin Change.md",
+    "LeetCode Solutions/All Solutions/0323-Number of Connected Components in an Undirected Graph.md",
+    "LeetCode Solutions/All Solutions/0338-Counting Bits.md",
+    "LeetCode Solutions/All Solutions/0347-Top K Frequent Elements.md",
+    "LeetCode Solutions/All Solutions/0371-Sum of Two Integers.md",
+    "LeetCode Solutions/All Solutions/0377-Combination Sum IV.md",
+    "LeetCode Solutions/All Solutions/0417-Pacific Atlantic Water Flow.md",
+    "LeetCode Solutions/All Solutions/0424-Longest Repeating Character Replacement.md",
+    "LeetCode Solutions/All Solutions/0435-Non-overlapping Intervals.md",
+    "LeetCode Solutions/All Solutions/0572-Subtree of Another Tree.md",
+    "LeetCode Solutions/All Solutions/0647-Palindromic Substrings.md",
+    "LeetCode Solutions/All Solutions/1143-Longest Common Subsequence.md",
+    "LeetCode Solutions/Practice Sheets/Blind 75.md",
+    "LeetCode Solutions/index.md",
+    "Machine Learning/HuggingFace - LLM Course.md",
+    "Machine Learning/index.md",
+    "System Design/index.md",
+    "index.md",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/6155340132a851f6089e.svg",
+    "lib/fonts/mathjax_zero.woff",
+    "lib/fonts/mathjax_main-regular.woff",
+    "lib/fonts/mathjax_main-bold.woff",
+    "lib/fonts/mathjax_math-italic.woff",
+    "lib/fonts/mathjax_main-italic.woff",
+    "lib/fonts/mathjax_math-bolditalic.woff",
+    "lib/fonts/mathjax_size1-regular.woff",
+    "lib/fonts/mathjax_size2-regular.woff",
+    "lib/fonts/mathjax_size3-regular.woff",
+    "lib/fonts/mathjax_size4-regular.woff",
+    "lib/fonts/mathjax_ams-regular.woff",
+    "lib/fonts/mathjax_calligraphic-regular.woff",
+    "lib/fonts/mathjax_calligraphic-bold.woff",
+    "lib/fonts/mathjax_fraktur-regular.woff",
+    "lib/fonts/mathjax_fraktur-bold.woff",
+    "lib/fonts/mathjax_sansserif-regular.woff",
+    "lib/fonts/mathjax_sansserif-bold.woff",
+    "lib/fonts/mathjax_sansserif-italic.woff",
+    "lib/fonts/mathjax_script-regular.woff",
+    "lib/fonts/mathjax_typewriter-regular.woff",
+    "lib/fonts/mathjax_vector-regular.woff",
+    "lib/fonts/mathjax_vector-bold.woff",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/html/custom-head-content.html",
+    "lib/styles/obsidian.css",
+    "lib/styles/other-plugins.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css"
+  ],
+  "mainDependencies": [
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/6155340132a851f6089e.svg",
+    "lib/fonts/mathjax_zero.woff",
+    "lib/fonts/mathjax_main-regular.woff",
+    "lib/fonts/mathjax_main-bold.woff",
+    "lib/fonts/mathjax_math-italic.woff",
+    "lib/fonts/mathjax_main-italic.woff",
+    "lib/fonts/mathjax_math-bolditalic.woff",
+    "lib/fonts/mathjax_size1-regular.woff",
+    "lib/fonts/mathjax_size2-regular.woff",
+    "lib/fonts/mathjax_size3-regular.woff",
+    "lib/fonts/mathjax_size4-regular.woff",
+    "lib/fonts/mathjax_ams-regular.woff",
+    "lib/fonts/mathjax_calligraphic-regular.woff",
+    "lib/fonts/mathjax_calligraphic-bold.woff",
+    "lib/fonts/mathjax_fraktur-regular.woff",
+    "lib/fonts/mathjax_fraktur-bold.woff",
+    "lib/fonts/mathjax_sansserif-regular.woff",
+    "lib/fonts/mathjax_sansserif-bold.woff",
+    "lib/fonts/mathjax_sansserif-italic.woff",
+    "lib/fonts/mathjax_script-regular.woff",
+    "lib/fonts/mathjax_typewriter-regular.woff",
+    "lib/fonts/mathjax_vector-regular.woff",
+    "lib/fonts/mathjax_vector-bold.woff",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/html/custom-head-content.html",
+    "lib/styles/obsidian.css",
+    "lib/styles/other-plugins.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css"
+  ],
+  "fileInfo": {
+    "LeetCode Solutions/All Solutions/0001-Two Sum.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 329,
+      "exportedPath": "leetcode-solutions/all-solutions/0001-two-sum.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0002-Add Two Numbers.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 769,
+      "exportedPath": "leetcode-solutions/all-solutions/0002-add-two-numbers.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0003-Longest Substring Without Repeating Characters.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 524,
+      "exportedPath": "leetcode-solutions/all-solutions/0003-longest-substring-without-repeating-characters.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0004-Median of Two Sorted Arrays.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1454,
+      "exportedPath": "leetcode-solutions/all-solutions/0004-median-of-two-sorted-arrays.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0005-Longest Palindromic Substring.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 800,
+      "exportedPath": "leetcode-solutions/all-solutions/0005-longest-palindromic-substring.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0006-Zigzag Conversion.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 478,
+      "exportedPath": "leetcode-solutions/all-solutions/0006-zigzag-conversion.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0007-Reverse Integer.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 804,
+      "exportedPath": "leetcode-solutions/all-solutions/0007-reverse-integer.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0008-String to Integer (atoi).md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 733,
+      "exportedPath": "leetcode-solutions/all-solutions/0008-string-to-integer-(atoi).html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0009-Palindrome Number.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 305,
+      "exportedPath": "leetcode-solutions/all-solutions/0009-palindrome-number.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0010-Regular Expression Matching.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1047,
+      "exportedPath": "leetcode-solutions/all-solutions/0010-regular-expression-matching.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0011-Container With Most Water.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 566,
+      "exportedPath": "leetcode-solutions/all-solutions/0011-container-with-most-water.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0012-Integer to Roman.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 589,
+      "exportedPath": "leetcode-solutions/all-solutions/0012-integer-to-roman.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0013-Roman to Integer.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 984,
+      "exportedPath": "leetcode-solutions/all-solutions/0013-roman-to-integer.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0014-Longest Common Prefix.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 294,
+      "exportedPath": "leetcode-solutions/all-solutions/0014-longest-common-prefix.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0015-3Sum.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1041,
+      "exportedPath": "leetcode-solutions/all-solutions/0015-3sum.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0016-3Sum Closest.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 588,
+      "exportedPath": "leetcode-solutions/all-solutions/0016-3sum-closest.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0017-Letter Combinations of a Phone Number.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 756,
+      "exportedPath": "leetcode-solutions/all-solutions/0017-letter-combinations-of-a-phone-number.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0018-4Sum.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1486,
+      "exportedPath": "leetcode-solutions/all-solutions/0018-4sum.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0019-Remove Nth Node From End of List.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 448,
+      "exportedPath": "leetcode-solutions/all-solutions/0019-remove-nth-node-from-end-of-list.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0020-Valid Parentheses.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 602,
+      "exportedPath": "leetcode-solutions/all-solutions/0020-valid-parentheses.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0021-Merge Two Sorted Lists.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 627,
+      "exportedPath": "leetcode-solutions/all-solutions/0021-merge-two-sorted-lists.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0022-Generate Parentheses.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 622,
+      "exportedPath": "leetcode-solutions/all-solutions/0022-generate-parentheses.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0023-Merge k Sorted Lists.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 761,
+      "exportedPath": "leetcode-solutions/all-solutions/0023-merge-k-sorted-lists.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0024-Swap Nodes in Pairs.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 473,
+      "exportedPath": "leetcode-solutions/all-solutions/0024-swap-nodes-in-pairs.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0025-Reverse Nodes in k-Group.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 709,
+      "exportedPath": "leetcode-solutions/all-solutions/0025-reverse-nodes-in-k-group.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0026-Remove Duplicates from Sorted Array.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 440,
+      "exportedPath": "leetcode-solutions/all-solutions/0026-remove-duplicates-from-sorted-array.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0027-Remove Element.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 387,
+      "exportedPath": "leetcode-solutions/all-solutions/0027-remove-element.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0028-Find the Index of the First Occurrence in a String.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 360,
+      "exportedPath": "leetcode-solutions/all-solutions/0028-find-the-index-of-the-first-occurrence-in-a-string.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0029-Divide Two Integers.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 734,
+      "exportedPath": "leetcode-solutions/all-solutions/0029-divide-two-integers.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0030-Substring with Concatenation of All Words.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1040,
+      "exportedPath": "leetcode-solutions/all-solutions/0030-substring-with-concatenation-of-all-words.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0033-Search in Rotated Sorted Array.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1113,
+      "exportedPath": "leetcode-solutions/all-solutions/0033-search-in-rotated-sorted-array.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0048-Rotate Image.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 293,
+      "exportedPath": "leetcode-solutions/all-solutions/0048-rotate-image.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0049-Group Anagrams.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 344,
+      "exportedPath": "leetcode-solutions/all-solutions/0049-group-anagrams.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0053-Maximum Subarray.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 313,
+      "exportedPath": "leetcode-solutions/all-solutions/0053-maximum-subarray.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0054-Spiral Matrix.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1203,
+      "exportedPath": "leetcode-solutions/all-solutions/0054-spiral-matrix.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0055-Jump Game.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 291,
+      "exportedPath": "leetcode-solutions/all-solutions/0055-jump-game.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0056-Merge Intervals.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 482,
+      "exportedPath": "leetcode-solutions/all-solutions/0056-merge-intervals.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0057-Insert Interval.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 556,
+      "exportedPath": "leetcode-solutions/all-solutions/0057-insert-interval.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0062-Unique Paths.md": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 441,
+      "exportedPath": "leetcode-solutions/all-solutions/0062-unique-paths.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0070-Climbing Stairs.md": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 346,
+      "exportedPath": "leetcode-solutions/all-solutions/0070-climbing-stairs.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0073-Set Matrix Zeroes.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1077,
+      "exportedPath": "leetcode-solutions/all-solutions/0073-set-matrix-zeroes.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0076-Minimum Window Substring.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 621,
+      "exportedPath": "leetcode-solutions/all-solutions/0076-minimum-window-substring.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0091-Decode Ways.md": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 482,
+      "exportedPath": "leetcode-solutions/all-solutions/0091-decode-ways.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0098-Validate Binary Search Tree.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 425,
+      "exportedPath": "leetcode-solutions/all-solutions/0098-validate-binary-search-tree.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0100-Same Tree.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 367,
+      "exportedPath": "leetcode-solutions/all-solutions/0100-same-tree.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0102-Binary Tree Level Order Traversal.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 581,
+      "exportedPath": "leetcode-solutions/all-solutions/0102-binary-tree-level-order-traversal.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0104-Maximum Depth of Binary Tree.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 285,
+      "exportedPath": "leetcode-solutions/all-solutions/0104-maximum-depth-of-binary-tree.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0105-Construct Binary Tree from Preorder and Inorder Traversal.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 467,
+      "exportedPath": "leetcode-solutions/all-solutions/0105-construct-binary-tree-from-preorder-and-inorder-traversal.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0121-Best Time to Buy and Sell Stock.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 279,
+      "exportedPath": "leetcode-solutions/all-solutions/0121-best-time-to-buy-and-sell-stock.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0124-Binary Tree Maximum Path Sum.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 479,
+      "exportedPath": "leetcode-solutions/all-solutions/0124-binary-tree-maximum-path-sum.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0125-Valid Palindrome.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 208,
+      "exportedPath": "leetcode-solutions/all-solutions/0125-valid-palindrome.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0128-Longest Consecutive Sequence.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 406,
+      "exportedPath": "leetcode-solutions/all-solutions/0128-longest-consecutive-sequence.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0133-Clone Graph.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 649,
+      "exportedPath": "leetcode-solutions/all-solutions/0133-clone-graph.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0139-Word Break.md": {
+      "modifiedTime": 1753461655524,
+      "sourceSize": 487,
+      "exportedPath": "leetcode-solutions/all-solutions/0139-word-break.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0141-Linked List Cycle.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 408,
+      "exportedPath": "leetcode-solutions/all-solutions/0141-linked-list-cycle.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0143-Reorder List.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 916,
+      "exportedPath": "leetcode-solutions/all-solutions/0143-reorder-list.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0152-Maximum Product Subarray.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 437,
+      "exportedPath": "leetcode-solutions/all-solutions/0152-maximum-product-subarray.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0153-Find Minimum in Rotated Sorted Array.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 693,
+      "exportedPath": "leetcode-solutions/all-solutions/0153-find-minimum-in-rotated-sorted-array.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0190-Reverse Bits.md": {
+      "modifiedTime": 1753461655524,
+      "sourceSize": 268,
+      "exportedPath": "leetcode-solutions/all-solutions/0190-reverse-bits.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0191-Number of 1 Bits.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 205,
+      "exportedPath": "leetcode-solutions/all-solutions/0191-number-of-1-bits.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0198-House Robber.md": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 391,
+      "exportedPath": "leetcode-solutions/all-solutions/0198-house-robber.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0200-Number of Islands.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 960,
+      "exportedPath": "leetcode-solutions/all-solutions/0200-number-of-islands.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0206-Reverse Linked List.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 386,
+      "exportedPath": "leetcode-solutions/all-solutions/0206-reverse-linked-list.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0207-Course Schedule.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 867,
+      "exportedPath": "leetcode-solutions/all-solutions/0207-course-schedule.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0208-Implement Trie (Prefix Tree).md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 924,
+      "exportedPath": "leetcode-solutions/all-solutions/0208-implement-trie-(prefix-tree).html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0211-Design Add and Search Words Data Structure.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1143,
+      "exportedPath": "leetcode-solutions/all-solutions/0211-design-add-and-search-words-data-structure.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0212-Word Search II.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1470,
+      "exportedPath": "leetcode-solutions/all-solutions/0212-word-search-ii.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0213-House Robber II.md": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 415,
+      "exportedPath": "leetcode-solutions/all-solutions/0213-house-robber-ii.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0217-Contains Duplicate.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 257,
+      "exportedPath": "leetcode-solutions/all-solutions/0217-contains-duplicate.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0226-Invert Binary Tree.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 391,
+      "exportedPath": "leetcode-solutions/all-solutions/0226-invert-binary-tree.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0230-Kth Smallest Element in a BST.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 468,
+      "exportedPath": "leetcode-solutions/all-solutions/0230-kth-smallest-element-in-a-bst.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0235-Lowest Common Ancestor of a Binary Search Tree.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 502,
+      "exportedPath": "leetcode-solutions/all-solutions/0235-lowest-common-ancestor-of-a-binary-search-tree.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0238-Product of Array Except Self.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 406,
+      "exportedPath": "leetcode-solutions/all-solutions/0238-product-of-array-except-self.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0242-Valid Anagram.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 224,
+      "exportedPath": "leetcode-solutions/all-solutions/0242-valid-anagram.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0252-Meeting Rooms.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 429,
+      "exportedPath": "leetcode-solutions/all-solutions/0252-meeting-rooms.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0253-Meeting Rooms II.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 471,
+      "exportedPath": "leetcode-solutions/all-solutions/0253-meeting-rooms-ii.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0261-Graph Valid Tree.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 612,
+      "exportedPath": "leetcode-solutions/all-solutions/0261-graph-valid-tree.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0268-Missing Number.md": {
+      "modifiedTime": 1753461655524,
+      "sourceSize": 173,
+      "exportedPath": "leetcode-solutions/all-solutions/0268-missing-number.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0269-Alien Dictionary.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1164,
+      "exportedPath": "leetcode-solutions/all-solutions/0269-alien-dictionary.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0271-Encode and Decode Strings.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 475,
+      "exportedPath": "leetcode-solutions/all-solutions/0271-encode-and-decode-strings.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0295-Find Median from Data Stream.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 819,
+      "exportedPath": "leetcode-solutions/all-solutions/0295-find-median-from-data-stream.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0297-Serialize and Deserialize Binary Tree.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 763,
+      "exportedPath": "leetcode-solutions/all-solutions/0297-serialize-and-deserialize-binary-tree.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0300-Longest Increasing Subsequence.md": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 822,
+      "exportedPath": "leetcode-solutions/all-solutions/0300-longest-increasing-subsequence.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0322-Coin Change.md": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 457,
+      "exportedPath": "leetcode-solutions/all-solutions/0322-coin-change.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0323-Number of Connected Components in an Undirected Graph.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 853,
+      "exportedPath": "leetcode-solutions/all-solutions/0323-number-of-connected-components-in-an-undirected-graph.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0338-Counting Bits.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 303,
+      "exportedPath": "leetcode-solutions/all-solutions/0338-counting-bits.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0347-Top K Frequent Elements.md": {
+      "modifiedTime": 1753461655524,
+      "sourceSize": 532,
+      "exportedPath": "leetcode-solutions/all-solutions/0347-top-k-frequent-elements.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0371-Sum of Two Integers.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 395,
+      "exportedPath": "leetcode-solutions/all-solutions/0371-sum-of-two-integers.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0377-Combination Sum IV.md": {
+      "modifiedTime": 1753461655524,
+      "sourceSize": 442,
+      "exportedPath": "leetcode-solutions/all-solutions/0377-combination-sum-iv.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0417-Pacific Atlantic Water Flow.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 1087,
+      "exportedPath": "leetcode-solutions/all-solutions/0417-pacific-atlantic-water-flow.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0424-Longest Repeating Character Replacement.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 502,
+      "exportedPath": "leetcode-solutions/all-solutions/0424-longest-repeating-character-replacement.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0435-Non-overlapping Intervals.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 466,
+      "exportedPath": "leetcode-solutions/all-solutions/0435-non-overlapping-intervals.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0572-Subtree of Another Tree.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 492,
+      "exportedPath": "leetcode-solutions/all-solutions/0572-subtree-of-another-tree.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/0647-Palindromic Substrings.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 663,
+      "exportedPath": "leetcode-solutions/all-solutions/0647-palindromic-substrings.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/All Solutions/1143-Longest Common Subsequence.md": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 606,
+      "exportedPath": "leetcode-solutions/all-solutions/1143-longest-common-subsequence.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/Practice Sheets/Blind 75.md": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 15577,
+      "exportedPath": "leetcode-solutions/practice-sheets/blind-75.html",
+      "dependencies": []
+    },
+    "LeetCode Solutions/index.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 7671,
+      "exportedPath": "leetcode-solutions/index.html",
+      "dependencies": []
+    },
+    "Machine Learning/HuggingFace - LLM Course.md": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 20805,
+      "exportedPath": "machine-learning/huggingface-llm-course.html",
+      "dependencies": []
+    },
+    "Machine Learning/index.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 95,
+      "exportedPath": "machine-learning/index.html",
+      "dependencies": []
+    },
+    "System Design/index.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 38,
+      "exportedPath": "system-design/index.html",
+      "dependencies": []
+    },
+    "index.md": {
+      "modifiedTime": 1753445789227,
+      "sourceSize": 256,
+      "exportedPath": "index.html",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/6155340132a851f6089e.svg": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 315,
+      "exportedPath": "lib/media/6155340132a851f6089e.svg",
+      "dependencies": []
+    },
+    "lib/html/file-tree.html": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 85639,
+      "exportedPath": "lib/html/file-tree.html",
+      "dependencies": []
+    },
+    "lib/scripts/webpage.js": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 47290,
+      "exportedPath": "lib/scripts/webpage.js",
+      "dependencies": []
+    },
+    "lib/media/favicon.png": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 48407,
+      "exportedPath": "lib/media/favicon.png",
+      "dependencies": []
+    },
+    "lib/html/custom-head-content.html": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 88,
+      "exportedPath": "lib/html/custom-head-content.html",
+      "dependencies": []
+    },
+    "lib/styles/obsidian.css": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 138258,
+      "exportedPath": "lib/styles/obsidian.css",
+      "dependencies": []
+    },
+    "lib/styles/global-variable-styles.css": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 262,
+      "exportedPath": "lib/styles/global-variable-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/supported-plugins.css": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 1637,
+      "exportedPath": "lib/styles/supported-plugins.css",
+      "dependencies": []
+    },
+    "lib/styles/main-styles.css": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 23130,
+      "exportedPath": "lib/styles/main-styles.css",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_zero.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 1368,
+      "exportedPath": "lib/fonts/mathjax_zero.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 34160,
+      "exportedPath": "lib/fonts/mathjax_main-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-bold.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 34464,
+      "exportedPath": "lib/fonts/mathjax_main-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_math-italic.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 19360,
+      "exportedPath": "lib/fonts/mathjax_math-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-italic.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 20832,
+      "exportedPath": "lib/fonts/mathjax_main-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_math-bolditalic.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 19776,
+      "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size1-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 5792,
+      "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size2-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 5464,
+      "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size3-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 3244,
+      "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size4-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 5148,
+      "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_ams-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 40808,
+      "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_calligraphic-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 9600,
+      "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_calligraphic-bold.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 9908,
+      "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_fraktur-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 21480,
+      "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_fraktur-bold.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 22340,
+      "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 12660,
+      "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-bold.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 15944,
+      "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-italic.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 14628,
+      "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_script-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 11852,
+      "exportedPath": "lib/fonts/mathjax_script-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_typewriter-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 17604,
+      "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_vector-regular.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 1136,
+      "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_vector-bold.woff": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 1116,
+      "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
+      "dependencies": []
+    },
+    "Agentic AI/index.md": {
+      "modifiedTime": 1753465607440,
+      "sourceSize": 149,
+      "exportedPath": "agentic-ai/index.html",
+      "dependencies": []
+    },
+    "lib/scripts/minisearch.js": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 29422,
+      "exportedPath": "lib/scripts/minisearch.js",
+      "dependencies": []
+    },
+    "lib/styles/other-plugins.css": {
+      "modifiedTime": 1753674321086,
+      "sourceSize": 12962,
+      "exportedPath": "lib/styles/other-plugins.css",
+      "dependencies": []
+    },
+    "Agentic AI/Ragged Notes/01-Create MCP Server.md": {
+      "modifiedTime": 1753465607440,
+      "sourceSize": 2413,
+      "exportedPath": "agentic-ai/ragged-notes/01-create-mcp-server.html",
+      "dependencies": []
+    },
+    "Agentic AI/Ragged Notes/02-Create MCP Client.md": {
+      "modifiedTime": 1753465607440,
+      "sourceSize": 171,
+      "exportedPath": "agentic-ai/ragged-notes/02-create-mcp-client.html",
+      "dependencies": []
+    }
+  }
+}

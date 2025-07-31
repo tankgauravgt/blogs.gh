@@ -1,0 +1,14 @@
+.obsidian
+CNAME
+
+/CNAME
+**/.DS_Store
+.DS_Store
+
+# remove vscode specific files
+.vscode
+.vscode/*
+
+# remove github copilot files
+.github/copilot.yml
+.github/copilot/**
