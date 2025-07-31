@@ -128,8 +128,6 @@ e2e_model([
 
 #### Model: BaseAutoEncodingModel
 
-![Transformer Basic Block](https://raw.githubusercontent.com/tankgauravgt/blogs.gh/refs/heads/images/auto-encoding-transformer-architecture.svg)
-
 ```python
 # Model: BaseAutoEncodingModel
 BaseAutoEncodingModel(
