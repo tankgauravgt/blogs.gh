@@ -1,0 +1,23 @@
+---
+title: "Revision Sheet: Data Structures"
+---
+- Arrays
+- Matrices
+- Strings
+- Linked Lists
+- Stacks
+- Queues
+- Deques
+- Sets
+- Hash Tables
+- Trees
+- BSTs
+- Tries
+- Heaps
+- Graphs
+- Segment Trees
+- Fenwick Trees
+- Disjoint Sets
+- Monotonic Stacks
+- Monotonic Queues
+- Skip Lists
