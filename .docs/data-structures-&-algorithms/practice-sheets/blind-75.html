@@ -1,0 +1,982 @@
+<!DOCTYPE html> <html lang="en"><head>
+<title>Blind 75</title>
+<base href="../..">
+<meta name="pathname" content="data-structures-&amp;-algorithms/practice-sheets/blind-75.html">
+<meta name="description" content="GT Notes - Blind 75">
+<meta property="og:title" content="Blind 75">
+<meta property="og:description" content="GT Notes - Blind 75">
+<meta property="og:type" content="website">
+<meta property="og:url" content="data-structures-&amp;-algorithms/practice-sheets/blind-75.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="GT Notes"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.png"><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="preload" href="site-lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/other-plugins.css"></noscript><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/supported-plugins.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script></head><body class="publish css-settings-manager show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="parsed-feature-container" style="display: contents;"><link itemprop="include" href="site-lib/html/custom-head-content-content.html"></div><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><div id="search-container"><div id="search-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div aria-label="Clear search" id="search-clear-button"></div></div></div></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"><link itemprop="include" href="site-lib/html/file-tree-content.html"></div></div><script defer="">let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles">mjx-c.mjx-c1D43E.TEX-I::before{padding:.683em .889em 0 0;content:"K"}mjx-c.mjx-c1D44A.TEX-I::before{padding:.683em 1.048em .022em 0;content:"W"}mjx-c.mjx-c1D45A.TEX-I::before{padding:.442em .878em .011em 0;content:"m"}mjx-c.mjx-c1D44E.TEX-I::before{padding:.441em .529em .01em 0;content:"a"}mjx-c.mjx-c1D465.TEX-I::before{padding:.442em .572em .011em 0;content:"x"}mjx-container[jax=CHTML]{line-height:0}mjx-container [space="1"]{margin-left:.111em}mjx-container [space="2"]{margin-left:.167em}mjx-container [space="3"]{margin-left:.222em}mjx-container [space="4"]{margin-left:.278em}mjx-container [space="5"]{margin-left:.333em}mjx-container [rspace="1"]{margin-right:.111em}mjx-container [rspace="2"]{margin-right:.167em}mjx-container [rspace="3"]{margin-right:.222em}mjx-container [rspace="4"]{margin-right:.278em}mjx-container [rspace="5"]{margin-right:.333em}mjx-container [size="s"]{font-size:70.7%}mjx-container [size=ss]{font-size:50%}mjx-container [size=Tn]{font-size:60%}mjx-container [size=sm]{font-size:85%}mjx-container [size=lg]{font-size:120%}mjx-container [size=Lg]{font-size:144%}mjx-container [size=LG]{font-size:173%}mjx-container [size=hg]{font-size:207%}mjx-container [size=HG]{font-size:249%}mjx-container [width=full]{width:100%}mjx-box{display:inline-block}mjx-block{display:block}mjx-itable{display:inline-table}mjx-row{display:table-row}mjx-row>*{display:table-cell}mjx-mtext{display:inline-block}mjx-mstyle{display:inline-block}mjx-merror{display:inline-block;color:red;background-color:#ff0}mjx-mphantom{visibility:hidden}mjx-assistive-mml{top:0;left:0;clip:rect(1px,1px,1px,1px);user-select:none;position:absolute!important;padding:1px 0 0!important;border:0!important;display:block!important;width:auto!important;overflow:hidden!important}mjx-assistive-mml[display=block]{width:100%!important}mjx-math{display:inline-block;text-align:left;line-height:0;text-indent:0;font-style:normal;font-weight:400;font-size:100%;font-size-adjust:none;letter-spacing:normal;border-collapse:collapse;overflow-wrap:normal;word-spacing:normal;white-space:nowrap;direction:ltr;padding:1px 0}mjx-container[jax=CHTML][display=true]{display:block;text-align:center;margin:1em 0}mjx-container[jax=CHTML][display=true][width=full]{display:flex}mjx-container[jax=CHTML][display=true] mjx-math{padding:0}mjx-container[jax=CHTML][justify=left]{text-align:left}mjx-container[jax=CHTML][justify=right]{text-align:right}mjx-mi{display:inline-block;text-align:left}mjx-c{display:inline-block}mjx-utext{display:inline-block;padding:.75em 0 .2em}mjx-mo{display:inline-block;text-align:left}mjx-stretchy-h{display:inline-table;width:100%}mjx-stretchy-h>*{display:table-cell;width:0}mjx-stretchy-h>*>mjx-c{display:inline-block;transform:scaleX(1)}mjx-stretchy-h>*>mjx-c::before{display:inline-block;width:initial}mjx-stretchy-h>mjx-ext{overflow:clip visible;width:100%}mjx-stretchy-h>mjx-ext>mjx-c::before{transform:scaleX(500)}mjx-stretchy-h>mjx-ext>mjx-c{width:0}mjx-stretchy-h>mjx-beg>mjx-c{margin-right:-.1em}mjx-stretchy-h>mjx-end>mjx-c{margin-left:-.1em}mjx-stretchy-v{display:inline-block}mjx-stretchy-v>*{display:block}mjx-stretchy-v>mjx-beg{height:0}mjx-stretchy-v>mjx-end>mjx-c{display:block}mjx-stretchy-v>*>mjx-c{transform:scaleY(1);transform-origin:left center;overflow:hidden}mjx-stretchy-v>mjx-ext{display:block;height:100%;box-sizing:border-box;border:0 solid transparent;overflow:visible clip}mjx-stretchy-v>mjx-ext>mjx-c::before{width:initial;box-sizing:border-box}mjx-stretchy-v>mjx-ext>mjx-c{transform:scaleY(500) translateY(.075em);overflow:visible}mjx-mark{display:inline-block;height:0}mjx-msub{display:inline-block;text-align:left}mjx-texatom{display:inline-block;text-align:left}mjx-mn{display:inline-block;text-align:left}mjx-msup{display:inline-block;text-align:left}mjx-mrow{display:inline-block;text-align:left}mjx-mfrac{display:inline-block;text-align:left}mjx-frac{display:inline-block;vertical-align:.17em;padding:0 .22em}mjx-frac[type="d"]{vertical-align:.04em}mjx-frac[delims]{padding:0 .1em}mjx-frac[atop]{padding:0 .12em}mjx-frac[atop][delims]{padding:0}mjx-dtable{display:inline-table;width:100%}mjx-dtable>*{font-size:2000%}mjx-dbox{display:block;font-size:5%}mjx-num{display:block;text-align:center}mjx-den{display:block;text-align:center}mjx-mfrac[bevelled]>mjx-num{display:inline-block}mjx-mfrac[bevelled]>mjx-den{display:inline-block}mjx-den[align=right],mjx-num[align=right]{text-align:right}mjx-den[align=left],mjx-num[align=left]{text-align:left}mjx-nstrut{display:inline-block;height:.054em;width:0;vertical-align:-.054em}mjx-nstrut[type="d"]{height:.217em;vertical-align:-.217em}mjx-dstrut{display:inline-block;height:.505em;width:0}mjx-dstrut[type="d"]{height:.726em}mjx-line{display:block;box-sizing:border-box;min-height:1px;height:.06em;border-top:.06em solid;margin:.06em -.1em;overflow:hidden}mjx-line[type="d"]{margin:.18em -.1em}mjx-c::before{display:block;width:0}.MJX-TEX{font-family:MJXZERO,MJXTEX}.TEX-B{font-family:MJXZERO,MJXTEX-B}.TEX-I{font-family:MJXZERO,MJXTEX-I}.TEX-MI{font-family:MJXZERO,MJXTEX-MI}.TEX-BI{font-family:MJXZERO,MJXTEX-BI}.TEX-S1{font-family:MJXZERO,MJXTEX-S1}.TEX-S2{font-family:MJXZERO,MJXTEX-S2}.TEX-S3{font-family:MJXZERO,MJXTEX-S3}.TEX-S4{font-family:MJXZERO,MJXTEX-S4}.TEX-A{font-family:MJXZERO,MJXTEX-A}.TEX-C{font-family:MJXZERO,MJXTEX-C}.TEX-CB{font-family:MJXZERO,MJXTEX-CB}.TEX-FR{font-family:MJXZERO,MJXTEX-FR}.TEX-FRB{font-family:MJXZERO,MJXTEX-FRB}.TEX-SS{font-family:MJXZERO,MJXTEX-SS}.TEX-SSB{font-family:MJXZERO,MJXTEX-SSB}.TEX-SSI{font-family:MJXZERO,MJXTEX-SSI}.TEX-SC{font-family:MJXZERO,MJXTEX-SC}.TEX-T{font-family:MJXZERO,MJXTEX-T}.TEX-V{font-family:MJXZERO,MJXTEX-V}.TEX-VB{font-family:MJXZERO,MJXTEX-VB}mjx-stretchy-h mjx-c,mjx-stretchy-v mjx-c{font-family:MJXZERO,MJXTEX-S1,MJXTEX-S4,MJXTEX,MJXTEX-A!important}@font-face{font-family:MJXZERO;src:url("site-lib/fonts/mathjax_zero.woff") format("woff")}@font-face{font-family:MJXTEX;src:url("site-lib/fonts/mathjax_main-regular.woff") format("woff")}@font-face{font-family:MJXTEX-B;src:url("site-lib/fonts/mathjax_main-bold.woff") format("woff")}@font-face{font-family:MJXTEX-I;src:url("site-lib/fonts/mathjax_math-italic.woff") format("woff")}@font-face{font-family:MJXTEX-MI;src:url("site-lib/fonts/mathjax_main-italic.woff") format("woff")}@font-face{font-family:MJXTEX-BI;src:url("site-lib/fonts/mathjax_math-bolditalic.woff") format("woff")}@font-face{font-family:MJXTEX-S1;src:url("site-lib/fonts/mathjax_size1-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S2;src:url("site-lib/fonts/mathjax_size2-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S3;src:url("site-lib/fonts/mathjax_size3-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S4;src:url("site-lib/fonts/mathjax_size4-regular.woff") format("woff")}@font-face{font-family:MJXTEX-A;src:url("site-lib/fonts/mathjax_ams-regular.woff") format("woff")}@font-face{font-family:MJXTEX-C;src:url("site-lib/fonts/mathjax_calligraphic-regular.woff") format("woff")}@font-face{font-family:MJXTEX-CB;src:url("site-lib/fonts/mathjax_calligraphic-bold.woff") format("woff")}@font-face{font-family:MJXTEX-FR;src:url("site-lib/fonts/mathjax_fraktur-regular.woff") format("woff")}@font-face{font-family:MJXTEX-FRB;src:url("site-lib/fonts/mathjax_fraktur-bold.woff") format("woff")}@font-face{font-family:MJXTEX-SS;src:url("site-lib/fonts/mathjax_sansserif-regular.woff") format("woff")}@font-face{font-family:MJXTEX-SSB;src:url("site-lib/fonts/mathjax_sansserif-bold.woff") format("woff")}@font-face{font-family:MJXTEX-SSI;src:url("site-lib/fonts/mathjax_sansserif-italic.woff") format("woff")}@font-face{font-family:MJXTEX-SC;src:url("site-lib/fonts/mathjax_script-regular.woff") format("woff")}@font-face{font-family:MJXTEX-T;src:url("site-lib/fonts/mathjax_typewriter-regular.woff") format("woff")}@font-face{font-family:MJXTEX-V;src:url("site-lib/fonts/mathjax_vector-regular.woff") format("woff")}@font-face{font-family:MJXTEX-VB;src:url("site-lib/fonts/mathjax_vector-bold.woff") format("woff")}mjx-c.mjx-c1D442.TEX-I::before{padding:.704em .763em .022em 0;content:"O"}mjx-c.mjx-c28::before{padding:.75em .389em .25em 0;content:"("}mjx-c.mjx-c1D441.TEX-I::before{padding:.683em .888em 0 0;content:"N"}mjx-c.mjx-c29::before{padding:.75em .389em .25em 0;content:")"}mjx-c.mjx-c6C::before{padding:.694em .278em 0 0;content:"l"}mjx-c.mjx-c6F::before{padding:.448em .5em .01em 0;content:"o"}mjx-c.mjx-c67::before{padding:.453em .5em .206em 0;content:"g"}mjx-c.mjx-c2061::before{padding:0;content:""}mjx-c.mjx-c6D::before{padding:.442em .833em 0 0;content:"m"}mjx-c.mjx-c69::before{padding:.669em .278em 0 0;content:"i"}mjx-c.mjx-c6E::before{padding:.442em .556em 0 0;content:"n"}mjx-c.mjx-c31::before{padding:.666em .5em 0 0;content:"1"}mjx-c.mjx-c2C::before{padding:.121em .278em .194em 0;content:","}mjx-c.mjx-c32::before{padding:.666em .5em 0 0;content:"2"}mjx-c.mjx-c1D440.TEX-I::before{padding:.683em 1.051em 0 0;content:"M"}mjx-c.mjx-c22C5::before{padding:.31em .278em 0 0;content:"⋅"}mjx-c.mjx-c33::before{padding:.665em .5em .022em 0;content:"3"}mjx-c.mjx-c34::before{padding:.677em .5em 0 0;content:"4"}mjx-c.mjx-c2B::before{padding:.583em .778em .082em 0;content:"+"}mjx-c.mjx-c28.TEX-S4::before{padding:1.75em .792em 1.249em 0;content:"("}mjx-c.mjx-c28.TEX-S1::before{padding:.85em .458em .349em 0;content:"("}mjx-c.mjx-c29.TEX-S1::before{padding:.85em .458em .349em 0;content:")"}mjx-c.mjx-c29.TEX-S4::before{padding:1.75em .792em 1.249em 0;content:")"}mjx-c.mjx-c3A3::before{padding:.683em .722em 0 0;content:"Σ"}mjx-c.mjx-c2212::before{padding:.583em .778em .082em 0;content:"−"}mjx-c.mjx-c1D43F.TEX-I::before{padding:.683em .681em 0 0;content:"L"}</style><pre class="frontmatter language-yaml" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">title</span><span class="token punctuation">:</span> Blind 75</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="Blind_75_0">Blind 75</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-h2"><h2 data-heading="Array and Hashing" dir="auto" class="heading" id="Array_and_Hashing_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Array and Hashing</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0001</td>
+<td dir="ltr">Two Sum</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:02:34</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0001-Two Sum" data-href="Data Structures &amp; Algorithms/All Problems/0001-Two Sum" href="data-structures-&amp;-algorithms/all-problems/0001-two-sum.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0242</td>
+<td dir="ltr">Valid Anagram</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:01:46</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0242-Valid Anagram" data-href="Data Structures &amp; Algorithms/All Problems/0242-Valid Anagram" href="data-structures-&amp;-algorithms/all-problems/0242-valid-anagram.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0217</td>
+<td dir="ltr">Contains Duplicate</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:02:09</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0217-Contains Duplicate" data-href="Data Structures &amp; Algorithms/All Problems/0217-Contains Duplicate" href="data-structures-&amp;-algorithms/all-problems/0217-contains-duplicate.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0238</td>
+<td dir="ltr">Product of Array Except Self</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:07:15</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0238-Product of Array Except Self" data-href="Data Structures &amp; Algorithms/All Problems/0238-Product of Array Except Self" href="data-structures-&amp;-algorithms/all-problems/0238-product-of-array-except-self.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0049</td>
+<td dir="ltr">Group Anagrams</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:03:27</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0049-Group Anagrams" data-href="Data Structures &amp; Algorithms/All Problems/0049-Group Anagrams" href="data-structures-&amp;-algorithms/all-problems/0049-group-anagrams.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D43E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-n" space="2"><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2061"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D43E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D43E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0271</td>
+<td dir="ltr">Encode and Decode Strings</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:04:51</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0271-Encode and Decode Strings" data-href="Data Structures &amp; Algorithms/All Problems/0271-Encode and Decode Strings" href="data-structures-&amp;-algorithms/all-problems/0271-encode-and-decode-strings.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0347</td>
+<td dir="ltr">Top K Frequent Elements</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:05:16</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0347-Top K Frequent Elements" data-href="Data Structures &amp; Algorithms/All Problems/0347-Top K Frequent Elements" href="data-structures-&amp;-algorithms/all-problems/0347-top-k-frequent-elements.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Binary Search" dir="auto" class="heading" id="Binary_Search_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Binary Search</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0153</td>
+<td dir="ltr">Find Minimum in Rotated Sorted Array</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:04:16</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0153-Find Minimum in Rotated Sorted Array" data-href="Data Structures &amp; Algorithms/All Problems/0153-Find Minimum in Rotated Sorted Array" href="data-structures-&amp;-algorithms/all-problems/0153-find-minimum-in-rotated-sorted-array.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-n"><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2061"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-n"><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2061"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0033</td>
+<td dir="ltr">Search in Rotated Sorted Array</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:11:03</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0033-Search in Rotated Sorted Array" data-href="Data Structures &amp; Algorithms/All Problems/0033-Search in Rotated Sorted Array" href="data-structures-&amp;-algorithms/all-problems/0033-search-in-rotated-sorted-array.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-n"><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2061"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-n"><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2061"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Bit Manipulation" dir="auto" class="heading" id="Bit_Manipulation_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Bit Manipulation</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0191</td>
+<td dir="ltr">Number of 1 Bits</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:02:17</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0191-Number of 1 Bits" data-href="Data Structures &amp; Algorithms/All Problems/0191-Number of 1 Bits" href="data-structures-&amp;-algorithms/all-problems/0191-number-of-1-bits.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0338</td>
+<td dir="ltr">Counting Bits</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:03:18</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0338-Counting Bits" data-href="Data Structures &amp; Algorithms/All Problems/0338-Counting Bits" href="data-structures-&amp;-algorithms/all-problems/0338-counting-bits.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0268</td>
+<td dir="ltr">Missing Number</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:01:54</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0268-Missing Number" data-href="Data Structures &amp; Algorithms/All Problems/0268-Missing Number" href="data-structures-&amp;-algorithms/all-problems/0268-missing-number.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0190</td>
+<td dir="ltr">Reverse Bits</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:03:49</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0190-Reverse Bits" data-href="Data Structures &amp; Algorithms/All Problems/0190-Reverse Bits" href="data-structures-&amp;-algorithms/all-problems/0190-reverse-bits.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0371</td>
+<td dir="ltr">Sum of Two Integers</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:09:16</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0371-Sum of Two Integers" data-href="Data Structures &amp; Algorithms/All Problems/0371-Sum of Two Integers" href="data-structures-&amp;-algorithms/all-problems/0371-sum-of-two-integers.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Dynamic Programming" dir="auto" class="heading" id="Dynamic_Programming_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Dynamic Programming</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0070</td>
+<td dir="ltr">Climbing Stairs</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:02:21</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0070-Climbing Stairs" data-href="Data Structures &amp; Algorithms/All Problems/0070-Climbing Stairs" href="data-structures-&amp;-algorithms/all-problems/0070-climbing-stairs.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0139</td>
+<td dir="ltr">Word Break</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:04:27</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0139-Word Break" data-href="Data Structures &amp; Algorithms/All Problems/0139-Word Break" href="data-structures-&amp;-algorithms/all-problems/0139-word-break.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.104em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0198</td>
+<td dir="ltr">House Robber</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:06:23</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0198-House Robber" data-href="Data Structures &amp; Algorithms/All Problems/0198-House Robber" href="data-structures-&amp;-algorithms/all-problems/0198-house-robber.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0322</td>
+<td dir="ltr">Coin Change</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:06:42</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0322-Coin Change" data-href="Data Structures &amp; Algorithms/All Problems/0322-Coin Change" href="data-structures-&amp;-algorithms/all-problems/0322-coin-change.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0300</td>
+<td dir="ltr">Longest Increasing Subsequence</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:23:51</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0300-Longest Increasing Subsequence" data-href="Data Structures &amp; Algorithms/All Problems/0300-Longest Increasing Subsequence" href="data-structures-&amp;-algorithms/all-problems/0300-longest-increasing-subsequence.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">1143</td>
+<td dir="ltr">Longest Common Subsequence</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:08:34</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/1143-Longest Common Subsequence" data-href="Data Structures &amp; Algorithms/All Problems/1143-Longest Common Subsequence" href="data-structures-&amp;-algorithms/all-problems/1143-longest-common-subsequence.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0005</td>
+<td dir="ltr">Longest Palindromic Substring</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:06:57</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0005-Longest Palindromic Substring" data-href="Data Structures &amp; Algorithms/All Problems/0005-Longest Palindromic Substring" href="data-structures-&amp;-algorithms/all-problems/0005-longest-palindromic-substring.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0152</td>
+<td dir="ltr">Maximum Product Subarray</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:05:34</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0152-Maximum Product Subarray" data-href="Data Structures &amp; Algorithms/All Problems/0152-Maximum Product Subarray" href="data-structures-&amp;-algorithms/all-problems/0152-maximum-product-subarray.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0647</td>
+<td dir="ltr">Palindromic Substrings</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0647-Palindromic Substrings" data-href="Data Structures &amp; Algorithms/All Problems/0647-Palindromic Substrings" href="data-structures-&amp;-algorithms/all-problems/0647-palindromic-substrings.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0377</td>
+<td dir="ltr">Combination Sum IV</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0377-Combination Sum IV" data-href="Data Structures &amp; Algorithms/All Problems/0377-Combination Sum IV" href="data-structures-&amp;-algorithms/all-problems/0377-combination-sum-iv.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0213</td>
+<td dir="ltr">House Robber II</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:04:52</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0213-House Robber II" data-href="Data Structures &amp; Algorithms/All Problems/0213-House Robber II" href="data-structures-&amp;-algorithms/all-problems/0213-house-robber-ii.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0091</td>
+<td dir="ltr">Decode Ways</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto">00:08:29</td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0091-Decode Ways" data-href="Data Structures &amp; Algorithms/All Problems/0091-Decode Ways" href="data-structures-&amp;-algorithms/all-problems/0091-decode-ways.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0062</td>
+<td dir="ltr">Unique Paths</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0062-Unique Paths" data-href="Data Structures &amp; Algorithms/All Problems/0062-Unique Paths" href="data-structures-&amp;-algorithms/all-problems/0062-unique-paths.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Graphs" dir="auto" class="heading" id="Graphs_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Graphs</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0133</td>
+<td dir="ltr">Clone Graph</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0133-Clone Graph" data-href="Data Structures &amp; Algorithms/All Problems/0133-Clone Graph" href="data-structures-&amp;-algorithms/all-problems/0133-clone-graph.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0207</td>
+<td dir="ltr">Course Schedule</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0207-Course Schedule" data-href="Data Structures &amp; Algorithms/All Problems/0207-Course Schedule" href="data-structures-&amp;-algorithms/all-problems/0207-course-schedule.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0417</td>
+<td dir="ltr">Pacific Atlantic Water Flow</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0417-Pacific Atlantic Water Flow" data-href="Data Structures &amp; Algorithms/All Problems/0417-Pacific Atlantic Water Flow" href="data-structures-&amp;-algorithms/all-problems/0417-pacific-atlantic-water-flow.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0200</td>
+<td dir="ltr">Number of Islands</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0200-Number of Islands" data-href="Data Structures &amp; Algorithms/All Problems/0200-Number of Islands" href="data-structures-&amp;-algorithms/all-problems/0200-number-of-islands.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0128</td>
+<td dir="ltr">Longest Consecutive Sequence</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0128-Longest Consecutive Sequence" data-href="Data Structures &amp; Algorithms/All Problems/0128-Longest Consecutive Sequence" href="data-structures-&amp;-algorithms/all-problems/0128-longest-consecutive-sequence.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0269</td>
+<td dir="ltr">Alien Dictionary</td>
+<td align="left" dir="ltr">Hard</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0269-Alien Dictionary" data-href="Data Structures &amp; Algorithms/All Problems/0269-Alien Dictionary" href="data-structures-&amp;-algorithms/all-problems/0269-alien-dictionary.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0261</td>
+<td dir="ltr">Graph Valid Tree</td>
+<td align="left" dir="ltr">Hard</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0261-Graph Valid Tree" data-href="Data Structures &amp; Algorithms/All Problems/0261-Graph Valid Tree" href="data-structures-&amp;-algorithms/all-problems/0261-graph-valid-tree.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0323</td>
+<td dir="ltr">Number of Connected Components in an Undirected Graph</td>
+<td align="left" dir="ltr">Hard</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0323-Number of Connected Components in an Undirected Graph" data-href="Data Structures &amp; Algorithms/All Problems/0323-Number of Connected Components in an Undirected Graph" href="data-structures-&amp;-algorithms/all-problems/0323-number-of-connected-components-in-an-undirected-graph.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Greedy" dir="auto" class="heading" id="Greedy_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Greedy</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0055</td>
+<td dir="ltr">Jump Game</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0055-Jump Game" data-href="Data Structures &amp; Algorithms/All Problems/0055-Jump Game" href="data-structures-&amp;-algorithms/all-problems/0055-jump-game.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0053</td>
+<td dir="ltr">Maximum Subarray</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0053-Maximum Subarray" data-href="Data Structures &amp; Algorithms/All Problems/0053-Maximum Subarray" href="data-structures-&amp;-algorithms/all-problems/0053-maximum-subarray.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Heaps" dir="auto" class="heading" id="Heaps_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Heaps</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0295</td>
+<td dir="ltr">Find Median from Data Stream</td>
+<td align="left" dir="ltr">Hard</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0295-Find Median from Data Stream" data-href="Data Structures &amp; Algorithms/All Problems/0295-Find Median from Data Stream" href="data-structures-&amp;-algorithms/all-problems/0295-find-median-from-data-stream.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Intervals" dir="auto" class="heading" id="Intervals_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Intervals</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0252</td>
+<td dir="ltr">Meeting Rooms</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0252-Meeting Rooms" data-href="Data Structures &amp; Algorithms/All Problems/0252-Meeting Rooms" href="data-structures-&amp;-algorithms/all-problems/0252-meeting-rooms.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0057</td>
+<td dir="ltr">Insert Interval</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0057-Insert Interval" data-href="Data Structures &amp; Algorithms/All Problems/0057-Insert Interval" href="data-structures-&amp;-algorithms/all-problems/0057-insert-interval.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0056</td>
+<td dir="ltr">Merge Intervals</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0056-Merge Intervals" data-href="Data Structures &amp; Algorithms/All Problems/0056-Merge Intervals" href="data-structures-&amp;-algorithms/all-problems/0056-merge-intervals.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0435</td>
+<td dir="ltr">Non-overlapping Intervals</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0435-Non-overlapping Intervals" data-href="Data Structures &amp; Algorithms/All Problems/0435-Non-overlapping Intervals" href="data-structures-&amp;-algorithms/all-problems/0435-non-overlapping-intervals.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0253</td>
+<td dir="ltr">Meeting Rooms II</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0253-Meeting Rooms II" data-href="Data Structures &amp; Algorithms/All Problems/0253-Meeting Rooms II" href="data-structures-&amp;-algorithms/all-problems/0253-meeting-rooms-ii.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Linked Lists" dir="auto" class="heading" id="Linked_Lists_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Linked Lists</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0206</td>
+<td dir="ltr">Reverse Linked List</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0206-Reverse Linked List" data-href="Data Structures &amp; Algorithms/All Problems/0206-Reverse Linked List" href="data-structures-&amp;-algorithms/all-problems/0206-reverse-linked-list.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0141</td>
+<td dir="ltr">Linked List Cycle</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0141-Linked List Cycle" data-href="Data Structures &amp; Algorithms/All Problems/0141-Linked List Cycle" href="data-structures-&amp;-algorithms/all-problems/0141-linked-list-cycle.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0021</td>
+<td dir="ltr">Merge Two Sorted Lists</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0021-Merge Two Sorted Lists" data-href="Data Structures &amp; Algorithms/All Problems/0021-Merge Two Sorted Lists" href="data-structures-&amp;-algorithms/all-problems/0021-merge-two-sorted-lists.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0019</td>
+<td dir="ltr">Remove Nth Node From End of List</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0019-Remove Nth Node From End of List" data-href="Data Structures &amp; Algorithms/All Problems/0019-Remove Nth Node From End of List" href="data-structures-&amp;-algorithms/all-problems/0019-remove-nth-node-from-end-of-list.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0143</td>
+<td dir="ltr">Reorder List</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0143-Reorder List" data-href="Data Structures &amp; Algorithms/All Problems/0143-Reorder List" href="data-structures-&amp;-algorithms/all-problems/0143-reorder-list.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0023</td>
+<td dir="ltr">Merge k Sorted Lists</td>
+<td align="left" dir="ltr">Hard</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0023-Merge k Sorted Lists" data-href="Data Structures &amp; Algorithms/All Problems/0023-Merge k Sorted Lists" href="data-structures-&amp;-algorithms/all-problems/0023-merge-k-sorted-lists.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Sliding Window" dir="auto" class="heading" id="Sliding_Window_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Sliding Window</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0121</td>
+<td dir="ltr">Best Time to Buy and Sell Stock</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0121-Best Time to Buy and Sell Stock" data-href="Data Structures &amp; Algorithms/All Problems/0121-Best Time to Buy and Sell Stock" href="data-structures-&amp;-algorithms/all-problems/0121-best-time-to-buy-and-sell-stock.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0424</td>
+<td dir="ltr">Longest Repeating Character Replacement</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0424-Longest Repeating Character Replacement" data-href="Data Structures &amp; Algorithms/All Problems/0424-Longest Repeating Character Replacement" href="data-structures-&amp;-algorithms/all-problems/0424-longest-repeating-character-replacement.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0003</td>
+<td dir="ltr">Longest Substring Without Repeating Characters</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0003-Longest Substring Without Repeating Characters" data-href="Data Structures &amp; Algorithms/All Problems/0003-Longest Substring Without Repeating Characters" href="data-structures-&amp;-algorithms/all-problems/0003-longest-substring-without-repeating-characters.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0076</td>
+<td dir="ltr">Minimum Window Substring</td>
+<td align="left" dir="ltr">Hard</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0076-Minimum Window Substring" data-href="Data Structures &amp; Algorithms/All Problems/0076-Minimum Window Substring" href="data-structures-&amp;-algorithms/all-problems/0076-minimum-window-substring.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Stacks" dir="auto" class="heading" id="Stacks_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Stacks</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0020</td>
+<td dir="ltr">Valid Parentheses</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0020-Valid Parentheses" data-href="Data Structures &amp; Algorithms/All Problems/0020-Valid Parentheses" href="data-structures-&amp;-algorithms/all-problems/0020-valid-parentheses.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Trees" dir="auto" class="heading" id="Trees_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Trees</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0104</td>
+<td dir="ltr">Maximum Depth of Binary Tree</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0104-Maximum Depth of Binary Tree" data-href="Data Structures &amp; Algorithms/All Problems/0104-Maximum Depth of Binary Tree" href="data-structures-&amp;-algorithms/all-problems/0104-maximum-depth-of-binary-tree.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0100</td>
+<td dir="ltr">Same Tree</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0100-Same Tree" data-href="Data Structures &amp; Algorithms/All Problems/0100-Same Tree" href="data-structures-&amp;-algorithms/all-problems/0100-same-tree.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0226</td>
+<td dir="ltr">Invert Binary Tree</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0226-Invert Binary Tree" data-href="Data Structures &amp; Algorithms/All Problems/0226-Invert Binary Tree" href="data-structures-&amp;-algorithms/all-problems/0226-invert-binary-tree.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0572</td>
+<td dir="ltr">Subtree of Another Tree</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0572-Subtree of Another Tree" data-href="Data Structures &amp; Algorithms/All Problems/0572-Subtree of Another Tree" href="data-structures-&amp;-algorithms/all-problems/0572-subtree-of-another-tree.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0102</td>
+<td dir="ltr">Binary Tree Level Order Traversal</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0102-Binary Tree Level Order Traversal" data-href="Data Structures &amp; Algorithms/All Problems/0102-Binary Tree Level Order Traversal" href="data-structures-&amp;-algorithms/all-problems/0102-binary-tree-level-order-traversal.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0105</td>
+<td dir="ltr">Construct Binary Tree from Preorder and Inorder Traversal</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0105-Construct Binary Tree from Preorder and Inorder Traversal" data-href="Data Structures &amp; Algorithms/All Problems/0105-Construct Binary Tree from Preorder and Inorder Traversal" href="data-structures-&amp;-algorithms/all-problems/0105-construct-binary-tree-from-preorder-and-inorder-traversal.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0098</td>
+<td dir="ltr">Validate Binary Search Tree</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0098-Validate Binary Search Tree" data-href="Data Structures &amp; Algorithms/All Problems/0098-Validate Binary Search Tree" href="data-structures-&amp;-algorithms/all-problems/0098-validate-binary-search-tree.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0230</td>
+<td dir="ltr">Kth Smallest Element in a BST</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0230-Kth Smallest Element in a BST" data-href="Data Structures &amp; Algorithms/All Problems/0230-Kth Smallest Element in a BST" href="data-structures-&amp;-algorithms/all-problems/0230-kth-smallest-element-in-a-bst.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0235</td>
+<td dir="ltr">Lowest Common Ancestor of a Binary Search Tree</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0235-Lowest Common Ancestor of a Binary Search Tree" data-href="Data Structures &amp; Algorithms/All Problems/0235-Lowest Common Ancestor of a Binary Search Tree" href="data-structures-&amp;-algorithms/all-problems/0235-lowest-common-ancestor-of-a-binary-search-tree.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0124</td>
+<td dir="ltr">Binary Tree Maximum Path Sum</td>
+<td align="left" dir="ltr">Hard</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0124-Binary Tree Maximum Path Sum" data-href="Data Structures &amp; Algorithms/All Problems/0124-Binary Tree Maximum Path Sum" href="data-structures-&amp;-algorithms/all-problems/0124-binary-tree-maximum-path-sum.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0297</td>
+<td dir="ltr">Serialize and Deserialize Binary Tree</td>
+<td align="left" dir="ltr">Hard</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0297-Serialize and Deserialize Binary Tree" data-href="Data Structures &amp; Algorithms/All Problems/0297-Serialize and Deserialize Binary Tree" href="data-structures-&amp;-algorithms/all-problems/0297-serialize-and-deserialize-binary-tree.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Tries" dir="auto" class="heading" id="Tries_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Tries</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0208</td>
+<td dir="ltr">Implement Trie (Prefix Tree)</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0208-Implement Trie (Prefix Tree)" data-href="Data Structures &amp; Algorithms/All Problems/0208-Implement Trie (Prefix Tree)" href="data-structures-&amp;-algorithms/all-problems/0208-implement-trie-(prefix-tree).html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0211</td>
+<td dir="ltr">Design Add and Search Words Data Structure</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0211-Design Add and Search Words Data Structure" data-href="Data Structures &amp; Algorithms/All Problems/0211-Design Add and Search Words Data Structure" href="data-structures-&amp;-algorithms/all-problems/0211-design-add-and-search-words-data-structure.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0212</td>
+<td dir="ltr">Word Search II</td>
+<td align="left" dir="ltr">Hard</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0212-Word Search II" data-href="Data Structures &amp; Algorithms/All Problems/0212-Word Search II" href="data-structures-&amp;-algorithms/all-problems/0212-word-search-ii.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Two Pointers" dir="auto" class="heading" id="Two_Pointers_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Two Pointers</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0125</td>
+<td dir="ltr">Valid Palindrome</td>
+<td align="left" dir="ltr">Easy</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0125-Valid Palindrome" data-href="Data Structures &amp; Algorithms/All Problems/0125-Valid Palindrome" href="data-structures-&amp;-algorithms/all-problems/0125-valid-palindrome.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0015</td>
+<td dir="ltr">3Sum</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0015-3Sum" data-href="Data Structures &amp; Algorithms/All Problems/0015-3Sum" href="data-structures-&amp;-algorithms/all-problems/0015-3sum.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0011</td>
+<td dir="ltr">Container With Most Water</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0011-Container With Most Water" data-href="Data Structures &amp; Algorithms/All Problems/0011-Container With Most Water" href="data-structures-&amp;-algorithms/all-problems/0011-container-with-most-water.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-h2"><h2 data-heading="Math and Geometry" dir="auto" class="heading" id="Math_and_Geometry_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Math and Geometry</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">LC#</th>
+<th dir="ltr">Title</th>
+<th align="left" dir="ltr">Level</th>
+<th dir="ltr">Solved?</th>
+<th dir="ltr">Time</th>
+<th dir="ltr">Soln</th>
+<th dir="ltr">T.C.</th>
+<th dir="ltr">S.C.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0048</td>
+<td dir="ltr">Rotate Image</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0048-Rotate Image" data-href="Data Structures &amp; Algorithms/All Problems/0048-Rotate Image" href="data-structures-&amp;-algorithms/all-problems/0048-rotate-image.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0054</td>
+<td dir="ltr">Spiral Matrix</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0054-Spiral Matrix" data-href="Data Structures &amp; Algorithms/All Problems/0054-Spiral Matrix" href="data-structures-&amp;-algorithms/all-problems/0054-spiral-matrix.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+<tr>
+<td dir="auto">0073</td>
+<td dir="ltr">Set Matrix Zeroes</td>
+<td align="left" dir="ltr">Medium</td>
+<td dir="auto">✓</td>
+<td dir="auto"></td>
+<td dir="ltr"><a data-tooltip-position="top" aria-label="Data Structures &amp; Algorithms/All Problems/0073-Set Matrix Zeroes" data-href="Data Structures &amp; Algorithms/All Problems/0073-Set Matrix Zeroes" href="data-structures-&amp;-algorithms/all-problems/0073-set-matrix-zeroes.html" class="internal-link" target="_self" rel="noopener nofollow">Link</a></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+<td dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span></td>
+</tr>
+</tbody>
+</table></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item mod-collapsible" data-depth="1"><a class="tree-item-self is-clickable mod-collapsible" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Blind_75_0" data-path="#Blind_75_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Blind 75">Blind 75</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Array_and_Hashing_0" data-path="#Array_and_Hashing_0"><div class="tree-item-inner heading-link" heading-name="Array and Hashing">Array and Hashing</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Binary_Search_0" data-path="#Binary_Search_0"><div class="tree-item-inner heading-link" heading-name="Binary Search">Binary Search</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Bit_Manipulation_0" data-path="#Bit_Manipulation_0"><div class="tree-item-inner heading-link" heading-name="Bit Manipulation">Bit Manipulation</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Dynamic_Programming_0" data-path="#Dynamic_Programming_0"><div class="tree-item-inner heading-link" heading-name="Dynamic Programming">Dynamic Programming</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Graphs_0" data-path="#Graphs_0"><div class="tree-item-inner heading-link" heading-name="Graphs">Graphs</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Greedy_0" data-path="#Greedy_0"><div class="tree-item-inner heading-link" heading-name="Greedy">Greedy</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Heaps_0" data-path="#Heaps_0"><div class="tree-item-inner heading-link" heading-name="Heaps">Heaps</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Intervals_0" data-path="#Intervals_0"><div class="tree-item-inner heading-link" heading-name="Intervals">Intervals</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Linked_Lists_0" data-path="#Linked_Lists_0"><div class="tree-item-inner heading-link" heading-name="Linked Lists">Linked Lists</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Sliding_Window_0" data-path="#Sliding_Window_0"><div class="tree-item-inner heading-link" heading-name="Sliding Window">Sliding Window</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Stacks_0" data-path="#Stacks_0"><div class="tree-item-inner heading-link" heading-name="Stacks">Stacks</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Trees_0" data-path="#Trees_0"><div class="tree-item-inner heading-link" heading-name="Trees">Trees</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Tries_0" data-path="#Tries_0"><div class="tree-item-inner heading-link" heading-name="Tries">Tries</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Two_Pointers_0" data-path="#Two_Pointers_0"><div class="tree-item-inner heading-link" heading-name="Two Pointers">Two Pointers</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="data-structures-&amp;-algorithms/practice-sheets/blind-75.html#Math_and_Geometry_0" data-path="#Math_and_Geometry_0"><div class="tree-item-inner heading-link" heading-name="Math and Geometry">Math and Geometry</div></a><div class="tree-item-children"></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></div></div></body></html>
