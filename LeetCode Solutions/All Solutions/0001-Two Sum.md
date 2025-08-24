@@ -4,7 +4,7 @@ tags:
   - Array
   - HashTable
 ---
-### Problem:
+### Problem Statement
 
 <p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
 
@@ -48,7 +48,7 @@ tags:
 
 <strong>Follow-up: </strong>Can you come up with an algorithm that is less than <code>O(n<sup>2</sup>)</code><font face="monospace"> </font>time complexity?
 
-### Solution:
+### Code Solution
 
 ```python
 class Solution:
