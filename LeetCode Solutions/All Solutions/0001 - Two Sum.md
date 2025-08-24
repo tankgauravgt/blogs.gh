@@ -1,9 +1,3 @@
----
-title: "0001: Two Sum"
-tags:
-  - Array
-  - HashTable
----
 ### Problem:
 
 <p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
@@ -51,13 +45,5 @@ tags:
 ### Solution:
 
 ```python
-class Solution:
-    def twoSum(self, nums, target):
-        rec = {}
-        for ix, n in enumerate(nums):
-            if n not in rec:
-                rec[target - n] = ix
-                continue
-            return [ix, rec[n]]
-        return [-1, -1]
+
 ```
