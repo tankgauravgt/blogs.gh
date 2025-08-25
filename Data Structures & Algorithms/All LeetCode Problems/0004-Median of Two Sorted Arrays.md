@@ -57,6 +57,7 @@ class Solution:
         # s3: find boundary elements (`upr_lmax`, `upr_rmin`, `btm_lmax`, `btm_rmin`)
         # s4: converge and return median
         
+        
         # s1: assure len(nums1) > len(nums2)
         if len(nums1) > len(nums2):
             nums1, nums2 = nums2, nums1
@@ -66,33 +67,25 @@ class Solution:
         lx = 0
         rx = nU
         while lx <= rx:
-		    
+	        
             # s2: calculate pivots:
             p1 = (lx + rx) // 2
             p2 = (nU + nL + 1) // 2 - p1
             
-            
             # s3: find boundaries:
             upr_lmax, upr_rmin = self.get_extremes(nums1, p1, nU)
-            btm_lmax, btm_rmin = self.get_extremes(nums2, p2, nL)
-            
+            btm_lmax, btm_rmin = self.get_extremes(nums2, p2, nL)            
             
             # s4: converge and return median:
             if max(upr_lmax, btm_lmax) <= min(upr_rmin, btm_rmin):
-                
-                # converged :)
                 if (nL + nU) % 2 == 0:
                     return (max(upr_lmax, btm_lmax) + min(upr_rmin, btm_rmin)) / 2
                 else:
                     return max(upr_lmax, btm_lmax)
-            
             else:
-	            
-                # not converged :(
                 if btm_rmin < upr_lmax:
                     rx = p1 - 1
                 elif upr_rmin < btm_lmax:
-                    lx = p1 + 1
-		    
+                    lx = p1 + 1		    
         return -1
 ```

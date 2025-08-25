@@ -38,6 +38,7 @@
         <span class="token comment"># s3: find boundary elements (`upr_lmax`, `upr_rmin`, `btm_lmax`, `btm_rmin`)</span>
         <span class="token comment"># s4: converge and return median</span>
         
+        
         <span class="token comment"># s1: assure len(nums1) &gt; len(nums2)</span>
         <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums1<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums2<span class="token punctuation">)</span><span class="token punctuation">:</span>
             nums1<span class="token punctuation">,</span> nums2 <span class="token operator">=</span> nums2<span class="token punctuation">,</span> nums1
@@ -47,34 +48,26 @@
         lx <span class="token operator">=</span> <span class="token number">0</span>
         rx <span class="token operator">=</span> nU
         <span class="token keyword">while</span> lx <span class="token operator">&lt;=</span> rx<span class="token punctuation">:</span>
-		    
+	        
             <span class="token comment"># s2: calculate pivots:</span>
             p1 <span class="token operator">=</span> <span class="token punctuation">(</span>lx <span class="token operator">+</span> rx<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>
             p2 <span class="token operator">=</span> <span class="token punctuation">(</span>nU <span class="token operator">+</span> nL <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span> <span class="token operator">-</span> p1
             
-            
             <span class="token comment"># s3: find boundaries:</span>
             upr_lmax<span class="token punctuation">,</span> upr_rmin <span class="token operator">=</span> self<span class="token punctuation">.</span>get_extremes<span class="token punctuation">(</span>nums1<span class="token punctuation">,</span> p1<span class="token punctuation">,</span> nU<span class="token punctuation">)</span>
-            btm_lmax<span class="token punctuation">,</span> btm_rmin <span class="token operator">=</span> self<span class="token punctuation">.</span>get_extremes<span class="token punctuation">(</span>nums2<span class="token punctuation">,</span> p2<span class="token punctuation">,</span> nL<span class="token punctuation">)</span>
-            
+            btm_lmax<span class="token punctuation">,</span> btm_rmin <span class="token operator">=</span> self<span class="token punctuation">.</span>get_extremes<span class="token punctuation">(</span>nums2<span class="token punctuation">,</span> p2<span class="token punctuation">,</span> nL<span class="token punctuation">)</span>            
             
             <span class="token comment"># s4: converge and return median:</span>
             <span class="token keyword">if</span> <span class="token builtin">max</span><span class="token punctuation">(</span>upr_lmax<span class="token punctuation">,</span> btm_lmax<span class="token punctuation">)</span> <span class="token operator">&lt;=</span> <span class="token builtin">min</span><span class="token punctuation">(</span>upr_rmin<span class="token punctuation">,</span> btm_rmin<span class="token punctuation">)</span><span class="token punctuation">:</span>
-                
-                <span class="token comment"># converged :)</span>
                 <span class="token keyword">if</span> <span class="token punctuation">(</span>nL <span class="token operator">+</span> nU<span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
                     <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token builtin">max</span><span class="token punctuation">(</span>upr_lmax<span class="token punctuation">,</span> btm_lmax<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token builtin">min</span><span class="token punctuation">(</span>upr_rmin<span class="token punctuation">,</span> btm_rmin<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span>
                 <span class="token keyword">else</span><span class="token punctuation">:</span>
                     <span class="token keyword">return</span> <span class="token builtin">max</span><span class="token punctuation">(</span>upr_lmax<span class="token punctuation">,</span> btm_lmax<span class="token punctuation">)</span>
-            
             <span class="token keyword">else</span><span class="token punctuation">:</span>
-	            
-                <span class="token comment"># not converged :(</span>
                 <span class="token keyword">if</span> btm_rmin <span class="token operator">&lt;</span> upr_lmax<span class="token punctuation">:</span>
                     rx <span class="token operator">=</span> p1 <span class="token operator">-</span> <span class="token number">1</span>
                 <span class="token keyword">elif</span> upr_rmin <span class="token operator">&lt;</span> btm_lmax<span class="token punctuation">:</span>
-                    lx <span class="token operator">=</span> p1 <span class="token operator">+</span> <span class="token number">1</span>
-		    
+                    lx <span class="token operator">=</span> p1 <span class="token operator">+</span> <span class="token number">1</span>		    
         <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span>
 </code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
 		<div class="graph-view-container">
