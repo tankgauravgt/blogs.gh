@@ -3,8 +3,8 @@ title: "Index: Data Structures & Algorithms"
 description: Personal coding problem tracker with solution links. A structured way to monitor progress and enhance problem-solving skills.
 ---
 
-| LC#  | Title                                              | Level  | Soln                                                                                                        |
-| ---- | -------------------------------------------------- | :----- | ----------------------------------------------------------------------------------------------------------- |
+| LC#  | Title                                              | Level  | Soln                                                              |
+| ---- | -------------------------------------------------- | :----- | ----------------------------------------------------------------- |
 | 0001 | Two Sum                                            | Easy   | [[0001-Two Sum\|Link]]                                            |
 | 0002 | Add Two Numbers                                    | Medium | [[0002-Add Two Numbers\|Link]]                                    |
 | 0003 | Longest Substring Without Repeating Characters     | Medium | [[0003-Longest Substring Without Repeating Characters\|Link]]     |

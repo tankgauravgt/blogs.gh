@@ -45,43 +45,54 @@ tags:
 
 ```python
 class Solution:
-    def findMedianSortedArrays(self, nums1, nums2):
+	
+    def get_extremes(self, arr, p, n):
+        lmax = float('-inf') if p == 0 else arr[p - 1]
+        rmin = float('+inf') if p == n else arr[p]
+        return lmax, rmin
+		
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        # s1: assure len(nums1) > len(nums2)
+        # s2: figure out pivots
+        # s3: find boundary elements (`upr_lmax`, `upr_rmin`, `btm_lmax`, `btm_rmin`)
+        # s4: converge and return median
         
-        # keep smaller array above:
+        # s1: assure len(nums1) > len(nums2)
         if len(nums1) > len(nums2):
             nums1, nums2 = nums2, nums1
+			
+        nU, nL = len(nums1), len(nums2)
         
-        # get lengths of above and below arrays:
-        nU, nL = len(nums1), len(nums2)        
-        lx, rx = 0, nU
-        
+        lx = 0
+        rx = nU
         while lx <= rx:
-        
-            # get partitions:
-            px_u = (lx + rx) // 2
-            px_l = (nU + nL + 1) // 2 - px_u
+		    
+            # s2: calculate pivots:
+            p1 = (lx + rx) // 2
+            p2 = (nU + nL + 1) // 2 - p1
             
-            # [...] - [<px_u>, ...]
-            ul_max = float('-inf') if px_u == 0 else nums1[px_u - 1]
-            ur_min = float('+inf') if px_u == nU else nums1[px_u]
             
-            # [...] - [<px_l>, ...]
-            ll_max = float('-inf') if px_l == 0 else nums2[px_l - 1]
-            lr_min = float('+inf') if px_l == nL else nums2[px_l]
+            # s3: find boundaries:
+            upr_lmax, upr_rmin = self.get_extremes(nums1, p1, nU)
+            btm_lmax, btm_rmin = self.get_extremes(nums2, p2, nL)
             
-            # if already in equilibrium:
-            if ul_max <= lr_min and ur_min >= ll_max:
             
+            # s4: converge and return median:
+            if max(upr_lmax, btm_lmax) <= min(upr_rmin, btm_rmin):
+                
+                # converged :)
                 if (nL + nU) % 2 == 0:
-                    return (max(ul_max, ll_max) + min(ur_min, lr_min)) / 2
+                    return (max(upr_lmax, btm_lmax) + min(upr_rmin, btm_rmin)) / 2
                 else:
-                    return max(ul_max, ll_max)
-                    
-            # not in equilibrium:
-            elif ul_max > lr_min:
-                rx = px_u - 1
+                    return max(upr_lmax, btm_lmax)
+            
             else:
-                lx = px_u + 1
-        
+	            
+                # not converged :(
+                if btm_rmin < upr_lmax:
+                    rx = p1 - 1
+                elif upr_rmin < btm_lmax:
+                    lx = p1 + 1
+		    
         return -1
 ```
