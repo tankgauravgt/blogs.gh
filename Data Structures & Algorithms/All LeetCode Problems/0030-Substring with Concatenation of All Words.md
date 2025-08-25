@@ -73,32 +73,20 @@ The substring starting at 12 is <code>&quot;thefoobar&quot;</code>. It is the co
 ```python
 from collections import Counter
 
-class Solution:
-    def findSubstring(self, s, words):
-        N = len(words)
-        L = len(words[0])
-        if len(s) < N * L:
-            return []
+class Solution:    
+    def findSubstring(self, s: str, words: List[str]) -> List[int]:
+        N = len(s)
         
-        target = Counter(words)
-        def check(s, sid, tgt, N, L):
-            sx = sid
-            buf = []
-            while sx < sid + N * L:
-                buf.append(s[sx:sx + L])
-                sx = sx + L
-            return Counter(buf) == tgt
+        wn = len(words)
+        ws = len(words[0])
         
-        results = []
-        tgt_hash_val = sum([sum(map(ord, word)) for word in words])
-        src_hash_val = sum(map(ord, s[0:N * L]))
-        for ix in range(len(s) - N * L + 1):
-            if ix != 0:
-                src_hash_val = src_hash_val - ord(s[ix - 1])
-                src_hash_val = src_hash_val + ord(s[ix + N * L - 1])
-            if src_hash_val != tgt_hash_val: continue
-            if check(s, ix, target, N, L):
-                results.append(ix)
-        
-        return results
+        out = []
+        tgt = dict(Counter(words))
+        for offset in range(ws):
+            for ix in range(offset, N - (ws * wn) + 1, ws):
+                src = [s[ix + jx:ix + jx + ws] for jx in range(0, (ws * wn), ws)]
+                src = dict(Counter(src))
+                if src == tgt:
+                    out.append(ix)
+        return out
 ```
