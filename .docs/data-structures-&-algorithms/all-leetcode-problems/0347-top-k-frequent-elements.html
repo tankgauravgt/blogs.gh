@@ -18,12 +18,15 @@
   <span class="token punctuation">-</span> BucketSort
   <span class="token punctuation">-</span> Counting
   <span class="token punctuation">-</span> Quickselect</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="0347_Top_K_Frequent_Elements_0">0347: Top K Frequent Elements</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-h3"><h3 data-heading="Problem Statement" dir="auto" class="heading" id="Problem_Statement_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Problem Statement</h3></div><div class="el-p"><p dir="auto">Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the</em> <code>k</code> <em>most frequent elements</em>. You may return the answer in <strong>any order</strong>.</p></div><div class="el-p"><p dir="auto"><strong class="example">Example 1:</strong></p></div><div class="el-div"><div class="example-block">
-<p dir="auto"><strong>Input:</strong> <span class="example-io">nums = [1,1,1,2,2,3], k = 2</span></p></div></div><div class="el-p"><p dir="auto"><strong>Output:</strong> <span class="example-io">[1,2]</span></p>
-</div><div class="el-p"><p dir="auto"><strong class="example">Example 2:</strong></p></div><div class="el-div"><div class="example-block">
-<p dir="auto"><strong>Input:</strong> <span class="example-io">nums = [1], k = 1</span></p></div></div><div class="el-p"><p dir="auto"><strong>Output:</strong> <span class="example-io">[1]</span></p>
-</div><div class="el-p"><p dir="auto"><strong class="example">Example 3:</strong></p></div><div class="el-div"><div class="example-block">
-<p dir="auto"><strong>Input:</strong> <span class="example-io">nums = [1,2,1,2,1,2,3,1,3,2], k = 2</span></p></div></div><div class="el-p"><p dir="auto"><strong>Output:</strong> <span class="example-io">[-1]</span></p>
-</div><div class="el-p"><p dir="auto"><strong>Constraints:</strong></p></div><div class="el-ul"><ul class="has-list-bullet">
+<p dir="auto"><strong>Input:</strong> <span class="example-io">nums = [1,1,1,2,2,3], k = 2</span></p>
+<p dir="auto"><strong>Output:</strong> <span class="example-io">[1,2]</span></p>
+</div></div><div class="el-p"><p dir="auto"><strong class="example">Example 2:</strong></p></div><div class="el-div"><div class="example-block">
+<p dir="auto"><strong>Input:</strong> <span class="example-io">nums = [1], k = 1</span></p>
+<p dir="auto"><strong>Output:</strong> <span class="example-io">[1]</span></p>
+</div></div><div class="el-p"><p dir="auto"><strong class="example">Example 3:</strong></p></div><div class="el-div"><div class="example-block">
+<p dir="auto"><strong>Input:</strong> <span class="example-io">nums = [1,2,1,2,1,2,3,1,3,2], k = 2</span></p>
+<p dir="auto"><strong>Output:</strong> <span class="example-io">[-1]</span></p>
+</div></div><div class="el-p"><p dir="auto"><strong>Constraints:</strong></p></div><div class="el-ul"><ul class="has-list-bullet">
 	<li dir="auto"><span class="list-bullet"></span><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li dir="auto"><span class="list-bullet"></span><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 	<li dir="auto"><span class="list-bullet"></span><code>k</code> is in the range <code>[1, the number of unique elements in the array]</code>.</li>

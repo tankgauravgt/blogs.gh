@@ -19,7 +19,6 @@ tags:
 
 <div class="example-block">
 <p><strong>Input:</strong> <span class="example-io">nums = [1,1,1,2,2,3], k = 2</span></p>
-
 <p><strong>Output:</strong> <span class="example-io">[1,2]</span></p>
 </div>
 
@@ -27,7 +26,6 @@ tags:
 
 <div class="example-block">
 <p><strong>Input:</strong> <span class="example-io">nums = [1], k = 1</span></p>
-
 <p><strong>Output:</strong> <span class="example-io">[1]</span></p>
 </div>
 
@@ -35,7 +33,6 @@ tags:
 
 <div class="example-block">
 <p><strong>Input:</strong> <span class="example-io">nums = [1,2,1,2,1,2,3,1,3,2], k = 2</span></p>
-
 <p><strong>Output:</strong> <span class="example-io">[-1]</span></p>
 </div>
 
