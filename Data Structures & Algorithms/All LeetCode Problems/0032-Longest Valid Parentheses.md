@@ -45,5 +45,20 @@ tags:
 ### Code Solution
 
 ```python
-
+class Solution:
+    def longestValidParentheses(self, s: str) -> int:
+        stk = [-1]
+        
+        cmax = 0
+        for cx, c in enumerate(s):
+            if c == '(':
+                stk.append(cx)
+            else:
+                stk.pop()
+                if not stk:
+                    stk.append(cx)
+                else:
+                    cmax = max(cmax, cx - stk[-1])
+        
+        return cmax
 ```

@@ -73,7 +73,7 @@ The substring starting at 12 is <code>&quot;thefoobar&quot;</code>. It is the co
 ```python
 from collections import Counter
 
-class Solution:    
+class Solution:
     def findSubstring(self, s: str, words: List[str]) -> List[int]:
         N = len(s)
         
