@@ -1747,7 +1747,7 @@ description: Personal coding problem tracker with solution links. A structured w
 | 1741 | Find Total Time Spent by Each Employee                                          |       | [[1741-Find Total Time Spent by Each Employee\|Link]]                                          |
 | 1742 | Maximum Number of Balls in a Box                                                |       | [[1742-Maximum Number of Balls in a Box\|Link]]                                                |
 | 1743 | Restore the Array From Adjacent Pairs                                           |       | [[1743-Restore the Array From Adjacent Pairs\|Link]]                                           |
-| 1744 | Can You Eat Your Favorite Candy on Your Favorite Day?                           |       | [[1744-Can You Eat Your Favorite Candy on Your Favorite Day?\|Link]]                           |
+| 1744 | Can You Eat Your Favorite Candy on Your Favorite Day?                           |       | [[1744-Can You Eat Your Favorite Candy on Your Favorite Day\|Link]]                           |
 | 1745 | Palindrome Partitioning IV                                                      |       | [[1745-Palindrome Partitioning IV\|Link]]                                                      |
 | 1746 | Maximum Subarray Sum After One Operation                                        |       | [[1746-Maximum Subarray Sum After One Operation\|Link]]                                        |
 | 1747 | Leetflex Banned Accounts                                                        |       | [[1747-Leetflex Banned Accounts\|Link]]                                                        |
