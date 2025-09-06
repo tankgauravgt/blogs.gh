@@ -60,28 +60,22 @@ class Solution:
     def isMatch(self, s: str, p: str) -> bool:
         
         @cache
-        def rec(sx, px):
+        def rec(s1, p1):
+            # boundary conditions:
+            if s1 > len(s) or p1 > len(p):
+                return False
+            if p1 == len(p):
+                return s1 == len(s)
             
-            # if pattern ends, string must end too
-            if px >= len(p):
-                return sx == len(s)
+            # check if pattern is matching:
+            matched = (s1 < len(s) and p1 < len(p)) and p[p1] in {'.', s[s1]}
             
-            # check if prefix `can_match`:
-            can_match = sx < len(s) and p[px] in {s[sx], '.'}
-            
-            # ---------------------------------
-            # next_char == '*': 
-            #     return `take_it` or `skip_it`
-            # ---------------------------------
-            if px < len(p) - 1 and p[px + 1] == '*':
-                take_it = can_match and rec(sx + 1, px)
-                skip_it = rec(sx, px + 2)
-                return take_it or skip_it
-            # ----------------
-            # next_char != '*'
-            # ----------------
-            else:
-                return can_match and rec(sx + 1, px + 1)
+            if p1 + 1 < len(p) and p[p1 + 1] == '*':
+                take_it = rec(s1 + 1, p1)
+                skip_it = rec(s1, p1 + 2)
+                return (matched and take_it) or skip_it
+            elif matched:
+                return rec(s1 + 1, p1 + 1)
             
             return False
         
