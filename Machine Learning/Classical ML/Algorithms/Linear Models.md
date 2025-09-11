@@ -17,10 +17,10 @@ model.fit(inputs, labels)
 
 ## 1. Ordinary Least Squares
 
-### Assumptions:
+### Assumptions
 
-- The target value is a linear combination of the features.
-- Features are independent.
-- The design matrix is not close to singular (no multicollinearity).
+- The target value is a **linear combination of the features**.
+- Features are **independent**.
+- The **design matrix** is not close to singular (no multicollinearity).
 ### Objective function
 $$\mathbf{w}_{*} = \underset{ \mathbf{w} }{\operatorname{arg max}}\ \Bigg\|\ X\mathbf{w} - y \ \Bigg\|_{2}^2$$
