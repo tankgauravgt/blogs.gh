@@ -15,4 +15,6 @@ model = linear_model.LinearRegression()
 model.fit(inputs, labels)
 ```
 
-## Ordinary Least Squares
+## 1. Ordinary Least Squares
+
+$$w = \max_{_w} \Big\| Xw - y \Big\|_{2}^2$$
