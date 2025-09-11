@@ -1,7 +1,7 @@
 Target value $\hat{y}$ is expected to be a linear combination of the features $X$.
 
 ```python
-from sklearn import linear_model
+from sklearn.linear_model import LinearRegression
 
 # --------------
 # `inputs`: (N, D)
