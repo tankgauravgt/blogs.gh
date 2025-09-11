@@ -1,13 +1,16 @@
+---
+title: Linear Models
+---
 Target value $\hat{y}$ is expected to be a linear combination of the features $X$.
 
-i.e.,
+Mathematically,
 
 $$
 \hat{y} = \mathbf{w_{0}} + \sum_{d=1}^{D} \mathbf{w_{d}} x_{d}
 $$
 
 ---
-## 1. Ordinary Least Squares
+## **1. Ordinary Least Squares**
 
 ### **1.1. Assumptions**
 
@@ -17,7 +20,7 @@ $$
 
 ### **1.2. Objective function**
 $$\mathbf{w}_{*} = \underset{ \mathbf{w} }{\operatorname{arg max}}\ \Bigg\|\ X\mathbf{w} - y \ \Bigg\|_{2}^2$$
-### **1.3. Code**
+### **1.3. Code Example**
 
 ```python
 from sklearn.linear_model import LinearRegression
