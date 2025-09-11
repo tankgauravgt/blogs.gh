@@ -17,4 +17,4 @@ model.fit(inputs, labels)
 
 ## 1. Ordinary Least Squares
 
-$$w = arg\max_{_w} \Big\| Xw - y \Big\|_{2}^2$$
+$$\mathbf{w} = arg\max_{_\mathbf{w}} \Big\| X\mathbf{w} - y \Big\|_{2}^2$$
